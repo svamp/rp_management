@@ -14,7 +14,10 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+PROJECT_DIR = os.path.dirname(__file__)
+PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(PROJECT_DIR)))
+
+HOME_URL = '//'
 
 with open(os.path.join(BASE_DIR, 'mail_password'), 'r') as f:
     mail_password = f.read()
@@ -44,6 +47,7 @@ INSTALLED_APPS = (
     'userena',
     'easy_thumbnails',
     #User created apps
+    'roleplaying',
     'accounts',
     'characters',
 )
@@ -88,7 +92,9 @@ ROOT_URLCONF = 'roleplaying.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(PROJECT_DIR, 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
