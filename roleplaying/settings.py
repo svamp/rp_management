@@ -14,7 +14,10 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
+with open(os.path.join(BASE_DIR, 'mail_password'), 'r') as f:
+    mail_password = f.read()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -27,10 +30,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# For django-guardian
-ANONYMOUS_USER_ID = -1
-
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -38,12 +37,35 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'guardian',
+    'userena',
+    'easy_thumbnails',
+    #User created apps
     'accounts',
     'characters',
 )
+
+# Userena settings
+ANONYMOUS_USER_ID = -1
+AUTH_PROFILE_MODULE='accounts.Profile'
+GUARDIAN_RENDER_403 = True
+
+USERENA_SIGNIN_REDIRECT_URL = '/accounts/%(username)s/'
+LOGIN_URL = '/accounts/signin/'
+LOGOUT_URL = '/accounts/signout/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'danielenilsson@gmail.com'
+EMAIL_HOST_PASSWORD = mail_password
+
+
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend', # this is default
