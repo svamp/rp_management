@@ -1,4 +1,5 @@
 mail_password
+db_pass
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
