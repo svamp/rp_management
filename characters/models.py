@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import User
 from django.db import models
 
@@ -57,13 +57,210 @@ MATERIAL_CHOICES = (
 	('14', _('Trä')),
 )
 
+class Weapons(models.Model):
+	name = models.CharField(max_length=100, 
+							null=False, 
+							blank=False)
+	weapon_type = models.CharField(max_length=100, 
+									null=False, 
+									blank=False)
+	weight_class= models.CharField(max_length=1, 
+									choices=WEAPON_WEIGHT_CLASS_CHOICES, 
+									null=False, 
+									blank=False)
+	quality = models.CharField(max_length=10,
+								choices=QUALITY_CHOICES,
+								null=False,
+								blank=False,
+								default='3')
+	actions = models.IntegerField(null=False, 
+									blank=False,
+									default=0)
+	initiative_mod = models.IntegerField(null=False,
+										blank=False,
+										default=0)
+	weight = models.FloatField(null=False,
+								blank=False,
+								default=0)
+	breaking_value = models.IntegerField(null=False,
+											blank=False,
+											default=0)
+	damage = models.CharField(max_length=100,
+								null=False,
+								blank=False,
+								default='1T10(ÖP10)')
+	value = models.IntegerField(null=False,
+								blank=False)
+	material = models.CharField(max_length=100,
+								null=False,
+								blank=False,
+								choices=MATERIAL_CHOICES,
+								default='6')
+	locked_action_points = models.IntegerField(null=False,
+												blank=False,
+												default=0)
+	# Info for ranged weapons
+	ranged = models.BooleanField()
+	short_range = models.CharField(max_length=100,
+									null=True,
+									blank=True,
+									default='N/A')
+	long_range = models.CharField(max_length=100,
+									null=True,
+									blank=True,
+									default='N/A')
+	penetration = models.CharField(max_length=100,
+									null=True,
+									blank=True,
+									default='N/A')
+	# For shields
+	passive_protection = models.CharField(max_length=100,
+											null=True,
+											blank=True,
+											default='N/A')
+
+	def __unicode__(self):
+		return self.name
+
+class Armor(models.Model):
+	name = models.CharField(max_length=100,
+							null=False,
+							blank=False)
+	location = models.CharField(max_length=1,
+								null=False,
+								blank=False)
+	material = models.CharField(max_length=100,
+								null=False,
+								blank=False,
+								choices=MATERIAL_CHOICES,
+								default='6')
+	quality = models.CharField(max_length=100,
+								null=False,
+								blank=False,
+								choices=QUALITY_CHOICES,
+								default='3')
+	armor = models.IntegerField(null=False,
+								blank=False,
+								default=1)
+	breaking_value = models.IntegerField(null=False,
+										blank=False,
+										default=1)
+	weight = models.FloatField(null=False,
+								blank=False,
+								default=1)
+	value = models.IntegerField(null=False,
+								blank=False,
+								default=0)
+	description = models.TextField(null=True,
+									blank=True)
+
+	def __unicode__(self):
+		return self.name
+
+class Items(models.Model):
+	name = models.CharField(max_length=100,
+							null=False,
+							blank=False)
+	weight = models.FloatField(null=False,
+								blank=False,
+								default=0)
+	value = models.IntegerField(null=False,
+								blank=False,
+								default=0)
+	description = models.TextField(null=True,
+									blank=True)
+
+
+class BaseInfoClass(models.Model):
+	name = models.CharField(max_length=100,
+							null=False,
+							blank=False)
+
+	tier = models.IntegerField(null=False, blank=False, default=0)
+
+	description = models.TextField(null=True,
+									blank=True)
+
+	"""
+        related_name
+        https://docs.djangoproject.com/en/1.8/topics/db/models/#abstract-related-name
+    """
+
+	class Meta(object):
+		abstract = True
+
+	def __unicode__(self):
+		return self.name
+
+class Race(BaseInfoClass):
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name = _('Ras')
+		verbose_name_plural = _('Raser')
+
+class RaceOrigin(BaseInfoClass):
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name = _('Folkslag')
+
+class Religion(BaseInfoClass):
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name = _('Religion')
+		verbose_name_plural = _('Religioner')
+
+class Background(BaseInfoClass):
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name = _('Bakgrundsmiljö')
+
+class Archetype(BaseInfoClass):
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name = _('Arketyp')
+		verbose_name_plural = _('Arketyper')
+
+class Characteristic(BaseInfoClass):
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name = _('Karaktärsdrag')
+
+class Skills(BaseInfoClass):
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name = _('Färdigheter')
+
+class SkillImprovement(BaseInfoClass):
+
+	parent = models.ForeignKey(Skills, null=False, blank=False)
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name = _('Fördjupning')
+		verbose_name_plural = _('Fördjupningar')
+		
+class ExceptionalCharacteristic(BaseInfoClass):
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name = _('Exeptionella karaktärsdrag')
+
+class CharacteristicDetail(BaseInfoClass):
+
+	parent = models.ForeignKey(ExceptionalCharacteristic, null=False, blank=False)
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name= _('Characteristic detail')
+
+class Spells(BaseInfoClass):
+
+	class Meta(BaseInfoClass.Meta):
+		verbose_name = _('Besvärjelser och gudomliga förmågor')
+
 class Character(models.Model):
-	creator = models.ForeignKey(User, related_name='creator')
+	creator = models.ForeignKey(User)
 
 	character_name = models.CharField(max_length=100, 
 										null=False, 
-										blank=False, 
-										related_name='character_name',
+										blank=False,
 										verbose_name=_('Karaktärs namn'))
 
 	homeland = models.CharField(max_length=100,
@@ -102,13 +299,13 @@ class Character(models.Model):
 
 	remaining_experience = models.IntegerField(verbose_name=_('Oanvända äventyrspoäng'), default=0)
 
-	skills = models.ManyToManyField(Skills)
+	skills = models.ManyToManyField(Skills, blank=True)
 
-	characteristic = models.ManyToManyField(Characteristic, null=True, blank=True)
+	characteristic = models.ManyToManyField(Characteristic, blank=True)
 
-	exceptional_characteristic = models.ManyToManyField(ExceptionalCharacteristic)
+	exceptional_characteristic = models.ManyToManyField(ExceptionalCharacteristic, blank=True)
 
-	skill_imporvements = models.ManyToManyField(SkillImprovement)
+	skill_imporvements = models.ManyToManyField(SkillImprovement, blank=True)
 
 	background_description = models.TextField(null=True, blank=True)
 
@@ -118,13 +315,13 @@ class Character(models.Model):
 
 	presistent_fright = models.TextField(null=True, blank=True)
 
-	spells = models.ManyToManyField(Spells, null=True, blank=True)
+	spells = models.ManyToManyField(Spells, blank=True)
 
 	weapons = models.ManyToManyField(Weapons, null=False, blank=False)
 
 	gold = models.CharField(max_length=256, null=True, blank=True)
 
-	items = models.ManyToManyField(Items)
+	items = models.ManyToManyField(Items, blank=True)
 
 	def __unicode__(self):
 		return self.character_name
@@ -170,31 +367,45 @@ class CharacterArmor(models.Model):
 
 	head_armor = models.IntegerField(null=False, blank=False, default=0)
 	head_armor_bv = models.IntegerField(null=False, blank=False, default=0)
-	head_armor_type = models.ManyToManyField(Armor)
-
-	rightarm_armor = models.IntegerField(null=False, blank=False, default=0)
-	rightarm_armor_bv = models.IntegerField(null=False, blank=False, default=0)
-	rightarm_armor_type = models.ManyToManyField(Armor)
+	head_armor_type = models.ManyToManyField(Armor, 
+											related_name='helmets',
+											verbose_name=_('Armskydd, höger'))
 
 	leftarm_armor = models.IntegerField(null=False, blank=False, default=0)
 	leftarm_armor_bv = models.IntegerField(null=False, blank=False, default=0)
-	leftarm_armor_type = models.ManyToManyField(Armor)
+	leftarm_armor_type = models.ManyToManyField(Armor, 
+												related_name='left_armguard',
+												verbose_name=_('Armskydd, vänster'))
+
+	rightarm_armor = models.IntegerField(null=False, blank=False, default=0)
+	rightarm_armor_bv = models.IntegerField(null=False, blank=False, default=0)
+	rightarm_armor_type = models.ManyToManyField(Armor, 
+												related_name='right_armguard', 
+												verbose_name=_('Armskydd, höger'))
 
 	chest_armor = models.IntegerField(null=False, blank=False, default=0)
 	chest_armor_bv = models.IntegerField(null=False, blank=False, default=0)
-	chest_armor_type = models.ManyToManyField(Armor)
+	chest_armor_type = models.ManyToManyField(Armor, 
+												related_name='chest_armor',
+												verbose_name=_('Bröstskydd'))
 
 	stomach_armor = models.IntegerField(null=False, blank=False, default=0)
 	stomach_armor_bv = models.IntegerField(null=False, blank=False, default=0)
-	stomach_armor_type = models.ManyToManyField(Armor)
+	stomach_armor_type = models.ManyToManyField(Armor, 
+												related_name='stomach_armor',
+												verbose_name=_('Magskydd'))
 
 	rightleg_armor = models.IntegerField(null=False, blank=False, default=0)
 	rightleg_armor_bv = models.IntegerField(null=False, blank=False, default=0)
-	rightleg_armor_type = models.ManyToManyField(Armor)
+	rightleg_armor_type = models.ManyToManyField(Armor,
+												related_name='right_legarmor',
+												verbose_name=_('Benskydd, höger'))
 
 	leftleg_armor = models.IntegerField(null=False, blank=False, default=0)
 	leftleg_armor_bv = models.IntegerField(null=False, blank=False, default=0)
-	leftleg_armor_type = models.ManyToManyField(Armor)
+	leftleg_armor_type = models.ManyToManyField(Armor,
+												related_name='left_legarmor',
+												verbose_name=_('Benskydd, vänster'))
 
 	total_armor_weight = models.IntegerField(null=False, blank=False, default=0)
 
@@ -216,194 +427,5 @@ class CharacterFighting(models.Model):
 	armed = models.IntegerField(null=False, blank=False, default=0)
 	unarmed = models.IntegerField(null=False, blank=False, default=0)
 
-class Weapons(models.Model):
-	name = models.CharField(max_length=100, 
-							null=False, 
-							blank=False)
-	weapon_type = models.CharField(max_length=100, 
-									null=False, 
-									blank=False)
-	weight_class= models.CharField(max_length=1, 
-									choices=WEAPON_WEIGHT_CLASS_CHOICES, 
-									null=False, 
-									blank=False)
-	quality = models.CharField(max_length=10,
-								choices=QUALITY_CHOICES,
-								null=False,
-								blank=False,
-								default='3')
-	actions = models.IntegerField(null=False, 
-									blank=False,
-									default=0)
-	initiative_mod = models.IntegerField(null=False,
-										blank=False,
-										default=0)
-	weight = models.FloatField(null=False,
-								blank=False,
-								default=0)
-	breaking_value = models.IntegerField(null=False,
-											blank=False,
-											default=0)
-	damage = models.CharField(max_length=100,
-								null=False,
-								blank=False,
-								default='1T10(ÖP10)')
-	value = models.IntegerField(null=False,
-								blank=False)
-	material = models.CharField(max_length=100,
-								null=False,
-								blank=False,
-								choices=MATERIAL_CHOICES,
-								default='6')
-	locked_action_points = models.IntegerField(max_length=10,
-												null=False,
-												blank=False,
-												default=0)
-	# Info for ranged weapons
-	ranged = models.BooleanField()
-	short_range = models.CharField(null=True,
-									blank=True)
-	long_range = models.CharField(null=True,
-									blank=True)
-	penetration = models.CharField(null=True,
-									blank=True)
-	# For shields
-	passive_protection = models.CharField(null=True,
-											blank=True)
-
 	def __unicode__(self):
-		return self.name
-
-class Armor(models.Model):
-	name = models.CharField(max_length=100,
-							null=False,
-							blank=False)
-	location = models.CharField(max_length=1,
-								null=False,
-								blank=False)
-	material = models.CharField(max_length=100,
-								null=False,
-								blank=False,
-								choices=MATERIAL_CHOICES,
-								default='6')
-	quality = models.CharField(max_length=100,
-								null=False,
-								blank=False,
-								choices=QUALITY_CHOICES,
-								deafult='3')
-	armor = models.IntegerField(null=False,
-								blank=False,
-								default=1)
-	breaking_value = models.IntegerField(null=False,
-										blank=False,
-										default=1)
-	weight = models.FloatField(null=False,
-								blank=False,
-								default=1)
-	value = models.IntegerField(null=False,
-								blank=False,
-								default=0)
-	description = models.TextField(null=True,
-									blank=True)
-
-	def __unicode__(self):
-		return self.name
-
-class Items(models.Model):
-	name = models.CharField(null=False,
-							blank=False)
-	weight = models.FloatField(null=False,
-								blank=False,
-								default=0)
-	value = models.IntegerField(null=False,
-								blank=False,
-								default=0)
-	description = models.TextField(null=True,
-									blank=True)
-
-
-class BaseInfoClass(models.Model):
-	name = models.CharField(max_length=100,
-							null=False,
-							blank=False,
-							related_name="%(app_label)s_%(class)s_name")
-
-	tier = models.IntegerField(null=False, blank=False, default=0)
-
-	description = models.TextField(null=True,
-									blank=True,
-									related_name="%(app_label)s_%(class)s_description")
-
-	"""
-        related_name
-        https://docs.djangoproject.com/en/1.8/topics/db/models/#abstract-related-name
-    """
-
-	class Meta(object):
-		abstract = True
-
-	def __unicode__(self):
-		return self.name
-
-class Race(BaseInfoClass):
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name = _('Ras')
-		verbose_name_plural = _('Raser')
-
-class RaceOrigin(BaseInfoClass.Meta):
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name = _('Folkslag')
-
-class Religion(BaseInfoClass):
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name = _('Religion')
-		verbose_name_plural = _('Religioner')
-
-class Background(BaseInfoClass):
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name = _('Bakgrundsmiljö')
-
-class Archetype(BaseInfoClass):
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name = _('Arketyp')
-		verbose_name_plural = _('Arketyper')
-
-class Characteristic(BaseInfoClass):
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name = _('Karaktärsdrag')
-
-class SkillImprovement(BaseInfoClass):
-
-	parent = models.ForeignKey(Skill, null=False, blank=False)
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name = _('Fördjupning')
-		verbose_name_plural = _('Fördjupningar')
-
-class CharacteristicDetail(BaseInfoClass):
-
-	parent = models.ForeignKey(ExceptionalCharacteristic, null=False, blank=False)
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name= _('Characteristic detail')
-
-class Skills(BaseInfoClass):
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name = _('Färdigheter')
-
-class ExceptionalCharacteristic(BaseInfoClass):
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name = _('Exeptionella karaktärsdrag')
-
-class Spells(BaseInfoClass):
-
-	class Meta(BaseInfoClass.Meta):
-		verbose_name = _('Besvärjelser och gudomliga förmågor')
+		return self.character.character_name
