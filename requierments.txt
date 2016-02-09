@@ -1,4 +1,8 @@
 Django==1.8.9
 django-guardian==1.4.1
+django-userena==1.4.1
+easy-thumbnails==2.3
+html2text==2014.12.29
+MySQL-python==1.2.5
 Pillow==3.1.1
 six==1.10.0
