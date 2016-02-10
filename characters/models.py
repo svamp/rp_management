@@ -60,67 +60,86 @@ MATERIAL_CHOICES = (
 class Weapons(models.Model):
 	name = models.CharField(max_length=100, 
 							null=False, 
-							blank=False)
+							blank=False,
+							verbose_name=_(u'Namn'))
 	weapon_type = models.CharField(max_length=100, 
 									null=False, 
-									blank=False)
+									blank=False,
+									verbose_name=_(u'Vapentyp'))
 	weight_class= models.CharField(max_length=1, 
 									choices=WEAPON_WEIGHT_CLASS_CHOICES, 
 									null=False, 
-									blank=False)
+									blank=False,
+									default='M',
+									verbose_name=_(u'Viktklass'))
 	quality = models.CharField(max_length=10,
 								choices=QUALITY_CHOICES,
 								null=False,
 								blank=False,
-								default='3')
+								default='3',
+								verbose_name=_(u'Kvalitet'))
 	actions = models.IntegerField(null=False, 
 									blank=False,
-									default=0)
+									default=0,
+									verbose_name=_(u'Handlingar'))
 	initiative_mod = models.IntegerField(null=False,
 										blank=False,
-										default=0)
+										default=0,
+										verbose_name=_(u'Initiativmodifikation'))
 	weight = models.FloatField(null=False,
 								blank=False,
-								default=0)
+								default=0,
+								verbose_name=_(u'Vikt'))
 	breaking_value = models.IntegerField(null=False,
 											blank=False,
-											default=0)
+											default=0,
+											verbose_name=_(u'Brytningsvärde'))
 	damage = models.CharField(max_length=100,
 								null=False,
 								blank=False,
-								default=u'1T10(ÖP10)')
+								default=u'1T10(ÖP10)',
+								verbose_name=_(u'Skada'))
 	value = models.IntegerField(null=False,
-								blank=False)
+								blank=False,
+								verbose_name=_(u'Värde'))
 	material = models.CharField(max_length=100,
 								null=False,
 								blank=False,
 								choices=MATERIAL_CHOICES,
-								default='6')
+								default='6',
+								verbose_name=_(u'Material'))
 	locked_action_points = models.IntegerField(null=False,
 												blank=False,
-												default=0)
+												default=0,
+												verbose_name=_(u'Låsta handlingpoäng'))
 	# Info for ranged weapons
-	ranged = models.BooleanField()
+	ranged = models.BooleanField(default=False,
+								verbose_name=_(u'Avståndsvapen'))
 	short_range = models.CharField(max_length=100,
 									null=True,
 									blank=True,
-									default=u'N/A')
+									default=u'N/A',
+									verbose_name=_(u'Kort räckvidd'))
 	long_range = models.CharField(max_length=100,
 									null=True,
 									blank=True,
-									default=u'N/A')
+									default=u'N/A',
+									verbose_name=_(u'Lång räckvidd'))
 	penetration = models.CharField(max_length=100,
 									null=True,
 									blank=True,
-									default=u'N/A')
+									default=u'N/A',
+									verbose_name=_(u'Penetreringsvärde Kort/Lång'))
 	# For shields
 	passive_protection = models.CharField(max_length=100,
 											null=True,
 											blank=True,
-											default=u'N/A')
+											default=u'N/A',
+											verbose_name=_(u'Passivtskydd'))
 
 	description = models.TextField(null=True,
-									blank=True)
+									blank=True,
+									verbose_name=_(u'Beskrivning'))
 
 	class Meta(object):
 		verbose_name=_(u'Vapen')
@@ -192,12 +211,17 @@ class Items(models.Model):
 class BaseInfoClass(models.Model):
 	name = models.CharField(max_length=100,
 							null=False,
-							blank=False)
+							blank=False,
+							verbose_name=_(u'Namn'))
 
-	tier = models.IntegerField(null=False, blank=False, default=0)
+	tier = models.IntegerField(null=False,
+								blank=False,
+								default=0,
+								verbose_name=_(u'Nivå'))
 
 	description = models.TextField(null=True,
-									blank=True)
+									blank=True,
+									verbose_name=_(u'Beskrivning'))
 
 	"""
         related_name
@@ -218,7 +242,7 @@ class Race(BaseInfoClass):
 
 class RaceOrigin(BaseInfoClass):
 
-	parent = models.ForeignKey(Race, null=False, blank=False)
+	parent = models.ForeignKey(Race, null=False, blank=False, verbose_name=_(u'Tillhörighet'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Folkslag')
@@ -226,7 +250,7 @@ class RaceOrigin(BaseInfoClass):
 
 class Religion(BaseInfoClass):
 
-	parent = models.ForeignKey(RaceOrigin, null=False, blank=False, default=0)
+	parent = models.ForeignKey(RaceOrigin, null=False, blank=False, default=0, verbose_name=_(u'Tillhörighet'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Religion')
@@ -258,7 +282,7 @@ class Skills(BaseInfoClass):
 
 class SkillImprovement(BaseInfoClass):
 
-	parent = models.ForeignKey(Skills, null=False, blank=False)
+	parent = models.ForeignKey(Skills, null=False, blank=False, verbose_name=_(u'Tillhörighet'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Fördjupning')
@@ -272,7 +296,7 @@ class ExceptionalCharacteristic(BaseInfoClass):
 
 class CharacteristicDetail(BaseInfoClass):
 
-	parent = models.ForeignKey(ExceptionalCharacteristic, null=False, blank=False)
+	parent = models.ForeignKey(ExceptionalCharacteristic, null=False, blank=False, verbose_name=_(u'Tillhörighet'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name= _(u'Karaktärs detaljer')
@@ -285,7 +309,7 @@ class Spells(BaseInfoClass):
 		verbose_name_plural = _(u'Besvärjelser och gudomliga förmågor')
 
 class Character(models.Model):
-	creator = models.ForeignKey(User)
+	creator = models.ForeignKey(User, verbose_name=_(u'Skapare'))
 
 	character_name = models.CharField(max_length=100, 
 										null=False, 
@@ -298,27 +322,27 @@ class Character(models.Model):
 	hometown = models.CharField(max_length=100,
 								verbose_name=_(u'Hemstad'))
 
-	race = models.ForeignKey(Race, null=False, blank=False)
+	race = models.ForeignKey(Race, null=False, blank=False, verbose_name=_(u'Ras'))
 
-	race_origin = models.ForeignKey(RaceOrigin, null=False, blank=False)
+	race_origin = models.ForeignKey(RaceOrigin, null=False, blank=False, verbose_name=_(u'Folkslag'))
 
-	religion = models.ForeignKey(Religion, null=False, blank=False)
+	religion = models.ForeignKey(Religion, null=False, blank=False, verbose_name=_(u'Religion'))
 
-	background = models.ForeignKey(Background, null=False, blank=False)
+	background = models.ForeignKey(Background, null=False, blank=False, verbose_name=_(u'Bakgrundsmiljö'))
 
-	archetype = models.ForeignKey(Archetype, null=False, blank=False)
+	archetype = models.ForeignKey(Archetype, null=False, blank=False, verbose_name=_(u'Arketyp'))
 
-	weapon_hand = models.CharField(max_length=2, choices=WEAPON_HAND_CHOICES, default='Ri')
+	weapon_hand = models.CharField(max_length=2, choices=WEAPON_HAND_CHOICES, default='Ri', verbose_name=_(u'Vapenhand'))
 
-	sex = models.CharField(max_length=1, choices=SEX_CHOICES, default='M')
+	sex = models.CharField(max_length=1, choices=SEX_CHOICES, default='M', verbose_name=_(u'Kön'))
 
-	age = models.IntegerField(null=False, blank=False, default=0)
+	age = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Ålder'))
 
-	weight = models.IntegerField(verbose_name=_(u'Hur mycket din karaktär väger i kg'), default=0)
+	weight = models.IntegerField(verbose_name=_(u'Vikt i kg'), default=0)
 
-	height = models.IntegerField(verbose_name=_(u'Hur lång din karaktär är i cm.'), default=0)
+	height = models.IntegerField(verbose_name=_(u'Längd i cm.'), default=0)
 
-	move = models.IntegerField(verbose_name=_(u'Hur långt din karaktär kan gå under en runda'), default=0)
+	move = models.IntegerField(verbose_name=_(u'Förflyttning'), default=0)
 
 	raud = models.IntegerField(verbose_name=_(u'Raud'), default=0)
 
@@ -328,33 +352,33 @@ class Character(models.Model):
 
 	remaining_experience = models.IntegerField(verbose_name=_(u'Oanvända äventyrspoäng'), default=0)
 
-	skills = models.ManyToManyField(Skills, blank=True)
+	skills = models.ManyToManyField(Skills, blank=True, verbose_name=_(u'Fördigheter'))
 
-	characteristic = models.ManyToManyField(Characteristic, blank=True)
+	characteristic = models.ManyToManyField(Characteristic, blank=True, verbose_name=_(u'Karaktärsdrag'))
 
-	exceptional_characteristic = models.ManyToManyField(ExceptionalCharacteristic, blank=True)
+	exceptional_characteristic = models.ManyToManyField(ExceptionalCharacteristic, blank=True, verbose_name=_(u'Exeptionella karaktärsdrag'))
 
-	skill_imporvements = models.ManyToManyField(SkillImprovement, blank=True)
+	skill_imporvements = models.ManyToManyField(SkillImprovement, blank=True, verbose_name=_(u'Fördjupningar'))
 
-	background_description = models.TextField(null=True, blank=True)
+	background_description = models.TextField(null=True, blank=True, verbose_name=_(u'Bakgrundsbeskrivning'))
 
-	gear = models.TextField(null=True, blank=True)
+	gear = models.TextField(null=True, blank=True, verbose_name=_(u'Utstyrsel'))
 
-	fright = models.IntegerField(null=False, blank=False, default=0)
+	fright = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Skräck'))
 
-	presistent_fright = models.TextField(null=True, blank=True)
+	presistent_fright = models.TextField(null=True, blank=True, verbose_name=_(u'Skräcksymtomer'))
 
-	spells = models.ManyToManyField(Spells, blank=True)
+	spells = models.ManyToManyField(Spells, blank=True, verbose_name=_(u'Besvärjelser och gudomliga förmågor'))
 
-	weapons = models.ManyToManyField(Weapons, null=False, blank=False)
+	weapons = models.ManyToManyField(Weapons, null=False, blank=False, verbose_name=_(u'Vapen'))
 
-	copper = models.IntegerField(null=False, blank=False, default=0)
+	copper = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Koppar'))
 
-	silver = models.IntegerField(null=False, blank=False, default=0)
+	silver = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Silver'))
 
-	gold = models.IntegerField(null=True, blank=True, default=0)
+	gold = models.IntegerField(null=True, blank=True, default=0, verbose_name=_(u'Guld'))
 
-	items = models.ManyToManyField(Items, blank=True)
+	items = models.ManyToManyField(Items, blank=True, verbose_name=_(u'Föremål'))
 
 	class Meta(object):
 		verbose_name=_(u'Karaktär')
@@ -364,33 +388,33 @@ class Character(models.Model):
 		return self.character_name
 
 class CharacterHP(models.Model):
-	character = models.ForeignKey(Character, null=False, blank=False)
+	character = models.ForeignKey(Character, null=False, blank=False, verbose_name=_(u'Karaktär'))
 
-	total_hp = models.IntegerField(null=False, blank=False, default=0)
-	current_hp = models.IntegerField(null=False, blank=False, default=0)
+	total_hp = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Total hälsa'))
+	current_hp = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Nuvarande hälsa'))
 
-	head_hp = models.IntegerField(null=False, blank=False, default=0)
-	head_hp_current = models.IntegerField(null=False, blank=False, default=0)
+	head_hp = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Hälsa: Huvudet'))
+	head_hp_current = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Nuvarande hälsa: Huvudet'))
 
-	rightarm_hp = models.IntegerField(null=False, blank=False, default=0)
-	rightarm_hp_current = models.IntegerField(null=False, blank=False, default=0)
+	rightarm_hp = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Hälsa: Höger arm'))
+	rightarm_hp_current = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Nuvarande hälsa: Höger arm'))
 
-	leftarm_hp = models.IntegerField(null=False, blank=False, default=0)
-	leftarm_hp_current = models.IntegerField(null=False, blank=False, default=0)
+	leftarm_hp = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Hälsa: Vänster arm'))
+	leftarm_hp_current = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Nuvarande hälsa: Vänster arm'))
 
-	chest_hp = models.IntegerField(null=False, blank=False, default=0)
-	chest_hp_current = models.IntegerField(null=False, blank=False, default=0)
+	chest_hp = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Hälsa: Bröstet'))
+	chest_hp_current = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Nuvarande hälsa: Bröstet'))
 
-	stomach_hp = models.IntegerField(null=False, blank=False, default=0)
-	stomach_hp_current = models.IntegerField(null=False, blank=False, default=0)
+	stomach_hp = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Hälsa: Magen'))
+	stomach_hp_current = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Nuvarande hälsa: Magen'))
 
-	rightleg_hp = models.IntegerField(null=False, blank=False, default=0)
-	rightleg_hp_current = models.IntegerField(null=False, blank=False, default=0)
+	rightleg_hp = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Hälsa: Höger ben'))
+	rightleg_hp_current = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Nuvarande hälsa: Höger ben'))
 
-	leftleg_hp = models.IntegerField(null=False, blank=False, default=0)
-	leftleg_hp_current = models.IntegerField(null=False, blank=False, default=0)
+	leftleg_hp = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Hälsa: Vänster ben'))
+	leftleg_hp_current = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Nuvarande hälsa_ Vänster ben'))
 
-	critical_injuries = models.TextField()
+	critical_injuries = models.TextField(verbose_name=_('Kritiska skador'))
 
 	class Meta(object):
 		verbose_name=_(u'Karaktärers hälsa')
@@ -402,59 +426,59 @@ class CharacterHP(models.Model):
 		)
 
 class CharacterArmor(models.Model):
-	character = models.ForeignKey(Character, null=False, blank=False)
+	character = models.ForeignKey(Character, null=False, blank=False, verbose_name=_(u'Karaktär'))
 
-	total_armor = models.IntegerField(null=False, blank=False, default=0)
+	total_armor = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Totalt rustningsvärde'))
 
-	head_armor = models.IntegerField(null=False, blank=False, default=0)
-	head_armor_bv = models.IntegerField(null=False, blank=False, default=0)
+	head_armor = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Hjälm'))
+	head_armor_bv = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Brytningsvärde: Hjälm'))
 	head_armor_type = models.ManyToManyField(Armor, 
 											related_name='helmets',
-											verbose_name=_(u'Armskydd, höger'))
+											verbose_name=_(u'Rustningstyp: Hjälm'))
 
-	leftarm_armor = models.IntegerField(null=False, blank=False, default=0)
-	leftarm_armor_bv = models.IntegerField(null=False, blank=False, default=0)
+	leftarm_armor = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Armskydd: Vänster'))
+	leftarm_armor_bv = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Brytningsvärde: Armskydd, vänster'))
 	leftarm_armor_type = models.ManyToManyField(Armor, 
 												related_name='left_armguard',
-												verbose_name=_(u'Armskydd, vänster'))
+												verbose_name=_(u'Rustningstyp: Armskydd, vänster'))
 
-	rightarm_armor = models.IntegerField(null=False, blank=False, default=0)
-	rightarm_armor_bv = models.IntegerField(null=False, blank=False, default=0)
+	rightarm_armor = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Armskydd: Höger'))
+	rightarm_armor_bv = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Brytningsvärde: Armskydd, höger'))
 	rightarm_armor_type = models.ManyToManyField(Armor, 
 												related_name='right_armguard', 
-												verbose_name=_(u'Armskydd, höger'))
+												verbose_name=_(u'Rustningstyp: Armskydd, höger'))
 
-	chest_armor = models.IntegerField(null=False, blank=False, default=0)
-	chest_armor_bv = models.IntegerField(null=False, blank=False, default=0)
+	chest_armor = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Bröstskydd'))
+	chest_armor_bv = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Brytningsvärde: Bröstskydd'))
 	chest_armor_type = models.ManyToManyField(Armor, 
 												related_name='chest_armor',
-												verbose_name=_(u'Bröstskydd'))
+												verbose_name=_(u'Rustningstyp: Bröstskydd'))
 
-	stomach_armor = models.IntegerField(null=False, blank=False, default=0)
-	stomach_armor_bv = models.IntegerField(null=False, blank=False, default=0)
+	stomach_armor = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Magskydd'))
+	stomach_armor_bv = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Brytningsvärde: Magskydd'))
 	stomach_armor_type = models.ManyToManyField(Armor, 
 												related_name='stomach_armor',
-												verbose_name=_(u'Magskydd'))
+												verbose_name=_(u'Rustningstyp: Magskydd'))
 
-	rightleg_armor = models.IntegerField(null=False, blank=False, default=0)
-	rightleg_armor_bv = models.IntegerField(null=False, blank=False, default=0)
+	rightleg_armor = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Benskydd: Höger'))
+	rightleg_armor_bv = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Brytningsvärde: Benskydd, höger'))
 	rightleg_armor_type = models.ManyToManyField(Armor,
 												related_name='right_legarmor',
-												verbose_name=_(u'Benskydd, höger'))
+												verbose_name=_(u'Rustningstyp: Benskydd, höger'))
 
-	leftleg_armor = models.IntegerField(null=False, blank=False, default=0)
-	leftleg_armor_bv = models.IntegerField(null=False, blank=False, default=0)
+	leftleg_armor = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Benskydd: Vänster'))
+	leftleg_armor_bv = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Brytningsvärde: Benskydd, vänster'))
 	leftleg_armor_type = models.ManyToManyField(Armor,
 												related_name='left_legarmor',
-												verbose_name=_(u'Benskydd, vänster'))
+												verbose_name=_(u'Rustningstyp: Benskydd, vänster'))
 
-	total_armor_weight = models.IntegerField(null=False, blank=False, default=0)
+	total_armor_weight = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Total rustningsvikt'))
 
-	initiative_mod = models.IntegerField(null=False, blank=False, default=0)
+	initiative_mod = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Initiativmodifikation'))
 
-	skill_mod = models.IntegerField(null=False, blank=False, default=0)
+	skill_mod = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Färdighetsmodifikation'))
 
-	spell_mod = models.IntegerField(null=False, blank=False, default=0)
+	spell_mod = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Magimodifikation'))
 
 	class Meta(object):
 		verbose_name=_(u'Rustning för karaktärer')
@@ -466,11 +490,11 @@ class CharacterArmor(models.Model):
 		)
 
 class CharacterFighting(models.Model):
-	character = models.ForeignKey(Character, null=False, blank=False)
+	character = models.ForeignKey(Character, null=False, blank=False, verbose_name=_(u'Karaktär'))
 
-	base_value = models.IntegerField(null=False, blank=False, default=0)
-	armed = models.IntegerField(null=False, blank=False, default=0)
-	unarmed = models.IntegerField(null=False, blank=False, default=0)
+	base_value = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Basvärde'))
+	armed = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Beväpnad strid'))
+	unarmed = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Obeväpnad strid'))
 
 	class Meta(object):
 		verbose_name=_(u'Stridsvärde')
@@ -480,4 +504,3 @@ class CharacterFighting(models.Model):
 		return u"Stridsvärden för {character}".format(
 			character=self.character.character_name
 		)
-		return self.character.character_name
