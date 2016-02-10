@@ -28,39 +28,39 @@ class CustomSignupForm(SignupFormOnlyEmail):
 		return new_user
 
 class AuthenticationForm(forms.Form):
-	identification = forms.CharField(
-		widget=forms.TextInput(attrs={'class': 'required form-control',
-								'placeholder': _(u"Enter your e-mail address")}),
-		label=_(u"E-mail address"),
-		max_length=75,
-		error_messages={'required': _(u"Please supply your email.")}
+    identification = forms.CharField(
+        widget=forms.TextInput(attrs={'class': 'required form-control',
+                                      'placeholder': _(u"Enter your e-mail address")}),
+        label=_(u"E-mail address"),
+        max_length=75,
+        error_messages={'required': _(u"Please supply your email.")}
     )
-	password = forms.CharField(
-		widget=forms.PasswordInput(attrs={'class': 'required form-control',
-											'placeholder': _(u"Enter your password")},
-											render_value=False),
-		label=_("Password"),
-	)
-	remember_me = forms.BooleanField(
-		widget=forms.CheckboxInput(),
-		label=_(u'Remember me for %(days)s') % {'days': _(userena_settings.USERENA_REMEMBER_ME_DAYS[0])},
-		required=False
-	)
+    password = forms.CharField(
+        widget=forms.PasswordInput(attrs={'class': 'required form-control',
+                                          'placeholder': _(u"Enter your password")},
+                                   render_value=False),
+        label=_("Password"),
+    )
+    remember_me = forms.BooleanField(
+        widget=forms.CheckboxInput(),
+        label=_(u'Remember me for %(days)s') % {'days': _(userena_settings.USERENA_REMEMBER_ME_DAYS[0])},
+        required=False
+    )
 
-	def clean(self):
-		"""
-		Checks for the identification and password.
+    def clean(self):
+        """
+        Checks for the identification and password.
 
-		If the combination can't be found will raise an invalid sign in error.
-		"""
-		identification = self.cleaned_data.get('identification')
-		password = self.cleaned_data.get('password')
+        If the combination can't be found will raise an invalid sign in error.
+        """
+        identification = self.cleaned_data.get('identification')
+        password = self.cleaned_data.get('password')
 
-		if identification and password:
-			user = authenticate(identification=identification, password=password)
-			if user is None:
-				error_msg = _(u"Please enter a correct username or email and password. Note that both fields are case-sensitive.")
-				raise forms.ValidationError(error_msg)
-		return self.cleaned_data
+        if identification and password:
+            user = authenticate(identification=identification, password=password)
+            if user is None:
+                error_msg = _(u"Please enter a correct username or email and password. Note that both fields are case-sensitive.")
+                raise forms.ValidationError(error_msg)
+        return self.cleaned_data
 
 		

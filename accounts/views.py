@@ -29,7 +29,9 @@ def signin(request):
         Wraps Userena signin, and also allows an user to sign in
         with their extra email.
     """
+
     if request.method == 'POST':
+    	pass
         original_identification = unicode(request.POST.get('identification', ""))
 
         # Restore the original identification if the form fails to validate.
@@ -58,8 +60,7 @@ def profile(request, username):
 @login_required
 def edit_profile(request, username):
 	if request.user.username == username:
+		pass
 	else:
 		url = reverse('me')
 		return HttpResponseRedirect(url)
-
-

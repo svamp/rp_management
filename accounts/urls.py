@@ -10,7 +10,7 @@ urlpatterns = [
 	url(r'^signin/$', views.signin, name="signin"),
 	url(r'^(?P<username>[\.\w-]+)/signup/complete/$',
         views.signup_complete,
-        name='signup_complete'),
+        name='userena_signup_complete'),
     url(r'^password/reset/$',
     auth_views.password_reset,
     {'template_name': 'password_reset_form.html',
@@ -30,6 +30,6 @@ urlpatterns = [
         auth_views.password_reset_complete,
         {'template_name': 'password_reset_complete.html'},
         name='password_reset_complete'),
-    url(r'^(?P<username>[\.\w-]+)/' views.profile, name="user_profile"),
-    url(r'^(?P<username>[\.\w-]+)/edit/' views.edit_profile, name="edit_profile"),
+    url(r'^(?P<username>[\.\w-]+)/', views.profile, name="user_profile"),
+    url(r'^(?P<username>[\.\w-]+)/edit/', views.edit_profile, name="edit_profile"),
 ]
