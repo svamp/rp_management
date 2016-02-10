@@ -217,6 +217,7 @@ class RaceOrigin(BaseInfoClass):
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Folkslag')
+		verbose_name_plural = _(u'Folkslag')
 
 class Religion(BaseInfoClass):
 
@@ -230,6 +231,7 @@ class Background(BaseInfoClass):
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Bakgrundsmiljö')
+		verbose_name_plural = _(u'Bakgrundsmiljöer')
 
 class Archetype(BaseInfoClass):
 
@@ -241,11 +243,13 @@ class Characteristic(BaseInfoClass):
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Karaktärsdrag')
+		verbose_name_plural = _(u'Karaktärsdrag')
 
 class Skills(BaseInfoClass):
 
 	class Meta(BaseInfoClass.Meta):
-		verbose_name = _(u'Färdigheter')
+		verbose_name = _(u'Färdighet')
+		verbose_name_plural = _(u'Färdigheter')
 
 class SkillImprovement(BaseInfoClass):
 
@@ -259,6 +263,7 @@ class ExceptionalCharacteristic(BaseInfoClass):
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Exeptionella karaktärsdrag')
+		verbose_name_plural = _(u'Exeptionella karaktärsdrag')
 
 class CharacteristicDetail(BaseInfoClass):
 
@@ -266,11 +271,13 @@ class CharacteristicDetail(BaseInfoClass):
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name= _(u'Karaktärs detaljer')
+		verbose_name_plural= _(u'Karaktärs detaljer')
 
 class Spells(BaseInfoClass):
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Besvärjelser och gudomliga förmågor')
+		verbose_name_plural = _(u'Besvärjelser och gudomliga förmågor')
 
 class Character(models.Model):
 	creator = models.ForeignKey(User)
@@ -345,7 +352,8 @@ class Character(models.Model):
 	items = models.ManyToManyField(Items, blank=True)
 
 	class Meta(object):
-		verbose_name=_(u'Karaktärer')
+		verbose_name=_(u'Karaktär')
+		verbose_name_plural=_(u'Karaktärer')
 
 	def __unicode__(self):
 		return self.character_name
@@ -381,6 +389,7 @@ class CharacterHP(models.Model):
 
 	class Meta(object):
 		verbose_name=_(u'Karaktärers hälsa')
+		verbose_name_plural=_(u'Karaktärers hälsa')
 
 	def __unicode__(self):
 		return u"{character} hälsa".format(
@@ -444,6 +453,7 @@ class CharacterArmor(models.Model):
 
 	class Meta(object):
 		verbose_name=_(u'Rustning för karaktärer')
+		verbose_name_plural=_(u'Rustning för karaktärer')
 
 	def __unicode__(self):
 		return u"Rustning för {character}".format(
