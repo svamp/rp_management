@@ -39,6 +39,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'django.contrib.admin',
+    'django.contrib.admindocs',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -60,6 +61,7 @@ AUTH_PROFILE_MODULE='accounts.Profile'
 GUARDIAN_RENDER_403 = True
 
 USERENA_SIGNIN_REDIRECT_URL = '/accounts/%(username)s/'
+USERENA_ACTIVATION_REQUIRED = False
 LOGIN_URL = '/accounts/signin/'
 LOGOUT_URL = '/accounts/signout/'
 
@@ -116,7 +118,7 @@ WSGI_APPLICATION = 'roleplaying.wsgi.application'
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 #with open(os.path.join(BASE_DIR, 'db_pass'), 'r') as f:
     #db_pass = f.read()
-
+SITE_ID = 1
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

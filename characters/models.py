@@ -118,6 +118,9 @@ class Weapons(models.Model):
 											null=True,
 											blank=True,
 											default=u'N/A')
+	class Meta(object):
+		verbose_name=_(u'Vapen')
+		verbose_name_plural=_(u'Vapen')
 
 	def __unicode__(self):
 		return self.name
@@ -153,6 +156,9 @@ class Armor(models.Model):
 								default=0)
 	description = models.TextField(null=True,
 									blank=True)
+	class Meta(object):
+		verbose_name=_(u'Rustning')
+		verbose_name_plural=_(u'Rustningar')
 
 	def __unicode__(self):
 		return self.name
@@ -169,6 +175,13 @@ class Items(models.Model):
 								default=0)
 	description = models.TextField(null=True,
 									blank=True)
+
+	class Meta(object):
+		verbose_name=_(u'Föremål')
+		verbose_name_plural=_(u'Föremål')
+
+	def __unicode__(self):
+		return self.name
 
 
 class BaseInfoClass(models.Model):
@@ -206,6 +219,8 @@ class RaceOrigin(BaseInfoClass):
 		verbose_name = _(u'Folkslag')
 
 class Religion(BaseInfoClass):
+
+	parent = models.ForeignKey(RaceOrigin, null=False, blank=False, default=0)
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Religion')
@@ -321,9 +336,16 @@ class Character(models.Model):
 
 	weapons = models.ManyToManyField(Weapons, null=False, blank=False)
 
-	gold = models.CharField(max_length=256, null=True, blank=True)
+	copper = models.IntegerField(null=False, blank=False, default=0)
+
+	silver = models.IntegerField(null=False, blank=False, default=0)
+
+	gold = models.IntegerField(null=True, blank=True, default=0)
 
 	items = models.ManyToManyField(Items, blank=True)
+
+	class Meta(object):
+		verbose_name=_(u'Karaktärer')
 
 	def __unicode__(self):
 		return self.character_name
@@ -357,8 +379,11 @@ class CharacterHP(models.Model):
 
 	critical_injuries = models.TextField()
 
+	class Meta(object):
+		verbose_name=_(u'Karaktärers hälsa')
+
 	def __unicode__(self):
-		return u"Health of {character}".format(
+		return u"{character} hälsa".format(
 			character=self.character.character_name
 		)
 
@@ -417,8 +442,11 @@ class CharacterArmor(models.Model):
 
 	spell_mod = models.IntegerField(null=False, blank=False, default=0)
 
+	class Meta(object):
+		verbose_name=_(u'Rustning för karaktärer')
+
 	def __unicode__(self):
-		return u"Armor of {character}".format(
+		return u"Rustning för {character}".format(
 			character=self.character.character_name
 		)
 
@@ -429,5 +457,12 @@ class CharacterFighting(models.Model):
 	armed = models.IntegerField(null=False, blank=False, default=0)
 	unarmed = models.IntegerField(null=False, blank=False, default=0)
 
+	class Meta(object):
+		verbose_name=_(u'Stridsvärde')
+		verbose_name_plural=_(u'Stridsvärden')
+
 	def __unicode__(self):
+		return u"Stridsvärden för {character}".format(
+			character=self.character.character_name
+		)
 		return self.character.character_name
