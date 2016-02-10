@@ -1,0 +1,20 @@
+{% extends "base_template.html" %}
+{% load i18n bootstrap staticfiles %}
+{% block content %}  
+<div class="section color-primary-lighter fill-screen">
+  <div class="container color-transparent screen-centered">
+    <div class="col-maincontent-small">
+      <form action="" method="post" role="form">
+        {% csrf_token %}
+        <h2>{% trans "Create an account" %}.</h2>
+        {{ form.email|bootstrap }}
+        {{ form.password1|bootstrap }}
+        {{ form.password2|bootstrap }}
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">{% trans 'Signup' %}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base_template.html" %}
+{% load i18n bootstrap staticfiles %}
+{% load url from future %}
+{% block content %}
+<div class="section color-primary-lighter fill-screen">
+  <div class="container screen-centered">
+    <div class="col-maincontent-small">
+      <form action="" method="post" role="form">
+        {% csrf_token %}
+        <h2>{% trans 'Logga in' %}.</h2>
+        {% for error in form.non_field_errors %}
+          <br /><p class="alert alert-danger">{{ error }}</p><br />
+        {% endfor %}
+        {% for field in form %}
+          {% comment %} Displaying checkboxes differently {% endcomment %}
+          {% if field.name == 'remember_me' %}
+            <div class="checkbox">
+              <label class="checkbox" for="id_{{ field.name }}">{{ field }} {{ field.label }}</label>
+            </div>
+          {% elif field.name == 'password' %}
+            <div class="form-group">
+              <label>{{ field.label }}</label><a href="{% url 'password_reset' %}" title="{% trans 'Forgot your password?' %}" class="pull-right small" tabindex="2">{% trans "Forgot your password?" %}</a>
+              {{ field }}
+            </div>
+          {% else %}
+            <div class="form-group">
+              <label>{{ field.label }}</label>
+              {{ field }}
+            </div>
+          {% endif %}
+          {% if field.errors|length > 1 %}
+            <br /><p class="alert alert-danger">{{ field.errors }}</p><br />
+            {% for error in form.errors %}
+              <li><strong>{{ error|escape }}</strong></li>
+            {% endfor %}
+          {% elif field.errors|length == 1 %}
+            <br /><p class="alert alert-danger">{{ field.errors.0 }}</p><br />
+          {% endif %}
+        {% endfor %}
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">{% trans 'Sign in' %}</button>
+          {% if next %}
+            <input type="hidden" name="next" value="{{ next }}" />
+          {% endif %}
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
