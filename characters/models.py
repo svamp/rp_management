@@ -276,6 +276,8 @@ class Characteristic(BaseInfoClass):
 
 class Skills(BaseInfoClass):
 
+	level = models.IntegerField(null=False, blank=False, default=0, verbose_name='Nivå')
+
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Färdighet')
 		verbose_name_plural = _(u'Färdigheter')
@@ -283,6 +285,7 @@ class Skills(BaseInfoClass):
 class SkillImprovement(BaseInfoClass):
 
 	parent = models.ForeignKey(Skills, null=False, blank=False, verbose_name=_(u'Tillhörighet'))
+	cost = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Kostnad'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Fördjupning')
@@ -303,6 +306,8 @@ class CharacteristicDetail(BaseInfoClass):
 		verbose_name_plural= _(u'Karaktärs detaljer')
 
 class Spells(BaseInfoClass):
+
+	cost = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Kostnad'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Besvärjelser och gudomliga förmågor')
@@ -352,7 +357,7 @@ class Character(models.Model):
 
 	remaining_experience = models.IntegerField(verbose_name=_(u'Oanvända äventyrspoäng'), default=0)
 
-	skills = models.ManyToManyField(Skills, blank=True, verbose_name=_(u'Fördigheter'))
+	skills = models.ManyToManyField(Skills, blank=True, verbose_name=_(u'Färdigheter'))
 
 	characteristic = models.ManyToManyField(Characteristic, blank=True, verbose_name=_(u'Karaktärsdrag'))
 
