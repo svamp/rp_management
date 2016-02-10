@@ -95,4 +95,4 @@ class CreateCharacterForm(forms.ModelForm):
 
 	class Meta(object):
 		model = Character
-		exclude = ('creator',)
+		exclude = ('creator', 'fright', 'presistent_fright')
