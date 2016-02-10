@@ -31,7 +31,7 @@ class CreateRaceForm(forms.ModelForm):
 		model = Race
 		exclude = ('tier',)
 
-class CreaceRaceOriginForm(forms.ModelForm):
+class CreateRaceOriginForm(forms.ModelForm):
 
 	class Meta(object):
 		model = RaceOrigin

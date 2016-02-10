@@ -21,6 +21,6 @@ from roleplaying import views as roleplaying_views
 urlpatterns = [
 	url(r'^$', roleplaying_views.main, name='landing_page'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^accounts/', include('userena.urls')),
+    url(r'^accounts/', include('accounts.urls')),
     url(r'^character/', include('characters.urls')),
 ]

@@ -20,8 +20,38 @@
   </head>
 
   <body>
+    
+    {% block nav_bar %}
+      <div class="menu-spacing"></div>
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container container-full">
+          <div class="navbar-header">
+            <a href="" class="navbar-brand">Roleplaying management</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right navbar-buttons">
+                {% if user.is_authenticated %}
+                  <ul>
+                    <a href="">Logga ut</a>
+                  </ul>
+                {% else %}
+                  <ul>
+                    <a href="{% url 'signin' %}">Logga in</a>
+                    <a href="{% url 'signup' %}">Skapa konto</a>
+                  </ul>
+                {% endif %}
+              </ul>
+          </div>
+        </div>
+      </nav>
+    {% endblock %}
 
-    {% block header %}{% endblock %}
+    <div class="jumbotron header color-transparent">
+      <div class="container">
+        {% block header %}
+        {% endblock %}
+      </div>
+    </div>
     
     {% block content %}{% endblock %}
 
