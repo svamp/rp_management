@@ -49,6 +49,9 @@ INSTALLED_APPS = (
     'guardian',
     'userena',
     'easy_thumbnails',
+    'twitter_bootstrap',
+    'bootstrapform',
+    'jquery',
     #User created apps
     'roleplaying',
     'accounts',
