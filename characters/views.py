@@ -11,28 +11,39 @@ from characters.models import Weapons, Armor, Items, Race, RaceOrigin, Religion,
 from characters.forms import *
 
 
-@login_required
-def create_character(request):
-	"""
-	View for creatin characters
-	"""
+def create_view(request, form_type):
+	form_list = {
+		'weapon': CreateWeaponsForm(),
+		'armor': CreateArmorForm(),
+		'items': CreateItemForm(),
+		'race': CreateRaceForm(),
+		'race_origin': CreateRaceOriginForm(),
+		'religion': CreateReligionForm(),
+		'background': CreateBackgroundForm(),
+		'archetype': CreateArchetypeForm(),
+		'characteristic': CreateCharacteristicForm(),
+		'skill': CreateSkillsForm(),
+		'skill_improvement': CreateSkillImprovementForm(),
+		'exceptional_characteristic': CreateExceptionalCharacteristicForm(),
+		'characteristic_detail': CreateCharacteristicDetailForm(),
+		'spells': CreateSpellsForm(),
+		'character': CreateCharacterForm(),
+	}
+	form = form_list[form_type]
+
 	if request.method == "POST":
-		form = CreateCharacterForm(request.POST)
 
-		if form.is_valid():
-			form.save()
-
-	else:
-		form = CreateCharacterForm()
+		validation_form = form(request.POST)
+		if validation_form.is_valid():
+			if form_type == 'character':
+				# Calculate hp and armor for the character
+				pass
+			validation_form.save()
 
 	args = {
 		'form': form,
+		'type': form_type,
 	}
 
 	return render(request, 'create.html', args)
 
-def create_view(request, form_type):
-	if form_type:
-		pass
-	else:
-		pass
