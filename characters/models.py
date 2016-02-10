@@ -314,7 +314,7 @@ class Character(models.Model):
 	character_name = models.CharField(max_length=100, 
 										null=False, 
 										blank=False,
-										verbose_name=_(u'Karaktärs namn'))
+										verbose_name=_(u'Karaktärsnamn'))
 
 	homeland = models.CharField(max_length=100,
 								verbose_name=_(u'Hemland'))
