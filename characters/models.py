@@ -118,6 +118,10 @@ class Weapons(models.Model):
 											null=True,
 											blank=True,
 											default=u'N/A')
+
+	description = models.TextField(null=True,
+									blank=True)
+
 	class Meta(object):
 		verbose_name=_(u'Vapen')
 		verbose_name_plural=_(u'Vapen')
@@ -130,6 +134,7 @@ class Armor(models.Model):
 							null=False,
 							blank=False)
 	location = models.CharField(max_length=1,
+								choices=ARMOR_LOCATIONS_CHOICES,
 								null=False,
 								blank=False)
 	material = models.CharField(max_length=100,
@@ -142,7 +147,7 @@ class Armor(models.Model):
 								blank=False,
 								choices=QUALITY_CHOICES,
 								default='3')
-	armor = models.IntegerField(null=False,
+	armor_value = models.IntegerField(null=False,
 								blank=False,
 								default=1)
 	breaking_value = models.IntegerField(null=False,
