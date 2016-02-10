@@ -30,3 +30,9 @@ def create_character(request):
 	}
 
 	return render(request, 'create.html', args)
+
+def create_view(request, form_type):
+	if form_type:
+		pass
+	else:
+		pass
