@@ -151,35 +151,44 @@ class Weapons(models.Model):
 class Armor(models.Model):
 	name = models.CharField(max_length=100,
 							null=False,
-							blank=False)
+							blank=False,
+							verbose_name=_(u'Namn'))
 	location = models.CharField(max_length=1,
 								choices=ARMOR_LOCATIONS_CHOICES,
 								null=False,
-								blank=False)
+								blank=False,
+								verbose_name=_(u'Plats'))
 	material = models.CharField(max_length=100,
 								null=False,
 								blank=False,
 								choices=MATERIAL_CHOICES,
-								default='6')
+								default='6',
+								verbose_name=_(u'Meterial'))
 	quality = models.CharField(max_length=100,
 								null=False,
 								blank=False,
 								choices=QUALITY_CHOICES,
-								default='3')
+								default='3',
+								verbose_name=_(u'Kvalitet'))
 	armor_value = models.IntegerField(null=False,
 								blank=False,
-								default=1)
+								default=1,
+								verbose_name=_(u'Rustningsvärde'))
 	breaking_value = models.IntegerField(null=False,
 										blank=False,
-										default=1)
+										default=1,
+										verbose_name=_(u'Brytningsvärde'))
 	weight = models.FloatField(null=False,
 								blank=False,
-								default=1)
+								default=1,
+								verbose_name=_(u'Vikt'))
 	value = models.IntegerField(null=False,
 								blank=False,
-								default=0)
+								default=0,
+								verbose_name=_(u'Värde'))
 	description = models.TextField(null=True,
-									blank=True)
+									blank=True,
+									verbose_name=_(u'Beskrivning'))
 	class Meta(object):
 		verbose_name=_(u'Rustning')
 		verbose_name_plural=_(u'Rustningar')
@@ -190,15 +199,19 @@ class Armor(models.Model):
 class Items(models.Model):
 	name = models.CharField(max_length=100,
 							null=False,
-							blank=False)
+							blank=False,
+							verbose_name=_(u'Namn'))
 	weight = models.FloatField(null=False,
 								blank=False,
-								default=0)
+								default=0,
+								verbose_name=_(u'Vikt'))
 	value = models.IntegerField(null=False,
 								blank=False,
-								default=0)
+								default=0,
+								verbose_name=_(u'Värde'))
 	description = models.TextField(null=True,
-									blank=True)
+									blank=True,
+									verbose_name=_(u'Beskrivning'))
 
 	class Meta(object):
 		verbose_name=_(u'Föremål')
