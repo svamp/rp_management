@@ -3,16 +3,25 @@
 
 {% block content %}
 	<div class="container">
-		<div class="row">
+		<div class="row" style="padding-bottom:100px;">
 			<form>
 				<div class="col-maincontent">
 					<div class="{% if type == 'character' %}col-sm-6{% else %}col-sm-12{% endif %}">
-						{{ form|bootstrap }}
+						<form action="{% url 'create_form' type %}" method="post">
+							{% csrf_token %}
+							{{ form|bootstrap }}
+						</form>
 					</div>
-					<div class="col-sm-6" id="info-block">
-					</div>
+					<div class="clearfix"></div>
+		            	  <div class="button-group text-center pull-left">
+		                	<button type="button" class="btn btn btn-primary"><i class="fa fa-check"></i> 
+		                		{% trans 'Spara' %}
+		                	</button>
+	              	</div>
+	              	<div class="clearfix"></div>
 				</div>
 			</form>
+			<div class="col-sm-5 pull-right" id="info-block" style=" height:400px; margin:0 0 0 50%;padding 10px; overflow-y:auto; position:fixed; top:120px;"></div>
 		</div>
 	</div>
 {% endblock %}
