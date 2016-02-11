@@ -1,5 +1,5 @@
-{% load i18n %}
-{% load staticfiles %}
+{% load i18n bootstrap staticfiles %}
+{% load url from future %}
 
 <!DOCTYPE html>
 <html>
@@ -24,25 +24,59 @@
     {% block nav_bar %}
       <div class="menu-spacing"></div>
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container container-full">
-          <div class="navbar-header">
-            <a href="" class="navbar-brand">Roleplaying management</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right navbar-buttons">
-                {% if user.is_authenticated %}
-                  <ul>
-                    <a href="">Logga ut</a>
-                  </ul>
-                {% else %}
-                  <ul>
-                    <a href="{% url 'signin' %}">Logga in</a>
-                    <a href="{% url 'signup' %}">Skapa konto</a>
-                  </ul>
-                {% endif %}
-              </ul>
-          </div>
+      <div class="container container-full">
+        <div class="navbar-header navbar-brand">
+          {% block navbar_brand %}
+            Roleplaying manegement
+          {% endblock %}
         </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          {% block top_menu %}
+            <ul class="nav navbar-nav navbar-right navbar-buttons">
+              {% block navbar_right %}
+                {% if user.is_authenticated %}
+                  <li>
+                    <a href="/accounts/signout">
+                      {% trans "Logga ut" %}
+                    </a>
+                  </li>
+                  <li class="divider"></li>
+                  <li{% if schooladmin %} class=" active"{% endif %}>
+                    <a href="{% url 'profile_detail' user.username %}">
+                      {% trans "Min profil" %}
+                    </a>
+                  </li>
+                  {% comment %}
+                  <li class="dropdown{% if account in request.path %} active{% endif %}">
+                    <a href="{% url 'userena_profile_detail' user.username %}" class="navbar-user">
+                      <img class="img-circle avatar-image" src="{{ user.profile.get_mugshot_url }}" alt="" />
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="{% url 'userena_profile_detail' user.username %}">{% trans "View my profile" %}</a></li>
+                      <li class="divider"></li>
+                      <li><a class="small" href="{% url 'userena_profile_edit' user.username %}">{% trans "Profile settings" %}</a></li>
+                      <li><a class="small" href="{% url 'userena_signout' %}">{% trans "Log out" %}</a></li>
+                    </ul>
+                  </li>
+                  {% endcomment %}
+                {% else %}
+                  <li><a class="" href="{% url 'signup' %}">{% trans "Create account" %}</a></li>
+                  <li class="divider"></li>
+                  <li><a class="" href="{% url 'signin' %}">{% trans "Log in" %}</a></li>
+                {% endif %}
+              {% endblock %}
+            </ul>
+            <ul class="nav navbar-nav navbar-center navbar-buttons">
+              {% block navbar_center %}
+                {% if user.is_authenticated %}
+
+                {% endif %}
+              {% endblock %}
+            </ul>
+          {% endblock %}
+        </div>
+      </div>
       </nav>
     {% endblock %}
 
@@ -52,10 +86,14 @@
         {% endblock %}
       </div>
     </div>
-    
+
+    {% block content_tabs %}
+    {% endblock %}
+
     {% block content %}{% endblock %}
 
-    {% block footer %}{% endblock %}
+    {% block footer %}
+    {% endblock %}
 
 
     {% block custom_scripts %}{% endblock %}
