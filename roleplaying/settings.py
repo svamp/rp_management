@@ -63,9 +63,11 @@ ANONYMOUS_USER_ID = -1
 AUTH_PROFILE_MODULE='accounts.Profile'
 GUARDIAN_RENDER_403 = True
 
-USERENA_SIGNIN_REDIRECT_URL = HOME_URL + '/accounts/me/'
 USERENA_ACTIVATION_REQUIRED = False
 USERENA_WITHOUT_USERNAMES = True
+USERENA_SIGNIN_AFTER_SIGNUP = True
+USERENA_DISABLE_PROFILE_LIST = True
+USERENA_SIGNIN_REDIRECT_URL = '/accounts/%(username)s/'
 LOGIN_URL = '/accounts/signin/'
 LOGOUT_URL = '/accounts/signout/'
 
@@ -80,8 +82,9 @@ EMAIL_HOST_PASSWORD = mail_password
 
 
 AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend', # this is default
+    'userena.backends.UserenaAuthenticationBackend',
     'guardian.backends.ObjectPermissionBackend',
+    'django.contrib.auth.backends.ModelBackend',
 )
 
 MIDDLEWARE_CLASSES = (

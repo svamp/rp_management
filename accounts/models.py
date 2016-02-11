@@ -9,6 +9,7 @@ class Profile(UserenaBaseProfile):
 								verbose_name=_('user'),
 								related_name='profile')
 	class Meta(object):
+		ordering = ['user__email',]
 		verbose_name=_('profile')
 		verbose_name_plural=_('profiles')
 
