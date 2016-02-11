@@ -2,6 +2,7 @@ Django==1.8.9
 django-bootstrap-form==3.2
 django-guardian==1.4.1
 django-jquery-js==2.1.4
+django-smart-selects==1.2.2
 django-taggit==0.18.0
 django-taggit-autosuggest==0.2.7
 django-twitter-bootstrap==3.3.0

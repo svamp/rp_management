@@ -52,6 +52,7 @@ INSTALLED_APPS = (
     'twitter_bootstrap',
     'bootstrapform',
     'jquery',
+    'smart_selects',
     #User created apps
     'roleplaying',
     'accounts',
