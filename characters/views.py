@@ -41,6 +41,7 @@ def create_view(request, form_type):
 				# Calculate hp and armor for the character
 				pass
 			validation_form.save()
+		url = reverse('profile_detail', args=[request.user.username])
 
 	args = {
 		'form': form,
@@ -48,10 +49,6 @@ def create_view(request, form_type):
 	}
 
 	return render(request, 'create.html', args)
-
-def save_item(request, form_type):
-	form = FORM_LIST[form_type]
-	pass
 
 def remove_character(request, character_id):
 	try:
