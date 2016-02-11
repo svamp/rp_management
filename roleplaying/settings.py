@@ -53,6 +53,7 @@ INSTALLED_APPS = (
     'bootstrapform',
     'jquery',
     'smart_selects',
+    'taggit',
     #User created apps
     'roleplaying',
     'accounts',
