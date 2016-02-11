@@ -1,0 +1,19 @@
+{% load i18n bootstrap staticfiles %}
+{% load url from future %}
+{% url 'userena_profile_detail' user.username as viewprofile %}
+{% url 'userena_profile_edit' user.username as editdetails %}
+{% url 'userena_email_change' user.username as changeemail %}
+{% url 'userena_password_change' user.username as changepassword %}
+
+{% url 'userena_profile_list' as profilelist %}
+
+{% block profile_navigation %}
+  {% block profile_navigation_items %}
+    <ul class="nav nav-pills nav-stacked">
+      <li{% if editdetails == request.path %} class="active"{% endif %}><a class="list-group-item" href="{% url 'userena_profile_edit' user.username %}"><i class="fa fa-edit"></i> {% trans "Profile details" %}</a></li>
+      <li{% if changeemail == request.path %} class="active"{% endif %}><a class="list-group-item" href="{% url 'email_change' user.username %}"><i class="fa fa-envelope"></i> {% trans "Email settings" %}</a></li>
+      <li{% if changepassword == request.path %} class="active"{% endif %}><a class="list-group-item" href="{% url 'password_change' user.username %}"><i class="fa fa-key"></i> {% trans "Change password" %}</a></li>
+      <li{% if viewprofile == request.path %} class="active"{% endif %}><a class="list-group-item" href="{% url 'profile_edit' user.username %}"><i class="fa fa-user"></i> {% trans "View my profile" %}</a></li>
+    </ul>
+  {% endblock %}
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base_template.html" %}
+{% load i18n bootstrap staticfiles %}
+{% load url from future %}
+
+{% block content_title %}<h2>{% blocktrans with user.username as username %}Account &raquo; {{ username }}{% endblocktrans %}</h2>{% endblock %}
+
+{% block content_header_title %}{% trans "E-mail settings" %}.{% endblock %}
+{% block content_header_description %}{% trans "E-mail settings for your account." %}{% endblock %}
+
+{% block content %}
+
+<div class="section color-white">
+<div class="container">
+  <div class="row">
+    <div class="col-leftbar-small col-sm-3" role="navigation" id="sidebar">
+      {% include "profile/settings_menu.html" %}
+    </div>
+
+    <div class="col-maincontent-small col-sm-8">
+
+      <dl>
+        <dt>{% trans "Current email" %}</dt>
+        <dd>{{ request.user.email }}</dd>
+      </dl>
+
+      <form action="" method="post">
+        {% csrf_token %}
+        {{ form|bootstrap }}
+        <button type="submit" class="btn btn-icon btn-green"><i class="fa fa-check"></i><span class="text">{% trans 'Save changes' %}</span></button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

@@ -16,6 +16,33 @@ urlpatterns = [
         {'template_name': 'signin.html' },
         name="signin"),
 
+    url(r'^(?P<username>[\.\w-]+)/signup/complete/$',
+        views.signup_complete,
+        name='signup_complete'),
+
+    # Edit profile details
+    url(r'^(?P<username>[\.\w-]+)/edit/$',
+        views.edit_profile,
+        name='profile_edit'),
+
+    # Edit email
+    url(r'^(?P<username>[\.\w-]+)/email/$',
+        views.edit_email,
+        name='email_change'),
+
+    # Change password
+    url(r'^(?P<username>[\.\w-]+)/password/$',
+        views.edit_password,
+        name='password_change'),
+    url(r'^(?P<username>[\.\w-]+)/password/complete/$',
+        views.edit_password_complete,
+        name='password_change_complete'),
+
+    # View profile
+    url(r'^(?P<username>(?!signout|signup|signin)[\.\w-]+)/$',
+        views.show_profile,
+        name='profile_detail'),
+
     # Password reset
     url(r'^password/reset/$',
         auth_views.password_reset,

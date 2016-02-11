@@ -1,0 +1,45 @@
+{% extends "base_template.html" %}
+{% load i18n bootstrap staticfiles %}
+{% load url from future %}
+
+{% block title %}{% trans "Account setup" %}{% endblock %}
+
+{% block content_title %}<h2>{% blocktrans with profile.get_full_name_or_username as username %}Account &raquo; {{ username }}{% endblocktrans %}</h2>{% endblock %}
+
+{% block content_header_title %}
+  {% if new_user %}
+    {% trans "Welcome to Flippen!" %}
+  {% else %}
+    {% trans "Profile details" %}.
+  {% endif %}
+{% endblock %}
+{% block content_header_description %}
+  {% if new_user %}
+    {% blocktrans %}We're delighted to see you here! But before you get on,<br/>
+    please verify the details on your user profile.{% endblocktrans %}
+  {% else %}
+    {% trans "Set up your user profile for others to see." %}
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<div class="section color-white">
+<div class="container">
+  <div class="row">
+    <div class="col-leftbar-small col-sm-3" role="navigation" id="sidebar">
+      {% include "profile/settings_menu.html" %}
+    </div>
+
+    <div class="col-maincontent-small col-sm-8">
+      <form action="." enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{ form|bootstrap }}
+        <hr />
+        <button type="submit" class="btn btn-green btn-icon"><i class="fa fa-check"></i> {% trans 'Save changes' %}</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
