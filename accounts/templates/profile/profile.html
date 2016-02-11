@@ -1,5 +1,37 @@
 {% extends "base_template.html" %}
 {% load i18n bootstrap staticfiles %}
 {% load url from future %}
+{% block header %}
+	<div class="header-text">
+		<div class="header-title text-center">
+			<h1>{{ name }}</h1>
+		</div>
+	</div>
+{% endblock %}
+
+<div class="clearfix"></div>
 {% block content %}
+	<div class="col-md-12">
+		<div class="col-maincontent text-center center-block col-md-8">
+			<div class="center-block">
+				<a class="btn btn-success pull-right" href="{% url 'create_form' 'character' %}"><i class="fa fa-plus-square"></i>
+					{% trans 'Skapa karaktär' %}
+				</a>
+			<h2 class="list-header centered">Karaktärer</h2>
+			</div>
+			<div class="clearfix"></div>
+			<br />
+			<div class="clearfix"></div>
+				{% for character in characters  %}
+					<div class="row">
+						{{ character.character_name }}
+						<a href="{% url 'remove_character' character.id %}" class="btn btn-danger pull-right"><i class="fa fa-times"></i> {% trans 'Tabort' %}</a>
+					</div>
+				{% empty %}
+					<div class="row">
+						{% trans 'Du har inte skapat några karaktärer än.' %}
+					</div>
+				{% endfor %}
+		</div>
+	</div>
 {% endblock %}

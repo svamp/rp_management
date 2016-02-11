@@ -7,6 +7,8 @@ from django.views.decorators.http import require_POST
 from userena.views import profile_edit, email_change, password_change
 from userena.decorators import secure_required
 from django.core.urlresolvers import reverse
+from characters.models import Character
+from django.contrib.auth.models import User
 
 def signup_complete(request, username):
 	url = reverse('profile_edit', args=[username])
@@ -49,4 +51,17 @@ def edit_password_complete(request, username):
     return HttpResponseRedirect(url)
 
 def show_profile(request, username):
-	pass
+
+	user = get_object_or_404(User, username=username)
+
+	characters = Character.objects.filter(creator=user)
+	name = user.get_full_name()
+	if name == '':
+		name = user.email
+	data = {
+		'user': user,
+		'characters': characters,
+		'name': name,
+	}
+
+	return render(request, 'profile/profile.html', data)
