@@ -329,10 +329,7 @@ class SkillImprovement(BaseInfoClass):
 		verbose_name_plural = _(u'Fördjupningar')
 
 	def __unicode__(self):
-		return _(u"Fördjupningar innom {skill}").format(
-			character=self.parent.name
-		)
-
+		return self.name
 		
 class ExceptionalCharacteristic(BaseInfoClass):
 
