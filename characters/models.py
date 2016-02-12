@@ -421,7 +421,7 @@ class SpellExtras(models.Model):
 		verbose_name_plural=_(u'Magi extra')
 
 	def __unicode__(self):
-		return u"Extra information om {spell}".format(
+		return _(u"Extra information om {spell}").format(
 			spell=self.spell.name
 		)
 
@@ -507,14 +507,14 @@ class CharacterSpells(models.Model):
 									verbose_name=_(u'Karaktär'))
 
 	spells = models.ManyToManyField(SpellInfo,
-									verbose_name=_('Magier och besvärjelser'))
+									verbose_name=_(u'Magier och besvärjelser'))
 
 	class Meta(object):
 		verbose_name=_(u'Karaktärers magi')
 		verbose_name_plural=_(u'Karaktärers magi')
 
 	def __unicode__(self):
-		return u"Magier för {character}".format(
+		return _(u"Magier för {character}").format(
 			character=self.character.character_name
 		)
 
@@ -552,7 +552,7 @@ class CharacterHP(models.Model):
 		verbose_name_plural=_(u'Karaktärers hälsa')
 
 	def __unicode__(self):
-		return u"{character} hälsa".format(
+		return _(u"{character} hälsa").format(
 			character=self.character.character_name
 		)
 
@@ -616,7 +616,7 @@ class CharacterArmor(models.Model):
 		verbose_name_plural=_(u'Rustning för karaktärer')
 
 	def __unicode__(self):
-		return u"Rustning för {character}".format(
+		return _(u"Rustning för {character}").format(
 			character=self.character.character_name
 		)
 
@@ -632,6 +632,6 @@ class CharacterFighting(models.Model):
 		verbose_name_plural=_(u'Stridsvärden')
 
 	def __unicode__(self):
-		return u"Stridsvärden för {character}".format(
+		return _(u"Stridsvärden för {character}").format(
 			character=self.character.character_name
 		)
