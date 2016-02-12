@@ -348,7 +348,7 @@ class SpellInfo(models.Model):
 	name=models.CharField(max_length=256,
 							null=False,
 							blank=False,
-							default='Magins namn'
+							default='Magins namn',
 							verbose_name=_(u'Namn'))
 	tier = models.IntegerField(null=False,
 								blank=False,
