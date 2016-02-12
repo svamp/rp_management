@@ -234,7 +234,8 @@ class BaseInfoClass(models.Model):
 	name = models.CharField(max_length=100,
 							null=False,
 							blank=False,
-							verbose_name=_(u'Namn'))
+							verbose_name=_(u'Namn'),
+							unique=True)
 
 	tier = models.IntegerField(null=False,
 								blank=False,
@@ -329,7 +330,10 @@ class SkillImprovement(BaseInfoClass):
 		verbose_name_plural = _(u'Fördjupningar')
 
 	def __unicode__(self):
-		return self.name
+		return _(u"{skill}({improvement})").format(
+			skill=self.parent.name,
+			improvement=self.name
+		)
 		
 class ExceptionalCharacteristic(BaseInfoClass):
 
