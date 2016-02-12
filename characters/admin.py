@@ -1,7 +1,7 @@
 from django.contrib import admin
 from characters.models import Weapons, Armor, Items, Race, RaceOrigin, Religion, Background, Archetype, Characteristic, \
-						Skills, SkillImprovement, ExceptionalCharacteristic, CharacteristicDetail, Spells, Character, \
-						CharacterHP, CharacterArmor, CharacterFighting
+						Skills, SkillImprovement, ExceptionalCharacteristic, CharacteristicDetail, SpellParent, SpellInfo, \
+						SpellExtras, Character, CharacterHP, CharacterArmor, CharacterFighting
 
 admin.site.register(Weapons)
 admin.site.register(Armor)
@@ -16,7 +16,9 @@ admin.site.register(Skills)
 admin.site.register(SkillImprovement)
 admin.site.register(ExceptionalCharacteristic)
 admin.site.register(CharacteristicDetail)
-admin.site.register(Spells)
+admin.site.register(SpellParent)
+admin.site.register(SpellInfo)
+admin.site.register(SpellExtras)
 admin.site.register(Character)
 admin.site.register(CharacterHP)
 admin.site.register(CharacterArmor)

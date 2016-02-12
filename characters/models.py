@@ -57,6 +57,16 @@ MATERIAL_CHOICES = (
 	('14', _(u'Trä')),
 )
 
+MAGIC_TYPS_CHOICES = (
+	('0', 'Vitner'),
+	('1', 'Gerbanis'),
+	('2', 'Nidendomen'),
+	('3', 'Ostroseden'),
+	('4', 'Hamingjes'),
+	('5', 'Savenpaha'),
+	('6', 'Thuldom'),
+)
+
 class Weapons(models.Model):
 	name = models.CharField(max_length=100, 
 							null=False, 
@@ -318,13 +328,85 @@ class CharacteristicDetail(BaseInfoClass):
 		verbose_name= _(u'Karaktärs detaljer')
 		verbose_name_plural= _(u'Karaktärs detaljer')
 
-class Spells(BaseInfoClass):
+class SpellParent(BaseInfoClass):
 
-	cost = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Kostnad'))
+	negations = models.TextField(verbose_name=_(u'Negationer'))
+
+	magic_type = models.CharField(max_length=1,
+									null=False,
+									blank=False,
+									choices=MAGIC_TYPS_CHOICES,
+									default='0')
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Besvärjelser och gudomliga förmågor')
 		verbose_name_plural = _(u'Besvärjelser och gudomliga förmågor')
+
+class SpellInfo(models.Model):
+
+	parent = models.ForeignKey(SpellParent)
+
+	tier = models.IntegerField(null=False,
+								blank=False,
+								default=0,
+								verbose_name=_(u'Nivå'))
+	cost = models.IntegerField(null=False,
+								blank=False,
+								default=0,
+								verbose_name=_(u'Kostnad'))
+	spell_type = models.CharField(max_length=100,
+									verbose_name=_(u'Typ'))
+	duration = models.CharField(max_length='100',
+								null=False,
+								blank=False,
+								default='0',
+								verbose_name=_(u'Varaktighet'))
+	spell_range = models.CharField(max_length=100,
+									null=False,
+									blank=False,
+									default=_(u'Beröring'),
+									verbose_name=_(u'Räckvidd'))
+	ritual_time = models.IntegerField(null=False,
+										blank=False,
+										default=0,
+										verbose_name=_(u'Ritualtid'))
+	mana_time = models.IntegerField(null=False,
+									blank=False,
+									default=0,
+									verbose_name=_(u'Manatid'))
+	activation = models.IntegerField(null=False,
+									blank=False,
+									default=0,
+									verbose_name=_(u'Aktivering'))
+	description = models.TextField(null=False,
+									blank=False,
+									verbose_name=_(u'Beskrivning'))
+
+
+
+	class Meta(object):
+		verbose_name=_(u'Magi information')
+
+class SpellExtras(models.Model):
+
+	spell = models.ForeignKey(SpellInfo)
+
+	extra_cost = models.IntegerField(null=False,
+									blank=False,
+									default=0,
+									verbose_name=_(u'Extra Kostnad'))
+
+	extra_effect = models.CharField(max_length=256,
+									null=False,
+									blank=False,
+									default='N/A',
+									verbose_name=_(u'Extra effekt'))
+
+	other = models.CharField(max_length=256,
+							null=False,
+							blank=False,
+							default='N/A',
+							verbose_name=_(u'Annat'))
 
 class Character(models.Model):
 	creator = models.ForeignKey(User, verbose_name=_(u'Skapare'))
@@ -385,8 +467,6 @@ class Character(models.Model):
 	fright = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Skräck'))
 
 	presistent_fright = models.TextField(null=True, blank=True, verbose_name=_(u'Skräcksymtomer'))
-
-	spells = models.ManyToManyField(Spells, blank=True, verbose_name=_(u'Besvärjelser och gudomliga förmågor'))
 
 	weapons = models.ManyToManyField(Weapons, null=False, blank=False, verbose_name=_(u'Vapen'))
 
