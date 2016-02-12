@@ -306,12 +306,29 @@ class Skills(BaseInfoClass):
 
 class SkillImprovement(BaseInfoClass):
 
-	parent = models.ForeignKey(Skills, null=False, blank=False, verbose_name=_(u'Tillhörighet'))
-	cost = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Kostnad'))
+	parent = models.ForeignKey(Skills,
+								null=False,
+								blank=False,
+								verbose_name=_(u'Tillhör'))
+	cost = models.IntegerField(null=False,
+								blank=False,
+								default=0,
+								verbose_name=_(u'Kostnad'))
+	dependencies = models.ManyToManyField("self",
+											symmetrical=False,
+											null=True,
+											blank=True,
+											verbose_name=_(u'Fördjupningskrav'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Fördjupning')
 		verbose_name_plural = _(u'Fördjupningar')
+
+	def __unicode__(self):
+		return _(u"Fördjupningar innom {skill}").format(
+			character=self.parent.name
+		)
+
 		
 class ExceptionalCharacteristic(BaseInfoClass):
 

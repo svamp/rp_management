@@ -59,3 +59,4 @@ def remove_character(request, character_id):
 
 	url = reverse('password_change', args=[request.user.username])
 	return HttpResponseRedirect(url)
+

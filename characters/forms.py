@@ -84,9 +84,6 @@ class CreateCharacteristicDetailForm(forms.ModelForm):
 	class Meta(object):
 		model = CharacteristicDetail
 		fields = ('name', 'tier', 'description', 'parent')
-
-class CreateSpellsForm(forms.ModelForm):
-	pass
 	
 class CreateCharacterForm(forms.ModelForm):
 
