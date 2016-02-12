@@ -6,8 +6,8 @@ from django.views.decorators.http import require_POST
 from django.http import HttpResponseRedirect
 
 from characters.models import Weapons, Armor, Items, Race, RaceOrigin, Religion, Background, Archetype, Characteristic, \
-						Skills, SkillImprovement, ExceptionalCharacteristic, CharacteristicDetail, Spells, Character, \
-						CharacterHP, CharacterArmor, CharacterFighting
+						Skills, SkillImprovement, ExceptionalCharacteristic, CharacteristicDetail, SpellParent, SpellInfo, \
+						SpellExtras, Character, CharacterHP, CharacterArmor, CharacterFighting
 
 from characters.forms import *
 
@@ -25,7 +25,7 @@ FORM_LIST = {
 	'skill_improvement': CreateSkillImprovementForm(),
 	'exceptional_characteristic': CreateExceptionalCharacteristicForm(),
 	'characteristic_detail': CreateCharacteristicDetailForm(),
-	'spells': CreateSpellsForm(),
+	#'spells': CreateSpellsForm(),
 	'character': CreateCharacterForm(),
 }
 

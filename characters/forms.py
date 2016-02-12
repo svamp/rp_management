@@ -3,8 +3,8 @@
 from django import forms
 from django.utils.translation import ugettext_lazy as _
 from characters.models import Weapons, Armor, Items, Race, RaceOrigin, Religion, Background, Archetype, Characteristic, \
-						Skills, SkillImprovement, ExceptionalCharacteristic, CharacteristicDetail, Spells, Character, \
-						CharacterHP, CharacterArmor, CharacterFighting
+						Skills, SkillImprovement, ExceptionalCharacteristic, CharacteristicDetail, SpellParent, SpellInfo, \
+						SpellExtras, Character, CharacterHP, CharacterArmor, CharacterFighting
 
 class CreateWeaponsForm(forms.ModelForm):
 
@@ -86,11 +86,8 @@ class CreateCharacteristicDetailForm(forms.ModelForm):
 		fields = ('name', 'tier', 'description', 'parent')
 
 class CreateSpellsForm(forms.ModelForm):
-
-	class Meta(object):
-		model = Spells
-		fields = ('name', 'tier', 'description',)
-
+	pass
+	
 class CreateCharacterForm(forms.ModelForm):
 
 	class Meta(object):
