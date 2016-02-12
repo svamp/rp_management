@@ -239,7 +239,7 @@ class BaseInfoClass(models.Model):
 	tier = models.IntegerField(null=False,
 								blank=False,
 								default=0,
-								verbose_name=_(u'Nivå'))
+								verbose_name=_(u'FV'))
 
 	description = models.TextField(null=True,
 									blank=True,
@@ -319,6 +319,10 @@ class SkillImprovement(BaseInfoClass):
 											null=True,
 											blank=True,
 											verbose_name=_(u'Fördjupningskrav'))
+	requierment = models.IntegerField(null=False,
+										blank=False,
+										default=0,
+										verbose_name=_(u'FV-krav'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Fördjupning')
