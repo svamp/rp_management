@@ -230,7 +230,6 @@ class Items(models.Model):
 	def __unicode__(self):
 		return self.name
 
-
 class BaseInfoClass(models.Model):
 	name = models.CharField(max_length=100,
 							null=False,
@@ -344,8 +343,12 @@ class SpellParent(BaseInfoClass):
 
 class SpellInfo(models.Model):
 
-	parent = models.ForeignKey(SpellParent)
-
+	parent = models.ForeignKey(SpellParent,
+								verbose_name=_(u'Tillhörighet'))
+	name=models.CharField(max_length=256,
+							null=False,
+							blank=False,
+							verbose_name=_(u'Namn'))
 	tier = models.IntegerField(null=False,
 								blank=False,
 								default=0,
@@ -386,6 +389,10 @@ class SpellInfo(models.Model):
 
 	class Meta(object):
 		verbose_name=_(u'Magi information')
+		verbose_name_plural=_(u'Magi information')
+
+	def __unicode__(self):
+		return self.name
 
 class SpellExtras(models.Model):
 
@@ -407,6 +414,15 @@ class SpellExtras(models.Model):
 							blank=False,
 							default='N/A',
 							verbose_name=_(u'Annat'))
+
+	class Meta(object):
+		verbose_name=_(u'Magi extra')
+		verbose_name_plural=_(u'Magi extra')
+
+	def __unicode__(self):
+		return u"Extra information om {spell}".format(
+			spell=self.spell.name
+		)
 
 class Character(models.Model):
 	creator = models.ForeignKey(User, verbose_name=_(u'Skapare'))
@@ -484,6 +500,22 @@ class Character(models.Model):
 
 	def __unicode__(self):
 		return self.character_name
+
+class CharacterSpells(models.Model):
+	character = models.ForeignKey(Character,
+									verbose_name=_(u'Karaktär'))
+
+	spells = models.ManyToManyField(SpellInfo,
+									verbose_name=_('Magier och besvärjelser'))
+
+	class Meta(object):
+		verbose_name=_(u'Karaktärers magi')
+		verbose_name_plural=_(u'Karaktärers magi')
+
+	def __unicode__(self):
+		return u"Magier för {character}".format(
+			character=self.character.character_name
+		)
 
 class CharacterHP(models.Model):
 	character = models.ForeignKey(Character, null=False, blank=False, verbose_name=_(u'Karaktär'))
