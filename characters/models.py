@@ -299,7 +299,7 @@ class Characteristic(BaseInfoClass):
 
 class Skills(BaseInfoClass):
 
-	level = models.IntegerField(null=False, blank=False, default=0, verbose_name='Nivå')
+	level = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Nivå'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Färdighet')
@@ -324,6 +324,10 @@ class SkillImprovement(BaseInfoClass):
 										blank=False,
 										default=0,
 										verbose_name=_(u'FV-krav'))
+	level = models.IntegerField(null=False,
+								blank=False,
+								default=0,
+								verbose_name=_(u'Nivå'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Fördjupning')
