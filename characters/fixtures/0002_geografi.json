@@ -1,1 +1,1541 @@
-[{"fields": {"tier": 0, "name": "M\u00e4nniskor", "description": "D\u00f6den grinade N\u00f3ri Stormgrim i ansiktet. Hans h\u00e4nder var klibbiga fr\u00e5n blodet av dem han dr\u00e4pt. Skaftet p\u00e5 hans m\u00e4ktiga sk\u00e4ggyxa var halt av s\u00f6rjan. Hans fiender kom i allt kortare v\u00e5gor nu och runtomkring honom l\u00e5g det som f\u00e5tt smaka p\u00e5 N\u00f3ris vrede. Han hade kluvit skallar, kapat ben, splittrat br\u00f6stkorgar och huggit av b\u00e5de fingrar och armar. N\u00f3ris br\u00f6der hade st\u00e5tt vid hans sida n\u00e4r striden b\u00f6rjade och m\u00e4nnen fr\u00e5n skogarna i vilt raseri hade st\u00f6rtat emot dem. Svinfylkingen hade brustigt tidigt, b\u00e4rs\u00e4rkarna hade inte kunnat h\u00e5lla sig och de unga krigarna hade inte st\u00e5t emot den f\u00f6rsta v\u00e5gen.\r\nJald l\u00e5g som en skadad ulv och gnydde vid hans sida. Karltuv Store f\u00f6rs\u00f6kte t\u00e4ppa igen s\u00e5ret som fick hans innanm\u00e4te att rinna ut i gyttjan.\r\nDet var ett tag sedan N\u00f3ri hade sett sin fosterbroder Lodir, man han var s\u00e4ker p\u00e5 att han hade klarat sig. Som av \u00f6dets nyck, Stormes \u00f6nsakn och alla stamf\u00e4ders viljan hade N\u00f3ri inga allvarliga skador. Nu var striden snart \u00f6ver. P\u00e5 h\u00e5ll kunde han se hur b\u00e4rs\u00e4rkar fr\u00e5n hans stam k\u00e4mpade sig fram mot den kulle d\u00e4r vildm\u00e4nnens ledare fanns. N\u00e4r han dog skulle slaget lycktas, N\u00f3ri bl\u00e5sa i sitt gautlahorn och vapen l\u00e4ggas ner. Av de fiender som \u00f6verlevde skulle N\u00f3ri offra en av tre till Tyrds \u00e4ra - resten skulle s\u00e4ljas som tr\u00e4lar. Fiendeh\u00f6vdingens huvud skulle han skicka tillbaka in i skogen med ett s\u00e4ndebud.\r\nDet skulle ta flera dagar att samla ihop de m\u00e4n av hans egen klan som d\u00f6tt. Han skulle l\u00e4gga dom p\u00e5 mossb\u00e4ddar i skogen och l\u00e5ta Storme ta deras kroppar. Ett m\u00f6rkt mold drog fram \u00f6ver himlen, det mullrade i fj\u00e4rran och en klar blixt slet sig loss fr\u00e5n molnen.\r\nTyrd hade kommit f\u00f6r att hylla deras seger."}, "model": "characters.race", "pk": 4}, {"fields": {"tier": 0, "name": "Alfer", "description": "Hinnama tittade p\u00e5 sj\u00e4rnorna, s\u00e5 n\u00e4ra men \u00e4nd\u00e5 s\u00e5 fj\u00e4rran. Hon kunde k\u00e4nna kraften fr\u00e5n fr\u00e5n gudarna, men \u00e4nd\u00e5 kunde hon inte tala med dem. De od\u00f6dliga sade att de en g\u00e5ng skulle komma tillbaka, att det skulle vandra i skogen tillsammans med alferna igen.\r\nHinnama hade h\u00f6rt s\u00e5ngerna s\u00e5 m\u00e5nga g\u00e5nger. Hur det hade varit d\u00e5 hennes folk levde tillsammans med sina skapare, hur allt hade varit stilla och vackert  som en skogssj\u00f6.\r\nHon k\u00e4nde hur tiden drog och slet i hennes sj\u00e4l, hon tillh\u00f6rde inte en av dem som f\u00f6tts till evigheten, hon var bunden av \u00f6det och inget kunde stoppa det.\r\nHon var kluven. Tiden som fl\u00f6t p\u00e5 i allt snabbare takt \u00f6kadeavst\u00e5ndet fr\u00e5n den tid d\u00e5 gudarna vandrat med dem, men det minskade ocks\u00e5 hennes tid h\u00e4r i Trudvang.\r\nHinnama \u00f6nskade att tiden stod stilla."}, "model": "characters.race", "pk": 5}, {"fields": {"tier": 0, "name": "Dv\u00e4rgar", "description": "De tre br\u00f6derna tittade f\u00f6rst p\u00e5 varandra och sedan ner i det o\u00e4ndliga schaktet. De kunde alla ana ett  mullrande avl\u00e4gset ljud som vindlade sig upp ur m\u00f6rkret. Det var ett olyckbr\u00e5dande ljud, som aldrig hade de h\u00f6rt n\u00e5got liknande f\u00f6rut.\r\nNalbog, den av br\u00f6derna som var thul, tog stoft fr\u00e5n marken och sl\u00e4ngde det ner i h\u00e5let. De s\u00e5g hur sm\u00e5grus f\u00f6rsvann ner i det bottenl\u00f6sa schaktet. Enorma kl\u00f6sm\u00e4rken vid sidorna vittnade om en stor varelse, kanske hade den s\u00f6kt sig upp redan, kanske l\u00e5g den d\u00e4r nere och dv\u00e4ljdes.\r\nKanske var det rentav Yukk."}, "model": "characters.race", "pk": 6}, {"fields": {"tier": 0, "name": "Halvblod", "description": "Blandraser mellan troll och m\u00e4nniska eller alv och m\u00e4nniska."}, "model": "characters.race", "pk": 7}, {"fields": {"tier": 0, "name": "Storml\u00e4ndare", "parent": 4, "description": "Storml\u00e4ndare \u00e4r det folkslag som \u00e4r f\u00f6rh\u00e4rskande i \u00f6ster. Tusernrals och \u00e5ter tusentals \u00e5rstider har sm\u00e4lt samman detta folk som en g\u00e5ng var b\u00e5de vildbronjor, kemorer och brotar. Av vildbronjorna hittar man fortfarande enstaka oblandade stammar i \u00f6ster, men b\u00e5de kemorer och brotar har sm\u00e4lt ihop till det som idag kallas f\u00f6r storml\u00e4ndare. Storml\u00e4ndare \u00e4r ett h\u00f6grest folk vars h\u00e5rdhet och \u00f6verlevnadsf\u00f6rm\u00e5ga m\u00e5nga g\u00e5nger har f\u00f6rundrat b\u00e5de alfer och dv\u00e4rgar. De lever i ett kargt klimat sida vid sida med den stora vildmarken.\r\nStorml\u00e4ndaren \u00e4r l\u00e4ngre \u00e4n normalm\u00e4nniskan har ofta m\u00f6rkt h\u00e5r och svarta \u00f6gon. Vissa b\u00e4r en r\u00f6d h\u00e5rf\u00e4rg och klarbl\u00e5 \u00f6gon. Som av ett \u00f6dets nyck har ejl\u00e4ndarna f\u00f6r\u00e4rats med att n\u00e5got annorlunda utseende. De \u00e4r lika h\u00f6gresta som de g\u00e4ngse storml\u00e4ndarna, men de flesta har en blond h\u00e5rf\u00e4rg och bl\u00e5a \u00f6gon. \u00d6veralt i storml\u00e4nderna kan man st\u00f6ta p\u00e5 m\u00e4nniskor som har gul \u00f6gonf\u00e4rg. Detta anses vara ett arv fr\u00e5n tiderna d\u00e5 regionen st\u00e4ndigt slogs mot trollfolk om herrav\u00e4ldet.\r\nStorml\u00e4nderna \u00e4r i de flesta fall anh\u00e4ngare till Gerbanis, eller n\u00e5gon form av blandning av natur/anfaderdyrkan och Gerbanis. Det krigare som lever enligt gerbanis trosatser l\u00e5ter ofta raka sina skallar n\u00e4r de har nedlagt sin f\u00f6rsta fiende. Andra sorml\u00e4ndare l\u00e5ter h\u00e5ret v\u00e4xa l\u00e5ngt, vilt och otuktat som om det vore en del av vildmarken.\r\nStorml\u00e4ndarna bor i den del av Trudvang som kallas f\u00f6r Osthem. L\u00e4nder som tillh\u00f6r Osthem \u00e4r Ejland, Vildland, Vortland, No, Dain och Junghart. En spelare som v\u00e4ljer att vara storml\u00e4ndare b\u00f6r komma fr\u00e5n n\u00e5gon av dessa l\u00e4nder."}, "model": "characters.raceorigin", "pk": 2}, {"fields": {"tier": 0, "name": "Mittl\u00e4ndare", "parent": 4, "description": "Mittl\u00e4ndarna - \u00e4vern kallade osttroner - \u00e4r ett folkslag med gammla och komplexa traditioner. Det s\u00e4gs att det var hemv\u00e4ndade Tronl\u00e4ndare som kom fr\u00e5n det som idag \u00e4r Osthem efter en l\u00e5ng landsflyckt, men att det valde att sl\u00e5 sig ner i sl\u00e4tternas rike, ist\u00e4llet f\u00f6r att \u00e5terv\u00e4nda till Tronland. Mittl\u00e4ndarna \u00e4r stolta och v\u00e4rderar \u00e4ra och mod h\u00f6gre \u00e4n mycket annat. De \u00e4r inte lika storv\u00e4xta och kraftfulla som storml\u00e4ndarna, men likv\u00e4l \u00e4r det ett respekterat och ansett folk.\r\nMittl\u00e4ndarna lever i sl\u00e4tternas rike d\u00e4r det b\u00f6ljande gr\u00e4set och ljungbev\u00e4xta kullarna \u00e4r kr\u00f6nta med kummel fr\u00e5n forntiden. M\u00e5nga mittl\u00e4ndare \u00e4r goda ryttare och h\u00e4sten anses vara en viktigt och v\u00f6rdad \u00e4godel hos var man och kvinna i Mittland.\r\nHj\u00e4ltemod \u00e4r en egenskap som genomsyrar hela det mittl\u00e4ndska samh\u00e4llet och d\u00e4rf\u00f6r har de som utf\u00f6r hj\u00e4lted\u00e5d s\u00e4rskilt h\u00f6g status i Mittlands l\u00e4nder.\r\nEn god mittl\u00e4ndare beh\u00e4rskar b\u00e5de f\u00f6rm\u00e5gan - och modet - att sl\u00e5ss som en hj\u00e4lte och beg\u00e5vningen att kunna skalda- Historier och ber\u00e4ttelser \u00e4r n\u00e4mligen h\u00f6gt skattade hos mittl\u00e4ndarna, som ofta samlas kring brasorna f\u00f6r att ta del av gamla legender.\r\nI Mittland lever man efter ostroseden som \u00e4r en samling traditioner vilken inefattar att man dyrkar naturen, lindormar och hj\u00e4ltar som uppn\u00e5tt gudomlig status som symboler f\u00f6r den ur\u00e5ldriga seden. Virannerna i v\u00e4ster har doch f\u00e5tt stort inflytande \u00f6ver mittl\u00e4ndarnas liv. Detta g\u00e4ller i synerhet de influenser av nidendomen som har f\u00e5tt m\u00e5nga mittl\u00e4ndare att \u00f6verge ostroseden f\u00f6r att ist\u00e4llet dyrka Rave och underkasta sig nidendomens p\u00e5bud.\r\nTill Mittlands l\u00e4nder h\u00f6r idag: Runvjiik, Majnjord, Bydland, Arje och det fj\u00e4rran Dranvelte"}, "model": "characters.raceorigin", "pk": 3}, {"fields": {"tier": 0, "name": "Virann", "parent": 4, "description": "Bland det folk som levde vid havet iv\u00e4ster kom virannerna att dominera mest. Det \u00e4r ett blandat folkslag som lever videt det stora havet i v\u00e4ster och som \u00e4r det mest framtr\u00e4dande folkgruppen i de v\u00e4stra l\u00e4nderna. H\u00e4r livn\u00e4r de sig p\u00e5 fiske och handel med sina grannar. Virannerna lever i det som idag kallas f\u00f6r Vastermark och som \u00e4r den del av Trudvang som ligger iv\u00e4ster. Den typiske virannen \u00e4r normalt byggd, har en blond h\u00e5rf\u00e4rg och gr\u00e5a \u00f6gon. Deras fysiska styrka har aldrig varit s\u00e4rskild stor och har d\u00e4rf\u00f6r heller inte varit deras st\u00f6rsta tillg\u00e5ng. Virannerns f\u00f6rm\u00e5ga att l\u00e4ra och ta till sig nta saker \u00e4r d\u00e4remot n\u00e5got som de har st\u00f6ttat sig mot genom \u00e5ren och som \u00e4r vida k\u00e4nd i hela de v\u00e4stra markerna. M\u00e5nga av dem delade friskt med sig av sina kunskaper och de \u00e4gnade sig i stor utstr\u00e4ckning \u00e5r l\u00e4rdom och kunskap i b\u00e5de handel och spr\u00e5k. Trots att riddersm\u00e4nnen har stor makt i vissa delar av Vastermark, s\u00e5 \u00e4r det \u00e4nd\u00e5 kunskap och l\u00e4rdom som \u00e4r de h\u00f6gt aktade egenskaperna hos detta folk.\r\nVirannerna \u00e4r i uteslutande fall anh\u00e4ngare av den nidendomska tron. Till Vastermarks l\u00e4nder h\u00f6r idag: Silvtrunder, Bysente, Carlonne, Viranne, Tronland och Vistergalp. De tv\u00e5 l\u00e4nderna Thoorkaal och Fja\u00f6 tillh\u00f6r visserligen Vastermark, men har lite gemensamt med de andra l\u00e4nderna. Den v\u00e4ljer att kommer fr\u00e5n n\u00e5got av dessa tv\u00e5 l\u00e4nder f\u00e5r samma modifikationer och egenskaper som storml\u00e4ndare."}, "model": "characters.raceorigin", "pk": 4}, {"fields": {"tier": 0, "level": 0, "name": "Besv\u00e4rjelsekonst", "description": ""}, "model": "characters.skills", "pk": 1}, {"fields": {"tier": 0, "level": 0, "name": "Geografi(Vastermark)", "description": ""}, "model": "characters.skills", "pk": 2}, {"fields": {"tier": 0, "level": 0, "name": "Geografi(Mittland)", "description": ""}, "model": "characters.skills", "pk": 3}, {"fields": {"tier": 0, "level": 0, "name": "Geografi(Osthem)", "description": ""}, "model": "characters.skills", "pk": 4}, {"fields": {"tier": 0, "level": 0, "name": "Geografi(Nhoordland)", "description": ""}, "model": "characters.skills", "pk": 5}, {"fields": {"tier": 0, "level": 0, "name": "Geografi(Soj)", "description": ""}, "model": "characters.skills", "pk": 6}, {"fields": {"tier": 0, "level": 0, "name": "Geografi(Underjorden)", "description": ""}, "model": "characters.skills", "pk": 7}, {"fields": {"tier": 0, "level": 0, "name": "Handel", "description": ""}, "model": "characters.skills", "pk": 8}, {"fields": {"tier": 0, "level": 0, "name": "Hantverk", "description": ""}, "model": "characters.skills", "pk": 9}, {"fields": {"tier": 0, "level": 0, "name": "Hantverk(Metall)", "description": ""}, "model": "characters.skills", "pk": 10}, {"fields": {"tier": 0, "level": 0, "name": "Hantverk(Mjuka meterial)", "description": ""}, "model": "characters.skills", "pk": 11}, {"fields": {"tier": 0, "level": 0, "name": "Hantverk(Sten)", "description": ""}, "model": "characters.skills", "pk": 12}, {"fields": {"tier": 0, "level": 0, "name": "Hantverk(Tr\u00e4)", "description": ""}, "model": "characters.skills", "pk": 13}, {"fields": {"tier": 0, "level": 0, "name": "Kropp och H\u00e4lsa", "description": ""}, "model": "characters.skills", "pk": 14}, {"fields": {"tier": 0, "level": 0, "name": "Extraktkunskap", "description": ""}, "model": "characters.skills", "pk": 15}, {"fields": {"tier": 0, "level": 0, "name": "L\u00e4kekonst", "description": ""}, "model": "characters.skills", "pk": 16}, {"fields": {"tier": 0, "level": 0, "name": "Kulturk\u00e4nnedom", "description": ""}, "model": "characters.skills", "pk": 17}, {"fields": {"tier": 0, "level": 0, "name": "L\u00f6ndom", "description": ""}, "model": "characters.skills", "pk": 18}, {"fields": {"tier": 0, "level": 0, "name": "Religion(Allm\u00e4n)", "description": ""}, "model": "characters.skills", "pk": 19}, {"fields": {"tier": 0, "level": 0, "name": "Religion(Gerbanis)", "description": ""}, "model": "characters.skills", "pk": 20}, {"fields": {"tier": 0, "level": 0, "name": "Religion(Ostroseden)", "description": ""}, "model": "characters.skills", "pk": 21}, {"fields": {"tier": 0, "level": 0, "name": "Religion(Nidendomen)", "description": ""}, "model": "characters.skills", "pk": 22}, {"fields": {"tier": 0, "level": 0, "name": "Religion(Hamingjes)", "description": ""}, "model": "characters.skills", "pk": 23}, {"fields": {"tier": 0, "level": 0, "name": "Religion(Thuldomen)", "description": ""}, "model": "characters.skills", "pk": 24}, {"fields": {"tier": 0, "level": 0, "name": "Riddjur", "description": ""}, "model": "characters.skills", "pk": 25}, {"fields": {"tier": 0, "level": 0, "name": "Sj\u00f6fart", "description": ""}, "model": "characters.skills", "pk": 26}, {"fields": {"tier": 0, "level": 0, "name": "Sk\u00f6tsel(Allm\u00e4n)", "description": ""}, "model": "characters.skills", "pk": 27}, {"fields": {"tier": 0, "level": 0, "name": "Sk\u00f6tsel(G\u00e5rd)", "description": ""}, "model": "characters.skills", "pk": 28}, {"fields": {"tier": 0, "level": 0, "name": "Sk\u00f6tsel(Krig)", "description": ""}, "model": "characters.skills", "pk": 29}, {"fields": {"tier": 0, "level": 0, "name": "Sk\u00f6tsel(Stad)", "description": ""}, "model": "characters.skills", "pk": 30}, {"fields": {"tier": 0, "level": 0, "name": "Spr\u00e5k(Allm\u00e4n)", "description": ""}, "model": "characters.skills", "pk": 31}, {"fields": {"tier": 0, "level": 0, "name": "Spr\u00e5k(Eika)", "description": ""}, "model": "characters.skills", "pk": 32}, {"fields": {"tier": 0, "level": 0, "name": "Spr\u00e5k(Futhark)", "description": ""}, "model": "characters.skills", "pk": 33}, {"fields": {"tier": 0, "level": 0, "name": "Spr\u00e5k(R\u00f6na)", "description": ""}, "model": "characters.skills", "pk": 34}, {"fields": {"tier": 0, "level": 0, "name": "Spr\u00e5k(Vrok)", "description": ""}, "model": "characters.skills", "pk": 35}, {"fields": {"tier": 0, "level": 0, "name": "Strid", "description": ""}, "model": "characters.skills", "pk": 36}, {"fields": {"tier": 0, "level": 0, "name": "Underh\u00e5llning", "description": ""}, "model": "characters.skills", "pk": 37}, {"fields": {"tier": 0, "level": 0, "name": "Vildmarksvana", "description": ""}, "model": "characters.skills", "pk": 38}, {"fields": {"tier": 0, "level": 0, "name": "Jakt och Fiske", "description": ""}, "model": "characters.skills", "pk": 39}, {"fields": {"tier": 0, "level": 0, "name": "\u00d6verlevnad(Sn\u00f6landskap)", "description": ""}, "model": "characters.skills", "pk": 40}, {"fields": {"tier": 0, "level": 0, "name": "\u00d6verlevnad(Skogslandskap)", "description": ""}, "model": "characters.skills", "pk": 41}, {"fields": {"tier": 0, "level": 0, "name": "\u00d6verlevnad(St\u00e4pplandskap)", "description": ""}, "model": "characters.skills", "pk": 42}, {"fields": {"tier": 0, "level": 0, "name": "\u00d6verlevnad(Klipplandskap)", "description": ""}, "model": "characters.skills", "pk": 43}, {"fields": {"tier": 0, "level": 0, "name": "V\u00e4xt- och djurliv(Vastermark)", "description": ""}, "model": "characters.skills", "pk": 44}, {"fields": {"tier": 0, "level": 0, "name": "V\u00e4xt- och djurliv(Mittland)", "description": ""}, "model": "characters.skills", "pk": 45}, {"fields": {"tier": 0, "level": 0, "name": "V\u00e4xt- och djurliv(Osthem)", "description": ""}, "model": "characters.skills", "pk": 46}, {"fields": {"tier": 0, "level": 0, "name": "V\u00e4xt- och djurliv(Nhoordland)", "description": ""}, "model": "characters.skills", "pk": 47}, {"fields": {"tier": 0, "level": 0, "name": "V\u00e4xt- och djurliv(Soj)", "description": ""}, "model": "characters.skills", "pk": 48}, {"fields": {"tier": 0, "level": 0, "name": "V\u00e4xt- och djurliv(Underjorden)", "description": ""}, "model": "characters.skills", "pk": 49}, {"fields": {"name": "Avsl\u00f6jare", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren kan genom att studera en annan besv\u00e4rjare se vad denne ska frammana f\u00f6r besv\u00e4rjelse. Genom att iakttaga besv\u00e4rjaren fr\u00e5n det att han b\u00f6rjar fammana till \u00f6gonblicket innan besv\u00e4rjelsen f\u00e5r effekt kan besv\u00e4rjaren genom ett lyckat f\u00e4rdighetsslag f\u00f6r f\u00e4rdigheten Besv\u00e4rjelsekonst se vad det \u00e4r som besv\u00e4rjaren t\u00e4nkt frammana, samt mot vem eller vad den \u00e4r riktad mot. Besv\u00e4rjaren hinner dock inte utf\u00f6ra n\u00e5gra handlingar som inneb\u00e4r att effekten av den frammanande besv\u00e4rjelsen undviks."}, "model": "characters.skillimprovement", "pk": 1}, {"fields": {"name": "Dold frammaning", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren \u00e4r duktig p\u00e5 att d\u00f6lja att han frammanar en besv\u00e4rj\u00e4lse. F\u00f6rdjupningen g\u00f6r att en betraktare m\u00e5ste lyckas med ett situationsslag med situationsv\u00e4rde 8 (exceptionella karakt\u00e4rsdrag f\u00f6r Intelligens anv\u00e4nds vid slaget) f\u00f6r att inse att besv\u00e4rjaren faktiskt h\u00e5ller p\u00e5 att frammana en besv\u00e4rjelse."}, "model": "characters.skillimprovement", "pk": 2}, {"fields": {"name": "Galdra", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren har specialiserat sig p\u00e5 att sjunga fram en besv\u00e4rjelse. Att galdra inneb\u00e4r att besv\u00e4rjaren v\u00e4ver och formar vitner till besv\u00e4rjelser helt genom mystiska s\u00e5nger och l\u00e4ten. Vissa s\u00e5nger \u00e4r b\u00e5de l\u00e5nga och komplicerade, andra \u00e4r inte mer \u00e4n en utdragen ton vid r\u00e4tt tidpunkt. S\u00e5ngerna och l\u00e4tena \u00e4r dock h\u00f6gst individuella och en besv\u00e4rjelse kan l\u00e5ta p\u00e5 tv\u00e5 helt skilda s\u00e4tt om tv\u00e5 olika besv\u00e4rjare skulle mana fram dem. F\u00f6r den ene kan besv\u00e4rjelsen vara en vacker s\u00e5ng med samma besv\u00e4rjelse f\u00f6r n\u00e5gon annan kan vara ett gurglande l\u00e4te djupt nere i halsen. En del besv\u00e4rjare anv\u00e4nder sig till och med av instrument av olika slag som de tillsammans med r\u00f6st och l\u00e4ten anv\u00e4nder f\u00f6r att locka fram och forma vitnern med. Oavsett hur besv\u00e4rjelsen l\u00e5ter h\u00f6rs det ofta p\u00e5 l\u00e5ngt h\u00e5ll n\u00e4r en besv\u00e4rjare galdrar, vilket leder till att de l\u00e4tt blir uppt\u00e4ckta och igenk\u00e4nda som besv\u00e4rjare. Den som galdrar f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00f6rdighetsv\u00e4rde d\u00e5 han ska frammana en f\u00f6rsta niv\u00e5ns (niv\u00e5 I) besv\u00e4rjelse. Galdraren kan \u00e4ven besv\u00e4rja fram den andra och den tredje niv\u00e5ns besv\u00e4rjelser, men f\u00e5r d\u00e5 ingen plusmodifikation f\u00f6r detta."}, "model": "characters.skillimprovement", "pk": 3}, {"fields": {"name": "Insiktsfull", "parent": 1, "level": 2, "requierment": 12, "cost": 20, "dependencies": [], "tier": 0, "description": "En besv\u00e4rjare med denna f\u00f6rdjupning uppt\u00e4cker tidigt under frammanandet om han kommer lyckas med besv\u00e4rjelsen eller inte. Genom att komma till denna insikt slipper besv\u00e4rjare f\u00f6rlora nitnerpo\u00e4ng, som man normalt g\u00f6r vid misslyckande."}, "model": "characters.skillimprovement", "pk": 4}, {"fields": {"name": "Teckerman", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren har l\u00e4rt sig ladda f\u00f6rem\u00e5l med vitner. Genom att f\u00f6rs\u00e4tta sig sj\u00e4lv i trans kan besv\u00e4rjaren ladda ett f\u00f6rem\u00e5l med 1 vitnerpo\u00f6ng f\u00f6r varje tv\u00e5 vitnerpo\u00e4ng som han offrar fr\u00e5n sin egna vitnerkapacitet. Varje vitnerpo\u00e4ng tar fem minuter att \u00f6verf\u00f6ra och ett normalt f\u00f6rem\u00e5l kan som mest inneh\u00e5lla 1T10 vitnerpo\u00e4ng. Vitnerpo\u00e4ng som besv\u00e4rjaren f\u00f6r in i ett f\u00f6rem\u00e5l binder han sedan till f\u00f6rem\u00e5let genom att teckna ett magiskt tecken p\u00e5 det.\r\nVitnerpo\u00e4ngen \u00e4r d\u00e4refter f\u00e5ngad i f\u00f6rem\u00e5let under lika m\u00e5nga dagar som besv\u00e4rjaren har i f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten Besv\u00e4rjelsekonst. De vitnerpo\u00e4ng en besv\u00e4rjare spenderar p\u00e5 att ladda ett f\u00f6rem\u00e5l \u00e5tervinns p\u00e5 vanligt s\u00e4tt genom vila. En besv\u00e4rjare kan som mest b\u00e4ra ett antal vitnerfyllda f\u00f6rem\u00e5l som tillsammans inneh\u00e5ller lika m\u00e5nga vitnerpo\u00e4ng som \u00e4r lika med besv\u00e4rjarens virnerkapacitet melat med tre (vitnerkapacitet/3).\r\nN\u00e4r ett f\u00f6rem\u00e5l v\u00e4l \u00e4r laddat kan besv\u00e4rjaren anv\u00e4nda det som kraftk\u00e4lla och beh\u00f6ver inte spendera vitnerpo\u00e4ng fr\u00e5n sin egna vitnerkapacitet."}, "model": "characters.skillimprovement", "pk": 5}, {"fields": {"name": "Stafvirja", "parent": 1, "level": 2, "requierment": 12, "cost": 20, "dependencies": [5], "tier": 0, "description": "Besv\u00e4rjaren har l\u00e4rt sig att ladda ett st\u00f6rre f\u00f6rem\u00e5l, oftast en stav, med vitner. Genom att f\u00f6rs\u00e4tta sig sj\u00e4lv i trans kan besv\u00e4rjaren ladda staven med 1 vitnerpo\u00e4ng f\u00f6r varje 2 vitnerpo\u00e4ng som han offrar fr\u00e5n sin egna vitnerkapacitet. Varje vitnerpo\u00e4ng tar fem minuter att \u00f6verf\u00f6ra och en stav kan som mest inneh\u00e5lla lika m\u00e5nga vitner po\u00e4ng som besv\u00e4rjaren har i vitnerkapacitet delat med tv\u00e5 (vitnerkapacitet/2). Vitnerpo\u00e4ngen ligger i staven till den \u00e4r f\u00f6rbrukad. Besv\u00e4rjaren kan n\u00e4r som helst v\u00e4lja att fylla p\u00e5 staven med nya vitner.\r\nEn besv\u00e4rjare kan \u00e4ndas b\u00e4ra en stav fylld med vitner, men han kan fortfarande b\u00e4ra f\u00f6rem\u00e5l fyllda med vitner genom f\u00f6rdjupningen Teclerman."}, "model": "characters.skillimprovement", "pk": 6}, {"fields": {"name": "Gandman", "parent": 1, "level": 3, "requierment": 16, "cost": 30, "dependencies": [6], "tier": 0, "description": "Besv\u00e4rjaren har l\u00e4rt sig att ladda ett st\u00f6rre f\u00f6rem\u00e5l, ofta en stav, med besv\u00e4rjelser. Genom att f\u00f6rs\u00e4tta sig sj\u00e4lv i trans kan besv\u00e4rjaren ladda staven med en eller flera besv\u00e4rjelser. Det tar besv\u00e4rjaren 1 timme att l\u00e4gga in en besc\u00e4rjelse av niv\u00e5 I, 3 timmar f\u00f6r en besv\u00e4rjelse av niv\u00e5 II och 6 timmar f\u00f6r en besv\u00e4rjelse av niv\u00e5 III. Besv\u00e4rjaren f\u00e5r vid \u00f6verf\u00f6relsen spendera lika m\u00e5nga vitnerpo\u00e4ng som den \u00f6verf\u00f6rda besv\u00e4rjelsen kostar. Dessa vitnerpo\u00e4ng \u00e5tervinns sedan p\u00e5 vanligt s\u00e4tt genom vila.<br />\r\nEn notmal stav kan inneh\u00e5lla besv\u00e4rjelser till ett v\u00e4rde (den sammalagda vitnerkostnaden) som \u00e4r lika med besv\u00e4rjarens vitnerkapacitet delat med tv\u00e5 (vitnerkapacitet/2). De \u00f6verf\u00f6rda besv\u00e4rjelserna ligger sedan i staven tills de aktiveras.<br />\r\nN\u00e4r besv\u00e4rjaren vill aktivera en besv\u00e4rjelse som finns i staven sl\u00e5r han ett f\u00e4rdighetsslag f\u00f6r f\u00e4rdigheten besv\u00e4rjelsekonst, precis som vanligt, f\u00f6rutom att han slipper spendera n\u00e5gra vitnerpo\u00e4ng, d\u00e5 detta redan \u00e4r gjort. Vill han l\u00e4gga till en eller flera effektgrader kan han g\u00f6ra det, men m\u00e5ste d\u00e5 betala med ett eller flera vitnerpo\u00e4ng.\r\nEftersom hela besv\u00e4rjelsen redan \u00e4r formad g\u00e5r det betydligt fortare att frammana en besv\u00e4rjelse som ligger i staven. Tabellen nedan visar vilken manatid besv\u00e4rjaren f\u00f6r l\u00e4gga till p\u00e5 sitt initiativslag.\r\n<br />\r\n<table border=\"1\"><tr><th>Besv\u00e4rjelseniv\u00e5</th><th>Niv\u00e5</th></tr><tr><td>Niv\u00e5 I</td><td>0</td></tr><tr><td>Niv\u00e5 II</td><td>+4</td></tr><tr><td>Niv\u00e5 III</td></tr><tr><td>6+</td></tr></table>\r\n<br />\r\nBesv\u00e4rjaren kan n\u00e4r som h\u00e4lst v\u00e4lja att fylla p\u00e5 staven med fler besv\u00e4rjelser s\u00e5 l\u00e4nge deras sammanlagda kostnad inte \u00f6verstiger besv\u00e4rjarens vitnerkapacitet delat med tv\u00e5 (vitnerkapacitet/2).<br />\r\nEn stav kan ineh\u00e5lla b\u00e5de besv\u00e4rjelser och vitner (som \u00f6verf\u00f6rs genom f\u00f6rdjupningen Stafvirja). Besv\u00e4rjaren kan som mest b\u00e4ra en stav fylld av vitner och besv\u00e4rjelser, men han kan fortfarande b\u00e4ra f\u00f6rem\u00e5l fyllda med vitner genom f\u00f6rdjupningen Teckerman.<br />\r\nG\u00e5r f\u00f6rem\u00e5len som \u00e4r laddat med en besv\u00e4rjelse s\u00f6nder f\u00f6rsvinner besv\u00e4rjelsen obedelbart.\r\n"}, "model": "characters.skillimprovement", "pk": 7}, {"fields": {"name": "Vitnerf\u00f6r\u00e4dling", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren har l\u00e4rt sig att f\u00f6r\u00e4dla  och f\u00f6rfina vitner som formas i och med att en besv\u00e4rjelse frammanas. Tack vare denna f\u00f6rdjupning kan en besv\u00e4rjare l\u00e4gga till en eller flera effektgrader n\u00e4r han frammanar en besv\u00e4rjelse p\u00e5 niv\u00e5 I."}, "model": "characters.skillimprovement", "pk": 8}, {"fields": {"name": "Havitnerf\u00f6r\u00e4dling", "parent": 1, "level": 2, "requierment": 12, "cost": 20, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren har l\u00e4rt sig att f\u00f6r\u00e4dla och f\u00f6rfina vitner som formas i och med att en besv\u00e4rjelse frammanas. Tack vare denna f\u00f6rdjupning kan en besv\u00e4rjare l\u00e4gga till en eller flera effektgrader n\u00e4r han frammanar en besv\u00e4rjelse av Niv\u00e5 II."}, "model": "characters.skillimprovement", "pk": 9}, {"fields": {"name": "Vitnerkalla", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren  n\u00e5r en viktig insikt i vitnerl\u00e4ran, vilket \u00f6kar hans f\u00f6rm\u00e5ga att kalla in vitner fr\u00e5n sin omgivning.  Beroende p\u00e5 vilken sorts vitner besv\u00e4rjaren valt att bruka \u00f6kar hans vitnerkapacitet olika mycket enligt tabellen nedan.\r\n<br />\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nVaagritalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 8-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nMorkvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 9-10)\r\n</td>\r\n</tr>\r\n</table>\r\n<br />"}, "model": "characters.skillimprovement", "pk": 10}, {"fields": {"name": "Havitnerkalla", "parent": 1, "level": 2, "requierment": 12, "cost": 20, "dependencies": [10], "tier": 0, "description": "Besv\u00e4rjaren n\u00e5r en viktig insikt i vinterl\u00e4ran, vilket \u00f6kar hans f\u00f6rm\u00e5ga att kalla in vitner fr\u00e5n sin omgivning. Beroende p\u00e5 vilken sorts vitner besv\u00e4rjaren valt att bruka s\u00e5 \u00f6kar hans vitnerkapacitet olika mycket enligt tabellen nedan.\r\n<br />\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nVaagritalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 8-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nMorkvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 9-10)\r\n</td>\r\n</tr>\r\n</table>\r\n<br />"}, "model": "characters.skillimprovement", "pk": 11}, {"fields": {"name": "Vitner\u00e5terkalla", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren fyller p\u00e5 sitt vittnerf\u00f6r\u00e5d snabbare \u00e4n normalt. Tabellen nedan ers\u00e4tter den m\u00e4ngd vitner en person normalt \u00e5terh\u00e4mtar utan denna f\u00f6rdjupningen.\r\n<br />\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\n\u00c5terh\u00e4mtade vitnerpo\u00e4ng per 8 timmars s\u00f6mn\r\n</th>\r\n</tr>\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n</table>\r\n<br />"}, "model": "characters.skillimprovement", "pk": 12}, {"fields": {"name": "Havitner\u00e5terkalla", "parent": 1, "level": 2, "requierment": 12, "cost": 20, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren fyller p\u00e5 sitt vitnerf\u00f6rr\u00e5d snabbare \u00e4n normalt. Tabellen nedan ers\u00e4tter den m\u00e4ngd vitner en person normalt kan \u00e5terh\u00e4mta utan denna f\u00f6rdjupning. Denna f\u00f6rdjupnings effekt ers\u00e4tter effekterna fr\u00e5n f\u00f6rdjupningen Vitner\u00e5terkalla.\r\n<br />\r\n\u00c5terh\u00e4mtade vitnerpo\u00e4ng per 8 timmars s\u00f6mn.\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 6-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nVaagritalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nMorkvitalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 8-10)\r\n</td>\r\n</tr>\r\n</table>"}, "model": "characters.skillimprovement", "pk": 13}, {"fields": {"name": "Samlad", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren \u00e4r mycket sv\u00e5rst\u00f6rd d\u00e5 han ska - eller just har p\u00e5b\u00f6rjat - fammana en besv\u00e4rjelse. Alla situationsslag som besv\u00e4rjaren m\u00e5ste sl\u00e5 f\u00f6r att se om han st\u00f6rs och m\u00e5ste avbryta besv\u00e4rjandet - eller om han kan forts\u00e4tta v\u00e4va magin - modifieras med +3."}, "model": "characters.skillimprovement", "pk": 14}, {"fields": {"name": "Koncentrerad", "parent": 1, "level": 2, "requierment": 12, "cost": 20, "dependencies": [14], "tier": 0, "description": "Besv\u00e4rjaren \u00e4r oerh\u00f6rt sv\u00e5rst\u00f6rd d\u00e5 han ska eller just har p\u00e5b\u00f6rjat frammanandet av en besv\u00e4rjelse. Alla situationsslag som besv\u00e4rgaren m\u00e5ste sl\u00e5 f\u00f6r att se om han st\u00f6rs och m\u00e5ste avbryta besv\u00e4rjandet eller om han kan forts\u00e4tta v\u00e4va magin modifieras med +5. Denna f\u00f6rdjupnings effek ers\u00e4tter effekten fr\u00e5n f\u00f6rdjupningen Samlad."}, "model": "characters.skillimprovement", "pk": 15}, {"fields": {"name": "Kraftfull", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Alla besv\u00e4rjarens besv\u00e4rjelser som medf\u00f6r att situationsslag f\u00f6r ett offer \u00e4r extra kraftfulla.  Alla situationsv\u00e4rden som offret ska sl\u00e5 under eller lika med f\u00f6r att st\u00e5 emot eller minska en besv\u00e4rjelses effekt modifieras med -2 p\u00e5 grund av besv\u00e4rjarens kraft"}, "model": "characters.skillimprovement", "pk": 16}, {"fields": {"name": "Potent", "parent": 1, "level": 2, "requierment": 12, "cost": 20, "dependencies": [16], "tier": 0, "description": "Alla besv\u00e4rjarens  besv\u00e4rjelser som medf\u00f6r ett situationsslag f\u00f6r ett offer \u00e4r mycket kraftfulla. Alla situationsv\u00e4rden som offret ska slu under eller lika med f\u00f6r att st\u00e5 emot eller minska en besv\u00e4rjelses effek modifieras med -4 p\u00e5 grund av besv\u00e4rjarens kraft. Denna f\u00f6rdjupnings effekt ers\u00e4tter effektern fr\u00e5n f\u00f6rdjupningen Kraftfull."}, "model": "characters.skillimprovement", "pk": 17}, {"fields": {"name": "Rimvitnerf\u00f6r\u00e4dling", "parent": 1, "level": 3, "requierment": 16, "cost": 30, "dependencies": [9], "tier": 0, "description": "Besv\u00e4rjaren har l\u00e4rt sig f\u00f6r\u00e4dla och f\u00f6rfina vitner som formas i och att en besv\u00e4rjelse frammanas. Tack vare denna f\u00f6rdjupning kan en besv\u00e4rjare l\u00e4gga till en eller flera effektgrader n\u00e4r han frammanar en besv\u00e4rjelse av niv\u00e5 III. Denna f\u00f6rdjupnings effekt ers\u00e4tter effekterna f\u00f6rdjupningarna Havitnerf\u00f6r\u00e4dling och Vitnerf\u00f6r\u00e4dling."}, "model": "characters.skillimprovement", "pk": 18}, {"fields": {"name": "Rimvitnerkalla", "parent": 1, "level": 3, "requierment": 16, "cost": 20, "dependencies": [11], "tier": 0, "description": "Besv\u00e4rjaren n\u00e5r en viktig insikt i vitnerl\u00e4ran, vilket \u00f6kar hans f\u00f6rm\u00e5ga att kalla in vitner fr\u00e5n sin omgivning. Beroende p\u00e5 vilken sorts vitner besv\u00e4rjaren valr att bruka \u00f6kar hans vitnerkapacitet olika mycket enligt tabellen nedan.\r\n<br />\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nVaagritalja\r\n</td>\r\n<td>\r\n5+T10(\u00d6P 8-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nMorkvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 9-10)\r\n</td>\r\n</tr>\r\n</table>\r\n<br />"}, "model": "characters.skillimprovement", "pk": 19}, {"fields": {"name": "Rimvitner\u00e5terkalla", "parent": 1, "level": 3, "requierment": 16, "cost": 30, "dependencies": [13], "tier": 0, "description": "Besv\u00e4rjaren fyller p\u00e5 sitt vitnerf\u00f6rr\u00e5d snabbare \u00e4n normalt. Tabellen nedan ers\u00e4tter den m\u00e4ngd vitner en person notmalt \u00e5terh\u00e4mtar utan denna f\u00f6rdjupning. Denna f\u00f6rdjupning ers\u00e4tter effekterna fr\u00e5n f\u00f6rdjupningarna Vitner\u00e5terkalla och Havitner\u00e5terkalla.\r\n<br />\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 6-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nVaagritalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nMorkvitalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 8-10)\r\n</td>\r\n</tr>\r\n</table>"}, "model": "characters.skillimprovement", "pk": 20}, {"fields": {"name": "Ritualist", "parent": 1, "level": 1, "requierment": 12, "cost": 20, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren har mycket l\u00e4tt f\u00f6r att utf\u00f6ra ritualer. En besv\u00e4rjare med denna f\u00f6rdjupning utf\u00f6r alla ritualbesv\u00e4rjelser dubbelt s\u00e5 fort, det vill s\u00e4ga halverad ritualtid. dEnna f\u00f6rdjupning g\u00e4ller inte f\u00f6r besv\u00e4rjelser med manatider."}, "model": "characters.skillimprovement", "pk": 21}, {"fields": {"name": "Sejdra", "parent": 1, "level": 1, "requierment": 12, "cost": 20, "dependencies": [], "tier": 0, "description": "Den som sejdrar fram en besv\u00e4rjelse lockar fram och formar vitner med hj\u00e4lp av olika r\u00f6relser och gester. Den som ut\u00f6var detta s\u00e4tt m\u00e5ste d\u00e4rf\u00f6rkunna anc\u00e4nda b\u00e5da sina h\u00e4nder. Annars kan han inte styra sina vitner p\u00e5 ett s\u00e4tt s\u00e5 att de resulterar i en besv\u00e4rjelse. Besv\u00e4rjeles\u00e4ttet \u00e4r tyst men uppseendev\u00e4ckande d\u00e5 besv\u00e4rjaren m\u00e5ste gestikulera med armar och h\u00e4nder. Den som sejdrar f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde d\u00e5 han ska frammana en andra niv\u00e5ns (niv\u00e5 II) besv\u00e4rjelse. Sejdaren kan \u00e4ven besv\u00e4rja fram den f\u00f6rsta och den tredjeniv\u00e5ns besv\u00e4rjelser, men f\u00e5r d\u00e5 ingen plusmodifikation f\u00f6r detta."}, "model": "characters.skillimprovement", "pk": 22}, {"fields": {"name": "Snabbv\u00e4vare", "parent": 1, "level": 2, "requierment": 12, "cost": 20, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren har mycket l\u00e4tt f\u00f6r att v\u00e4va vitner s\u00e5 att de tar formen av en besv\u00e4rjelse. En besv\u00e4rjare med denna f\u00f6rdjupning frammanar all besv\u00e4rjelser som har manatid dubbelt s\u00e5 fort, det vill s\u00e4ga med halverad manatid. Denna f\u00f6rdjupning g\u00e4ller inte f\u00f6r ritualbesv\u00e4rjelser."}, "model": "characters.skillimprovement", "pk": 23}, {"fields": {"name": "S\u00e4kerhetsv\u00e4vare", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren \u00e4r noggran vid besv\u00e4rjande. Vid de tillf\u00e4llen besv\u00e4rjaren snedt\u00e4nder f\u00e5r han tack vare denna f\u00f6rdjupning dra bort 3 fr\u00e5n slaget p\u00e5 snedt\u00e4ndningstabellen."}, "model": "characters.skillimprovement", "pk": 24}, {"fields": {"name": "S\u00e4kerhetsv\u00e4vare - M\u00e4stare", "parent": 1, "level": 2, "requierment": 8, "cost": 20, "dependencies": [24], "tier": 0, "description": "Besv\u00e4rjaren \u00e4r mycket s\u00e4ker p\u00e5 att v\u00e4va vitner r\u00e4tt. Vid de tillf\u00e4llen besv\u00e4rjaren snedt\u00e4nder f\u00e5r han tack vare denna f\u00f6rdjupning dra bort 5 fr\u00e5n slaget p\u00e5 snedt\u00e4ndningstabellen."}, "model": "characters.skillimprovement", "pk": 25}, {"fields": {"name": "S\u00e4kerhetsv\u00e4vare - Legendar", "parent": 1, "level": 3, "requierment": 16, "cost": 30, "dependencies": [25], "tier": 0, "description": "Besv\u00e4rjaren \u00e4r v\u00e4ldigt s\u00e4ker p\u00e5 att v\u00e4va vitner r\u00e4tt d\u00e5 han frammanar en besv\u00e4rjelse. Vid de tillf\u00e4llen besv\u00e4rjaren snedt\u00e4nder f\u00e5r han tack vare denna f\u00f6rdjupning dra bort 8 fr\u00e5n slaget p\u00e5 snedt\u00e4ndningstabellen."}, "model": "characters.skillimprovement", "pk": 26}, {"fields": {"name": "Vitnerv\u00e4vare", "parent": 1, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "En besv\u00e4rjare med denna kunskap kan minska vitnerkostnaden f\u00f6r att frammana en besv\u00e4rjelse. Genom att f\u00e4rdighetslaget som sl\u00e5s vi frammaningen hamnar p\u00e5 eller under t\u00e4rningsresultatet 4 beh\u00f6ver besv\u00e4rjaren endast spendera h\u00e4lften av de vitnerpo\u00e4ng sin besv\u00e4rjelsen kostate att frammana (inklusive effektgrader)."}, "model": "characters.skillimprovement", "pk": 27}, {"fields": {"name": "Vitnerm\u00e4stare", "parent": 1, "level": 2, "requierment": 12, "cost": 20, "dependencies": [27], "tier": 0, "description": "En besv\u00e4rjare med denna kunskap kan minska vitnerkostnaden f\u00f6r att frammana en besv\u00e4rjelse. Genom att f\u00e4rdighetsslaget som sl\u00e5s vid frammaningen hamnar p\u00e5 eller under t\u00e4rningsresultatet 6 beh\u00f6ver besv\u00e4rjaren endast spendera h\u00e4lften av de vitnerpo\u00e4ng som besv\u00e4rjelsen kostade att frammana (inklusive effekgrader)."}, "model": "characters.skillimprovement", "pk": 28}, {"fields": {"name": "Vitnerlegendar", "parent": 1, "level": 3, "requierment": 16, "cost": 30, "dependencies": [28], "tier": 0, "description": "En besv\u00e4rjare med denna kunskap kan minska vitnerkostnaden f\u00f6r att frammana en besv\u00e4rjelse. Genom att f\u00e4rdighetsslaget som sl\u00e5s vid frammaningen hamnar p\u00e5 eller under t\u00e4rningsresultatet 8 beh\u00f6ver besv\u00e4rjaren endast spendera h\u00e4lften av de vitnerpo\u00e4ng som besv\u00e4rjelsen kostade att frammana (inklusive effektgrader)."}, "model": "characters.skillimprovement", "pk": 29}, {"fields": {"name": "Vitnermotst\u00e5nd", "parent": 1, "level": 2, "requierment": 12, "cost": 20, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjaren kan s\u00e4tta upp stort motst\u00e5nd mot besv\u00e4rjelser som \u00e4r riktade mot honom. Alla situationsslag situationsv\u00e4rden som besv\u00e4rjaren m\u00e5ste sl\u00e5 under  eller lika med f\u00f6r att st\u00e5 emot eller minska en en besv\u00e4rjelses effekt \u00f6kar med +3"}, "model": "characters.skillimprovement", "pk": 30}, {"fields": {"name": "Vitnerresistent", "parent": 1, "level": 3, "requierment": 16, "cost": 30, "dependencies": [30], "tier": 0, "description": "Besv\u00e4rjaren kan s\u00e4tta upp stort motst\u00e5nd mot besv\u00e4rjelser som \u00e4r riktade mot honom. Alla situationsslag situationsv\u00e4rden som besv\u00e4rjaren m\u00e5ste sl\u00e5 under  eller lika med f\u00f6r att st\u00e5 emot eller minska en en besv\u00e4rjelses effekt \u00f6kar med +5. <br />\r\nDenna f\u00f6rdjupnings effekt ers\u00e4tter effekten fr\u00e5n f\u00f6rdjupningen Vitnermotst\u00e5nd."}, "model": "characters.skillimprovement", "pk": 31}, {"fields": {"name": "Vyrda", "parent": 1, "level": 1, "requierment": 16, "cost": 30, "dependencies": [], "tier": 0, "description": "Besv\u00e4rjelses\u00e4ttet vyrda \u00e4r tyst och stillsamt, oftast g\u00e5r vyrden helt obem\u00e4rkt f\u00f6rbi tills dess att effekten kommer farande. Besv\u00e4rjare som vyrdar fyller sig sj\u00e4lv med vitner vilken f\u00f6r en stund blir ett med det egna v\u00e4sendet. Han formar vitnern med tankens kraft och enda som tyder p\u00e5 att den som vyrdar f\u00f6rs\u00f6ker l\u00e4gga en besv\u00e4rjelse \u00e4r n\u00e4st intill obefintilgt gest eller en r\u00f6relse som slutligen kanaliserar ut magin genom kroppen. R\u00f6relserna kan utg\u00f6ras av en ekel vridning av en handled, ett kn\u00e4pp med fingrarna eller blinkgning av ett \u00f6ga. Den som vyrdar f\u00e5r alltid l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4re d\u00e5 han ska frammana en tredje niv\u00e5ns (niv\u00e5 III) besv\u00e4rjelse. Vyrdaren kan \u00e4ven besv\u00e4rja fram den f\u00f6rsta och den andra niv\u00e5ns besv\u00e4rjelser, men f\u00e5r d\u00e5 ingen plusmodifikation f\u00f6r detta. Men eftersom den som vyrdar varken beh\u00f6ver l\u00e5ta eller gestikulera anses vyrden vara den b\u00e4sta besv\u00f6erjelses\u00e4ttet av de tre."}, "model": "characters.skillimprovement", "pk": 32}, {"fields": {"name": "Havsk\u00e4nnedom", "parent": 2, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Personen k\u00e4nner till havet som finns utanf\u00f6r regionens kust. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska f\u00f6rs\u00f6ka ta reda p\u00e5 n\u00e5got av den utvalda regionens hav."}, "model": "characters.skillimprovement", "pk": 33}, {"fields": {"name": "Kunskapst\u00f6rstare", "parent": 2, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Personen \u00e4r en sann kunskapst\u00f6rstare och ivrig bibblioteksbes\u00f6kare och har l\u00e4rt sig att hitta i bibliotek. N\u00e4r han s\u00f6ker i ett bibliotek f\u00e5r han l\u00e4gga till +3 p\u00e5 sitt v\u00e4rdighetsv\u00e4rde f\u00f6r f\u00e4rdighetsslag (aktuell f\u00e4rdighet) sin anv\u00f6nds f\u00f6r att hitta information om det han s\u00f6ker efter."}, "model": "characters.skillimprovement", "pk": 34}, {"fields": {"name": "Orientera", "parent": 2, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnos och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. F\u00f6rdjupningen  hj\u00e4lper en person  att p\u00e5 b\u00e4sta och raskast m\u00f6jliga s\u00e4tt ta sig fr\u00e5n en plats till en annan. Beroende p\u00e5 avst\u00e5ndet och terr\u00e4ng f\u00e5r spelledaren avg\u00f6ra hur ofra en orienterare beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela v\u00e4gen. Vem som helst kan normalt peka ut v\u00e4derstrecken och f\u00f6lja dem. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten Geografi d\u00e5 han ska orientera sig fram med hj\u00e4lp av denna f\u00f6rdjupnings kunskaper. <br />\r\nHar en person en duglig karta till hands d\u00e4r landm\u00e4rkens positioner finns markerade kan han med stor exakthet veta vart han \u00e4r p\u00e5v\u00e4g. En s\u00e5dan karta get personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde."}, "model": "characters.skillimprovement", "pk": 35}, {"fields": {"name": "Navigera", "parent": 2, "level": 2, "requierment": 12, "cost": 20, "dependencies": [33], "tier": 0, "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnor och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. <br />\r\nF\u00f6rdjupningen hj\u00e4lper en person att p\u00e5 b\u00e4sta och rakast m\u00f6jliga s\u00e4tt att ta sig fr\u00e5n en plats till en annan ute  till sj\u00f6ss. Beroende p\u00e5 avst\u00e5nd och v\u00e4der f\u00e5r spelledaren avg\u00f6ra hur ofta en navigat\u00f6r beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela tiden. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska ta ut den r\u00e4tta kursen till sj\u00f6ss. <br />\r\nHar en person en duglig sj\u00f6karta tillhands d\u00e4r olika landm\u00e4rkens positioner finns utm\u00e4rkta kan han med stor exakthet veta var han \u00e4r p\u00e5 v\u00e4g, en s\u00e5dan karta ger personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde vid f\u00e4rdighetsslag f\u00f6r navigering."}, "model": "characters.skillimprovement", "pk": 36}, {"fields": {"name": "Resen\u00e4r", "parent": 2, "level": 1, "requierment": 8, "cost": 10, "dependencies": [], "tier": 0, "description": "Personen har rest mycket i regionen och k\u00e4nner d\u00e4rf\u00f6r till de st\u00f6rsta och mest trafikerade rutterna mellan olika platser i regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan indom den valda regionen."}, "model": "characters.skillimprovement", "pk": 37}, {"fields": {"name": "Stadsk\u00e4nnare", "parent": 2, "level": 2, "requierment": 12, "cost": 20, "dependencies": [37], "tier": 0, "description": "Personen k\u00e4nner till de st\u00f6rsta st\u00e4derna i regionen och vet p\u00e5 ett ungef\u00e4r var de ligger i f\u00f6rh\u00e5llande tillvarandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om staden."}, "model": "characters.skillimprovement", "pk": 38}, {"fields": {"name": "Ortk\u00e4nnare", "parent": 2, "level": 3, "requierment": 16, "cost": 30, "dependencies": [38], "tier": 0, "description": "Personen k\u00e4nner till de flesta byar och orter i regionen och vet p\u00e5 ett ungef\u00e4r var det ligger i f\u00f6rh\u00e5llande till varandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om byn i fr\u00e5ga."}, "model": "characters.skillimprovement", "pk": 39}, {"fields": {"name": "Stigfinnare", "parent": 2, "level": 2, "requierment": 12, "cost": 20, "dependencies": [37], "tier": 0, "description": "Personen k\u00e4nner till de flesta stigar och mindre farleder i den utvalda regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan inom det valda landet."}, "model": "characters.skillimprovement", "pk": 40}]
+[{
+    "fields": {
+        "tier": 0,
+        "name": "M\u00e4nniskor",
+        "description": "D\u00f6den grinade N\u00f3ri Stormgrim i ansiktet. Hans h\u00e4nder var klibbiga fr\u00e5n blodet av dem han dr\u00e4pt. Skaftet p\u00e5 hans m\u00e4ktiga sk\u00e4ggyxa var halt av s\u00f6rjan. Hans fiender kom i allt kortare v\u00e5gor nu och runtomkring honom l\u00e5g det som f\u00e5tt smaka p\u00e5 N\u00f3ris vrede. Han hade kluvit skallar, kapat ben, splittrat br\u00f6stkorgar och huggit av b\u00e5de fingrar och armar. N\u00f3ris br\u00f6der hade st\u00e5tt vid hans sida n\u00e4r striden b\u00f6rjade och m\u00e4nnen fr\u00e5n skogarna i vilt raseri hade st\u00f6rtat emot dem. Svinfylkingen hade brustigt tidigt, b\u00e4rs\u00e4rkarna hade inte kunnat h\u00e5lla sig och de unga krigarna hade inte st\u00e5t emot den f\u00f6rsta v\u00e5gen.\r\nJald l\u00e5g som en skadad ulv och gnydde vid hans sida. Karltuv Store f\u00f6rs\u00f6kte t\u00e4ppa igen s\u00e5ret som fick hans innanm\u00e4te att rinna ut i gyttjan.\r\nDet var ett tag sedan N\u00f3ri hade sett sin fosterbroder Lodir, man han var s\u00e4ker p\u00e5 att han hade klarat sig. Som av \u00f6dets nyck, Stormes \u00f6nsakn och alla stamf\u00e4ders viljan hade N\u00f3ri inga allvarliga skador. Nu var striden snart \u00f6ver. P\u00e5 h\u00e5ll kunde han se hur b\u00e4rs\u00e4rkar fr\u00e5n hans stam k\u00e4mpade sig fram mot den kulle d\u00e4r vildm\u00e4nnens ledare fanns. N\u00e4r han dog skulle slaget lycktas, N\u00f3ri bl\u00e5sa i sitt gautlahorn och vapen l\u00e4ggas ner. Av de fiender som \u00f6verlevde skulle N\u00f3ri offra en av tre till Tyrds \u00e4ra - resten skulle s\u00e4ljas som tr\u00e4lar. Fiendeh\u00f6vdingens huvud skulle han skicka tillbaka in i skogen med ett s\u00e4ndebud.\r\nDet skulle ta flera dagar att samla ihop de m\u00e4n av hans egen klan som d\u00f6tt. Han skulle l\u00e4gga dom p\u00e5 mossb\u00e4ddar i skogen och l\u00e5ta Storme ta deras kroppar. Ett m\u00f6rkt mold drog fram \u00f6ver himlen, det mullrade i fj\u00e4rran och en klar blixt slet sig loss fr\u00e5n molnen.\r\nTyrd hade kommit f\u00f6r att hylla deras seger."
+    },
+    "model": "characters.race",
+    "pk": 4
+}, {
+    "fields": {
+        "tier": 0,
+        "name": "Alfer",
+        "description": "Hinnama tittade p\u00e5 sj\u00e4rnorna, s\u00e5 n\u00e4ra men \u00e4nd\u00e5 s\u00e5 fj\u00e4rran. Hon kunde k\u00e4nna kraften fr\u00e5n fr\u00e5n gudarna, men \u00e4nd\u00e5 kunde hon inte tala med dem. De od\u00f6dliga sade att de en g\u00e5ng skulle komma tillbaka, att det skulle vandra i skogen tillsammans med alferna igen.\r\nHinnama hade h\u00f6rt s\u00e5ngerna s\u00e5 m\u00e5nga g\u00e5nger. Hur det hade varit d\u00e5 hennes folk levde tillsammans med sina skapare, hur allt hade varit stilla och vackert  som en skogssj\u00f6.\r\nHon k\u00e4nde hur tiden drog och slet i hennes sj\u00e4l, hon tillh\u00f6rde inte en av dem som f\u00f6tts till evigheten, hon var bunden av \u00f6det och inget kunde stoppa det.\r\nHon var kluven. Tiden som fl\u00f6t p\u00e5 i allt snabbare takt \u00f6kadeavst\u00e5ndet fr\u00e5n den tid d\u00e5 gudarna vandrat med dem, men det minskade ocks\u00e5 hennes tid h\u00e4r i Trudvang.\r\nHinnama \u00f6nskade att tiden stod stilla."
+    },
+    "model": "characters.race",
+    "pk": 5
+}, {
+    "fields": {
+        "tier": 0,
+        "name": "Dv\u00e4rgar",
+        "description": "De tre br\u00f6derna tittade f\u00f6rst p\u00e5 varandra och sedan ner i det o\u00e4ndliga schaktet. De kunde alla ana ett  mullrande avl\u00e4gset ljud som vindlade sig upp ur m\u00f6rkret. Det var ett olyckbr\u00e5dande ljud, som aldrig hade de h\u00f6rt n\u00e5got liknande f\u00f6rut.\r\nNalbog, den av br\u00f6derna som var thul, tog stoft fr\u00e5n marken och sl\u00e4ngde det ner i h\u00e5let. De s\u00e5g hur sm\u00e5grus f\u00f6rsvann ner i det bottenl\u00f6sa schaktet. Enorma kl\u00f6sm\u00e4rken vid sidorna vittnade om en stor varelse, kanske hade den s\u00f6kt sig upp redan, kanske l\u00e5g den d\u00e4r nere och dv\u00e4ljdes.\r\nKanske var det rentav Yukk."
+    },
+    "model": "characters.race",
+    "pk": 6
+}, {
+    "fields": {
+        "tier": 0,
+        "name": "Halvblod",
+        "description": "Blandraser mellan troll och m\u00e4nniska eller alv och m\u00e4nniska."
+    },
+    "model": "characters.race",
+    "pk": 7
+}, {
+    "fields": {
+        "tier": 0,
+        "name": "Storml\u00e4ndare",
+        "parent": 4,
+        "description": "Storml\u00e4ndare \u00e4r det folkslag som \u00e4r f\u00f6rh\u00e4rskande i \u00f6ster. Tusernrals och \u00e5ter tusentals \u00e5rstider har sm\u00e4lt samman detta folk som en g\u00e5ng var b\u00e5de vildbronjor, kemorer och brotar. Av vildbronjorna hittar man fortfarande enstaka oblandade stammar i \u00f6ster, men b\u00e5de kemorer och brotar har sm\u00e4lt ihop till det som idag kallas f\u00f6r storml\u00e4ndare. Storml\u00e4ndare \u00e4r ett h\u00f6grest folk vars h\u00e5rdhet och \u00f6verlevnadsf\u00f6rm\u00e5ga m\u00e5nga g\u00e5nger har f\u00f6rundrat b\u00e5de alfer och dv\u00e4rgar. De lever i ett kargt klimat sida vid sida med den stora vildmarken.\r\nStorml\u00e4ndaren \u00e4r l\u00e4ngre \u00e4n normalm\u00e4nniskan har ofta m\u00f6rkt h\u00e5r och svarta \u00f6gon. Vissa b\u00e4r en r\u00f6d h\u00e5rf\u00e4rg och klarbl\u00e5 \u00f6gon. Som av ett \u00f6dets nyck har ejl\u00e4ndarna f\u00f6r\u00e4rats med att n\u00e5got annorlunda utseende. De \u00e4r lika h\u00f6gresta som de g\u00e4ngse storml\u00e4ndarna, men de flesta har en blond h\u00e5rf\u00e4rg och bl\u00e5a \u00f6gon. \u00d6veralt i storml\u00e4nderna kan man st\u00f6ta p\u00e5 m\u00e4nniskor som har gul \u00f6gonf\u00e4rg. Detta anses vara ett arv fr\u00e5n tiderna d\u00e5 regionen st\u00e4ndigt slogs mot trollfolk om herrav\u00e4ldet.\r\nStorml\u00e4nderna \u00e4r i de flesta fall anh\u00e4ngare till Gerbanis, eller n\u00e5gon form av blandning av natur/anfaderdyrkan och Gerbanis. Det krigare som lever enligt gerbanis trosatser l\u00e5ter ofta raka sina skallar n\u00e4r de har nedlagt sin f\u00f6rsta fiende. Andra sorml\u00e4ndare l\u00e5ter h\u00e5ret v\u00e4xa l\u00e5ngt, vilt och otuktat som om det vore en del av vildmarken.\r\nStorml\u00e4ndarna bor i den del av Trudvang som kallas f\u00f6r Osthem. L\u00e4nder som tillh\u00f6r Osthem \u00e4r Ejland, Vildland, Vortland, No, Dain och Junghart. En spelare som v\u00e4ljer att vara storml\u00e4ndare b\u00f6r komma fr\u00e5n n\u00e5gon av dessa l\u00e4nder."
+    },
+    "model": "characters.raceorigin",
+    "pk": 2
+}, {
+    "fields": {
+        "tier": 0,
+        "name": "Mittl\u00e4ndare",
+        "parent": 4,
+        "description": "Mittl\u00e4ndarna - \u00e4vern kallade osttroner - \u00e4r ett folkslag med gammla och komplexa traditioner. Det s\u00e4gs att det var hemv\u00e4ndade Tronl\u00e4ndare som kom fr\u00e5n det som idag \u00e4r Osthem efter en l\u00e5ng landsflyckt, men att det valde att sl\u00e5 sig ner i sl\u00e4tternas rike, ist\u00e4llet f\u00f6r att \u00e5terv\u00e4nda till Tronland. Mittl\u00e4ndarna \u00e4r stolta och v\u00e4rderar \u00e4ra och mod h\u00f6gre \u00e4n mycket annat. De \u00e4r inte lika storv\u00e4xta och kraftfulla som storml\u00e4ndarna, men likv\u00e4l \u00e4r det ett respekterat och ansett folk.\r\nMittl\u00e4ndarna lever i sl\u00e4tternas rike d\u00e4r det b\u00f6ljande gr\u00e4set och ljungbev\u00e4xta kullarna \u00e4r kr\u00f6nta med kummel fr\u00e5n forntiden. M\u00e5nga mittl\u00e4ndare \u00e4r goda ryttare och h\u00e4sten anses vara en viktigt och v\u00f6rdad \u00e4godel hos var man och kvinna i Mittland.\r\nHj\u00e4ltemod \u00e4r en egenskap som genomsyrar hela det mittl\u00e4ndska samh\u00e4llet och d\u00e4rf\u00f6r har de som utf\u00f6r hj\u00e4lted\u00e5d s\u00e4rskilt h\u00f6g status i Mittlands l\u00e4nder.\r\nEn god mittl\u00e4ndare beh\u00e4rskar b\u00e5de f\u00f6rm\u00e5gan - och modet - att sl\u00e5ss som en hj\u00e4lte och beg\u00e5vningen att kunna skalda- Historier och ber\u00e4ttelser \u00e4r n\u00e4mligen h\u00f6gt skattade hos mittl\u00e4ndarna, som ofta samlas kring brasorna f\u00f6r att ta del av gamla legender.\r\nI Mittland lever man efter ostroseden som \u00e4r en samling traditioner vilken inefattar att man dyrkar naturen, lindormar och hj\u00e4ltar som uppn\u00e5tt gudomlig status som symboler f\u00f6r den ur\u00e5ldriga seden. Virannerna i v\u00e4ster har doch f\u00e5tt stort inflytande \u00f6ver mittl\u00e4ndarnas liv. Detta g\u00e4ller i synerhet de influenser av nidendomen som har f\u00e5tt m\u00e5nga mittl\u00e4ndare att \u00f6verge ostroseden f\u00f6r att ist\u00e4llet dyrka Rave och underkasta sig nidendomens p\u00e5bud.\r\nTill Mittlands l\u00e4nder h\u00f6r idag: Runvjiik, Majnjord, Bydland, Arje och det fj\u00e4rran Dranvelte"
+    },
+    "model": "characters.raceorigin",
+    "pk": 3
+}, {
+    "fields": {
+        "tier": 0,
+        "name": "Virann",
+        "parent": 4,
+        "description": "Bland det folk som levde vid havet iv\u00e4ster kom virannerna att dominera mest. Det \u00e4r ett blandat folkslag som lever videt det stora havet i v\u00e4ster och som \u00e4r det mest framtr\u00e4dande folkgruppen i de v\u00e4stra l\u00e4nderna. H\u00e4r livn\u00e4r de sig p\u00e5 fiske och handel med sina grannar. Virannerna lever i det som idag kallas f\u00f6r Vastermark och som \u00e4r den del av Trudvang som ligger iv\u00e4ster. Den typiske virannen \u00e4r normalt byggd, har en blond h\u00e5rf\u00e4rg och gr\u00e5a \u00f6gon. Deras fysiska styrka har aldrig varit s\u00e4rskild stor och har d\u00e4rf\u00f6r heller inte varit deras st\u00f6rsta tillg\u00e5ng. Virannerns f\u00f6rm\u00e5ga att l\u00e4ra och ta till sig nta saker \u00e4r d\u00e4remot n\u00e5got som de har st\u00f6ttat sig mot genom \u00e5ren och som \u00e4r vida k\u00e4nd i hela de v\u00e4stra markerna. M\u00e5nga av dem delade friskt med sig av sina kunskaper och de \u00e4gnade sig i stor utstr\u00e4ckning \u00e5r l\u00e4rdom och kunskap i b\u00e5de handel och spr\u00e5k. Trots att riddersm\u00e4nnen har stor makt i vissa delar av Vastermark, s\u00e5 \u00e4r det \u00e4nd\u00e5 kunskap och l\u00e4rdom som \u00e4r de h\u00f6gt aktade egenskaperna hos detta folk.\r\nVirannerna \u00e4r i uteslutande fall anh\u00e4ngare av den nidendomska tron. Till Vastermarks l\u00e4nder h\u00f6r idag: Silvtrunder, Bysente, Carlonne, Viranne, Tronland och Vistergalp. De tv\u00e5 l\u00e4nderna Thoorkaal och Fja\u00f6 tillh\u00f6r visserligen Vastermark, men har lite gemensamt med de andra l\u00e4nderna. Den v\u00e4ljer att kommer fr\u00e5n n\u00e5got av dessa tv\u00e5 l\u00e4nder f\u00e5r samma modifikationer och egenskaper som storml\u00e4ndare."
+    },
+    "model": "characters.raceorigin",
+    "pk": 4
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Besv\u00e4rjelsekonst",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 1
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Geografi(Vastermark)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 2
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Geografi(Mittland)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 3
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Geografi(Osthem)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 4
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Geografi(Nhoordland)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 5
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Geografi(Soj)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 6
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Geografi(Underjorden)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 7
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Handel",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 8
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Hantverk",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 9
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Hantverk(Metall)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 10
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Hantverk(Mjuka meterial)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 11
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Hantverk(Sten)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 12
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Hantverk(Tr\u00e4)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 13
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Kropp och H\u00e4lsa",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 14
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Extraktkunskap",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 15
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "L\u00e4kekonst",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 16
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Kulturk\u00e4nnedom",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 17
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "L\u00f6ndom",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 18
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Religion(Allm\u00e4n)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 19
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Religion(Gerbanis)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 20
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Religion(Ostroseden)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 21
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Religion(Nidendomen)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 22
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Religion(Hamingjes)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 23
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Religion(Thuldomen)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 24
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Riddjur",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 25
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Sj\u00f6fart",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 26
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Sk\u00f6tsel(Allm\u00e4n)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 27
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Sk\u00f6tsel(G\u00e5rd)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 28
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Sk\u00f6tsel(Krig)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 29
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Sk\u00f6tsel(Stad)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 30
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Spr\u00e5k(Allm\u00e4n)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 31
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Spr\u00e5k(Eika)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 32
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Spr\u00e5k(Futhark)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 33
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Spr\u00e5k(R\u00f6na)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 34
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Spr\u00e5k(Vrok)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 35
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Strid",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 36
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Underh\u00e5llning",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 37
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Vildmarksvana",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 38
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "Jakt och Fiske",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 39
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "\u00d6verlevnad(Sn\u00f6landskap)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 40
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "\u00d6verlevnad(Skogslandskap)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 41
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "\u00d6verlevnad(St\u00e4pplandskap)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 42
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "\u00d6verlevnad(Klipplandskap)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 43
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "V\u00e4xt- och djurliv(Vastermark)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 44
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "V\u00e4xt- och djurliv(Mittland)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 45
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "V\u00e4xt- och djurliv(Osthem)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 46
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "V\u00e4xt- och djurliv(Nhoordland)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 47
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "V\u00e4xt- och djurliv(Soj)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 48
+}, {
+    "fields": {
+        "tier": 0,
+        "level": 0,
+        "name": "V\u00e4xt- och djurliv(Underjorden)",
+        "description": ""
+    },
+    "model": "characters.skills",
+    "pk": 49
+}, {
+    "fields": {
+        "name": "Avsl\u00f6jare",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren kan genom att studera en annan besv\u00e4rjare se vad denne ska frammana f\u00f6r besv\u00e4rjelse. Genom att iakttaga besv\u00e4rjaren fr\u00e5n det att han b\u00f6rjar fammana till \u00f6gonblicket innan besv\u00e4rjelsen f\u00e5r effekt kan besv\u00e4rjaren genom ett lyckat f\u00e4rdighetsslag f\u00f6r f\u00e4rdigheten Besv\u00e4rjelsekonst se vad det \u00e4r som besv\u00e4rjaren t\u00e4nkt frammana, samt mot vem eller vad den \u00e4r riktad mot. Besv\u00e4rjaren hinner dock inte utf\u00f6ra n\u00e5gra handlingar som inneb\u00e4r att effekten av den frammanande besv\u00e4rjelsen undviks."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 1
+}, {
+    "fields": {
+        "name": "Dold frammaning",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren \u00e4r duktig p\u00e5 att d\u00f6lja att han frammanar en besv\u00e4rj\u00e4lse. F\u00f6rdjupningen g\u00f6r att en betraktare m\u00e5ste lyckas med ett situationsslag med situationsv\u00e4rde 8 (exceptionella karakt\u00e4rsdrag f\u00f6r Intelligens anv\u00e4nds vid slaget) f\u00f6r att inse att besv\u00e4rjaren faktiskt h\u00e5ller p\u00e5 att frammana en besv\u00e4rjelse."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 2
+}, {
+    "fields": {
+        "name": "Galdra",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren har specialiserat sig p\u00e5 att sjunga fram en besv\u00e4rjelse. Att galdra inneb\u00e4r att besv\u00e4rjaren v\u00e4ver och formar vitner till besv\u00e4rjelser helt genom mystiska s\u00e5nger och l\u00e4ten. Vissa s\u00e5nger \u00e4r b\u00e5de l\u00e5nga och komplicerade, andra \u00e4r inte mer \u00e4n en utdragen ton vid r\u00e4tt tidpunkt. S\u00e5ngerna och l\u00e4tena \u00e4r dock h\u00f6gst individuella och en besv\u00e4rjelse kan l\u00e5ta p\u00e5 tv\u00e5 helt skilda s\u00e4tt om tv\u00e5 olika besv\u00e4rjare skulle mana fram dem. F\u00f6r den ene kan besv\u00e4rjelsen vara en vacker s\u00e5ng med samma besv\u00e4rjelse f\u00f6r n\u00e5gon annan kan vara ett gurglande l\u00e4te djupt nere i halsen. En del besv\u00e4rjare anv\u00e4nder sig till och med av instrument av olika slag som de tillsammans med r\u00f6st och l\u00e4ten anv\u00e4nder f\u00f6r att locka fram och forma vitnern med. Oavsett hur besv\u00e4rjelsen l\u00e5ter h\u00f6rs det ofta p\u00e5 l\u00e5ngt h\u00e5ll n\u00e4r en besv\u00e4rjare galdrar, vilket leder till att de l\u00e4tt blir uppt\u00e4ckta och igenk\u00e4nda som besv\u00e4rjare. Den som galdrar f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00f6rdighetsv\u00e4rde d\u00e5 han ska frammana en f\u00f6rsta niv\u00e5ns (niv\u00e5 I) besv\u00e4rjelse. Galdraren kan \u00e4ven besv\u00e4rja fram den andra och den tredje niv\u00e5ns besv\u00e4rjelser, men f\u00e5r d\u00e5 ingen plusmodifikation f\u00f6r detta."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 3
+}, {
+    "fields": {
+        "name": "Insiktsfull",
+        "parent": 1,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [],
+        "tier": 0,
+        "description": "En besv\u00e4rjare med denna f\u00f6rdjupning uppt\u00e4cker tidigt under frammanandet om han kommer lyckas med besv\u00e4rjelsen eller inte. Genom att komma till denna insikt slipper besv\u00e4rjare f\u00f6rlora nitnerpo\u00e4ng, som man normalt g\u00f6r vid misslyckande."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 4
+}, {
+    "fields": {
+        "name": "Teckerman",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren har l\u00e4rt sig ladda f\u00f6rem\u00e5l med vitner. Genom att f\u00f6rs\u00e4tta sig sj\u00e4lv i trans kan besv\u00e4rjaren ladda ett f\u00f6rem\u00e5l med 1 vitnerpo\u00f6ng f\u00f6r varje tv\u00e5 vitnerpo\u00e4ng som han offrar fr\u00e5n sin egna vitnerkapacitet. Varje vitnerpo\u00e4ng tar fem minuter att \u00f6verf\u00f6ra och ett normalt f\u00f6rem\u00e5l kan som mest inneh\u00e5lla 1T10 vitnerpo\u00e4ng. Vitnerpo\u00e4ng som besv\u00e4rjaren f\u00f6r in i ett f\u00f6rem\u00e5l binder han sedan till f\u00f6rem\u00e5let genom att teckna ett magiskt tecken p\u00e5 det.\r\nVitnerpo\u00e4ngen \u00e4r d\u00e4refter f\u00e5ngad i f\u00f6rem\u00e5let under lika m\u00e5nga dagar som besv\u00e4rjaren har i f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten Besv\u00e4rjelsekonst. De vitnerpo\u00e4ng en besv\u00e4rjare spenderar p\u00e5 att ladda ett f\u00f6rem\u00e5l \u00e5tervinns p\u00e5 vanligt s\u00e4tt genom vila. En besv\u00e4rjare kan som mest b\u00e4ra ett antal vitnerfyllda f\u00f6rem\u00e5l som tillsammans inneh\u00e5ller lika m\u00e5nga vitnerpo\u00e4ng som \u00e4r lika med besv\u00e4rjarens virnerkapacitet melat med tre (vitnerkapacitet/3).\r\nN\u00e4r ett f\u00f6rem\u00e5l v\u00e4l \u00e4r laddat kan besv\u00e4rjaren anv\u00e4nda det som kraftk\u00e4lla och beh\u00f6ver inte spendera vitnerpo\u00e4ng fr\u00e5n sin egna vitnerkapacitet."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 5
+}, {
+    "fields": {
+        "name": "Stafvirja",
+        "parent": 1,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [5],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren har l\u00e4rt sig att ladda ett st\u00f6rre f\u00f6rem\u00e5l, oftast en stav, med vitner. Genom att f\u00f6rs\u00e4tta sig sj\u00e4lv i trans kan besv\u00e4rjaren ladda staven med 1 vitnerpo\u00e4ng f\u00f6r varje 2 vitnerpo\u00e4ng som han offrar fr\u00e5n sin egna vitnerkapacitet. Varje vitnerpo\u00e4ng tar fem minuter att \u00f6verf\u00f6ra och en stav kan som mest inneh\u00e5lla lika m\u00e5nga vitner po\u00e4ng som besv\u00e4rjaren har i vitnerkapacitet delat med tv\u00e5 (vitnerkapacitet/2). Vitnerpo\u00e4ngen ligger i staven till den \u00e4r f\u00f6rbrukad. Besv\u00e4rjaren kan n\u00e4r som helst v\u00e4lja att fylla p\u00e5 staven med nya vitner.\r\nEn besv\u00e4rjare kan \u00e4ndas b\u00e4ra en stav fylld med vitner, men han kan fortfarande b\u00e4ra f\u00f6rem\u00e5l fyllda med vitner genom f\u00f6rdjupningen Teclerman."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 6
+}, {
+    "fields": {
+        "name": "Gandman",
+        "parent": 1,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [6],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren har l\u00e4rt sig att ladda ett st\u00f6rre f\u00f6rem\u00e5l, ofta en stav, med besv\u00e4rjelser. Genom att f\u00f6rs\u00e4tta sig sj\u00e4lv i trans kan besv\u00e4rjaren ladda staven med en eller flera besv\u00e4rjelser. Det tar besv\u00e4rjaren 1 timme att l\u00e4gga in en besc\u00e4rjelse av niv\u00e5 I, 3 timmar f\u00f6r en besv\u00e4rjelse av niv\u00e5 II och 6 timmar f\u00f6r en besv\u00e4rjelse av niv\u00e5 III. Besv\u00e4rjaren f\u00e5r vid \u00f6verf\u00f6relsen spendera lika m\u00e5nga vitnerpo\u00e4ng som den \u00f6verf\u00f6rda besv\u00e4rjelsen kostar. Dessa vitnerpo\u00e4ng \u00e5tervinns sedan p\u00e5 vanligt s\u00e4tt genom vila.<br />\r\nEn notmal stav kan inneh\u00e5lla besv\u00e4rjelser till ett v\u00e4rde (den sammalagda vitnerkostnaden) som \u00e4r lika med besv\u00e4rjarens vitnerkapacitet delat med tv\u00e5 (vitnerkapacitet/2). De \u00f6verf\u00f6rda besv\u00e4rjelserna ligger sedan i staven tills de aktiveras.<br />\r\nN\u00e4r besv\u00e4rjaren vill aktivera en besv\u00e4rjelse som finns i staven sl\u00e5r han ett f\u00e4rdighetsslag f\u00f6r f\u00e4rdigheten besv\u00e4rjelsekonst, precis som vanligt, f\u00f6rutom att han slipper spendera n\u00e5gra vitnerpo\u00e4ng, d\u00e5 detta redan \u00e4r gjort. Vill han l\u00e4gga till en eller flera effektgrader kan han g\u00f6ra det, men m\u00e5ste d\u00e5 betala med ett eller flera vitnerpo\u00e4ng.\r\nEftersom hela besv\u00e4rjelsen redan \u00e4r formad g\u00e5r det betydligt fortare att frammana en besv\u00e4rjelse som ligger i staven. Tabellen nedan visar vilken manatid besv\u00e4rjaren f\u00f6r l\u00e4gga till p\u00e5 sitt initiativslag.\r\n<br />\r\n<table border=\"1\"><tr><th>Besv\u00e4rjelseniv\u00e5</th><th>Niv\u00e5</th></tr><tr><td>Niv\u00e5 I</td><td>0</td></tr><tr><td>Niv\u00e5 II</td><td>+4</td></tr><tr><td>Niv\u00e5 III</td></tr><tr><td>6+</td></tr></table>\r\n<br />\r\nBesv\u00e4rjaren kan n\u00e4r som h\u00e4lst v\u00e4lja att fylla p\u00e5 staven med fler besv\u00e4rjelser s\u00e5 l\u00e4nge deras sammanlagda kostnad inte \u00f6verstiger besv\u00e4rjarens vitnerkapacitet delat med tv\u00e5 (vitnerkapacitet/2).<br />\r\nEn stav kan ineh\u00e5lla b\u00e5de besv\u00e4rjelser och vitner (som \u00f6verf\u00f6rs genom f\u00f6rdjupningen Stafvirja). Besv\u00e4rjaren kan som mest b\u00e4ra en stav fylld av vitner och besv\u00e4rjelser, men han kan fortfarande b\u00e4ra f\u00f6rem\u00e5l fyllda med vitner genom f\u00f6rdjupningen Teckerman.<br />\r\nG\u00e5r f\u00f6rem\u00e5len som \u00e4r laddat med en besv\u00e4rjelse s\u00f6nder f\u00f6rsvinner besv\u00e4rjelsen obedelbart.\r\n"
+    },
+    "model": "characters.skillimprovement",
+    "pk": 7
+}, {
+    "fields": {
+        "name": "Vitnerf\u00f6r\u00e4dling",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren har l\u00e4rt sig att f\u00f6r\u00e4dla  och f\u00f6rfina vitner som formas i och med att en besv\u00e4rjelse frammanas. Tack vare denna f\u00f6rdjupning kan en besv\u00e4rjare l\u00e4gga till en eller flera effektgrader n\u00e4r han frammanar en besv\u00e4rjelse p\u00e5 niv\u00e5 I."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 8
+}, {
+    "fields": {
+        "name": "Havitnerf\u00f6r\u00e4dling",
+        "parent": 1,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren har l\u00e4rt sig att f\u00f6r\u00e4dla och f\u00f6rfina vitner som formas i och med att en besv\u00e4rjelse frammanas. Tack vare denna f\u00f6rdjupning kan en besv\u00e4rjare l\u00e4gga till en eller flera effektgrader n\u00e4r han frammanar en besv\u00e4rjelse av Niv\u00e5 II."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 9
+}, {
+    "fields": {
+        "name": "Vitnerkalla",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren  n\u00e5r en viktig insikt i vitnerl\u00e4ran, vilket \u00f6kar hans f\u00f6rm\u00e5ga att kalla in vitner fr\u00e5n sin omgivning.  Beroende p\u00e5 vilken sorts vitner besv\u00e4rjaren valt att bruka \u00f6kar hans vitnerkapacitet olika mycket enligt tabellen nedan.\r\n<br />\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nVaagritalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 8-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nMorkvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 9-10)\r\n</td>\r\n</tr>\r\n</table>\r\n<br />"
+    },
+    "model": "characters.skillimprovement",
+    "pk": 10
+}, {
+    "fields": {
+        "name": "Havitnerkalla",
+        "parent": 1,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [10],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren n\u00e5r en viktig insikt i vinterl\u00e4ran, vilket \u00f6kar hans f\u00f6rm\u00e5ga att kalla in vitner fr\u00e5n sin omgivning. Beroende p\u00e5 vilken sorts vitner besv\u00e4rjaren valt att bruka s\u00e5 \u00f6kar hans vitnerkapacitet olika mycket enligt tabellen nedan.\r\n<br />\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nVaagritalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 8-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nMorkvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 9-10)\r\n</td>\r\n</tr>\r\n</table>\r\n<br />"
+    },
+    "model": "characters.skillimprovement",
+    "pk": 11
+}, {
+    "fields": {
+        "name": "Vitner\u00e5terkalla",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren fyller p\u00e5 sitt vittnerf\u00f6r\u00e5d snabbare \u00e4n normalt. Tabellen nedan ers\u00e4tter den m\u00e4ngd vitner en person normalt \u00e5terh\u00e4mtar utan denna f\u00f6rdjupningen.\r\n<br />\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\n\u00c5terh\u00e4mtade vitnerpo\u00e4ng per 8 timmars s\u00f6mn\r\n</th>\r\n</tr>\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n</table>\r\n<br />"
+    },
+    "model": "characters.skillimprovement",
+    "pk": 12
+}, {
+    "fields": {
+        "name": "Havitner\u00e5terkalla",
+        "parent": 1,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren fyller p\u00e5 sitt vitnerf\u00f6rr\u00e5d snabbare \u00e4n normalt. Tabellen nedan ers\u00e4tter den m\u00e4ngd vitner en person normalt kan \u00e5terh\u00e4mta utan denna f\u00f6rdjupning. Denna f\u00f6rdjupnings effekt ers\u00e4tter effekterna fr\u00e5n f\u00f6rdjupningen Vitner\u00e5terkalla.\r\n<br />\r\n\u00c5terh\u00e4mtade vitnerpo\u00e4ng per 8 timmars s\u00f6mn.\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 6-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nVaagritalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nMorkvitalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 8-10)\r\n</td>\r\n</tr>\r\n</table>"
+    },
+    "model": "characters.skillimprovement",
+    "pk": 13
+}, {
+    "fields": {
+        "name": "Samlad",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren \u00e4r mycket sv\u00e5rst\u00f6rd d\u00e5 han ska - eller just har p\u00e5b\u00f6rjat - fammana en besv\u00e4rjelse. Alla situationsslag som besv\u00e4rjaren m\u00e5ste sl\u00e5 f\u00f6r att se om han st\u00f6rs och m\u00e5ste avbryta besv\u00e4rjandet - eller om han kan forts\u00e4tta v\u00e4va magin - modifieras med +3."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 14
+}, {
+    "fields": {
+        "name": "Koncentrerad",
+        "parent": 1,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [14],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren \u00e4r oerh\u00f6rt sv\u00e5rst\u00f6rd d\u00e5 han ska eller just har p\u00e5b\u00f6rjat frammanandet av en besv\u00e4rjelse. Alla situationsslag som besv\u00e4rgaren m\u00e5ste sl\u00e5 f\u00f6r att se om han st\u00f6rs och m\u00e5ste avbryta besv\u00e4rjandet eller om han kan forts\u00e4tta v\u00e4va magin modifieras med +5. Denna f\u00f6rdjupnings effek ers\u00e4tter effekten fr\u00e5n f\u00f6rdjupningen Samlad."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 15
+}, {
+    "fields": {
+        "name": "Kraftfull",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Alla besv\u00e4rjarens besv\u00e4rjelser som medf\u00f6r att situationsslag f\u00f6r ett offer \u00e4r extra kraftfulla.  Alla situationsv\u00e4rden som offret ska sl\u00e5 under eller lika med f\u00f6r att st\u00e5 emot eller minska en besv\u00e4rjelses effekt modifieras med -2 p\u00e5 grund av besv\u00e4rjarens kraft"
+    },
+    "model": "characters.skillimprovement",
+    "pk": 16
+}, {
+    "fields": {
+        "name": "Potent",
+        "parent": 1,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [16],
+        "tier": 0,
+        "description": "Alla besv\u00e4rjarens  besv\u00e4rjelser som medf\u00f6r ett situationsslag f\u00f6r ett offer \u00e4r mycket kraftfulla. Alla situationsv\u00e4rden som offret ska slu under eller lika med f\u00f6r att st\u00e5 emot eller minska en besv\u00e4rjelses effek modifieras med -4 p\u00e5 grund av besv\u00e4rjarens kraft. Denna f\u00f6rdjupnings effekt ers\u00e4tter effektern fr\u00e5n f\u00f6rdjupningen Kraftfull."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 17
+}, {
+    "fields": {
+        "name": "Rimvitnerf\u00f6r\u00e4dling",
+        "parent": 1,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [9],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren har l\u00e4rt sig f\u00f6r\u00e4dla och f\u00f6rfina vitner som formas i och att en besv\u00e4rjelse frammanas. Tack vare denna f\u00f6rdjupning kan en besv\u00e4rjare l\u00e4gga till en eller flera effektgrader n\u00e4r han frammanar en besv\u00e4rjelse av niv\u00e5 III. Denna f\u00f6rdjupnings effekt ers\u00e4tter effekterna f\u00f6rdjupningarna Havitnerf\u00f6r\u00e4dling och Vitnerf\u00f6r\u00e4dling."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 18
+}, {
+    "fields": {
+        "name": "Rimvitnerkalla",
+        "parent": 1,
+        "level": 3,
+        "requierment": 16,
+        "cost": 20,
+        "dependencies": [11],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren n\u00e5r en viktig insikt i vitnerl\u00e4ran, vilket \u00f6kar hans f\u00f6rm\u00e5ga att kalla in vitner fr\u00e5n sin omgivning. Beroende p\u00e5 vilken sorts vitner besv\u00e4rjaren valr att bruka \u00f6kar hans vitnerkapacitet olika mycket enligt tabellen nedan.\r\n<br />\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nVaagritalja\r\n</td>\r\n<td>\r\n5+T10(\u00d6P 8-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nMorkvitalja\r\n</td>\r\n<td>\r\n5+1T10(\u00d6P 9-10)\r\n</td>\r\n</tr>\r\n</table>\r\n<br />"
+    },
+    "model": "characters.skillimprovement",
+    "pk": 19
+}, {
+    "fields": {
+        "name": "Rimvitner\u00e5terkalla",
+        "parent": 1,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [13],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren fyller p\u00e5 sitt vitnerf\u00f6rr\u00e5d snabbare \u00e4n normalt. Tabellen nedan ers\u00e4tter den m\u00e4ngd vitner en person notmalt \u00e5terh\u00e4mtar utan denna f\u00f6rdjupning. Denna f\u00f6rdjupning ers\u00e4tter effekterna fr\u00e5n f\u00f6rdjupningarna Vitner\u00e5terkalla och Havitner\u00e5terkalla.\r\n<br />\r\n<table border=\"1\">\r\n<tr>\r\n<th>\r\nBesv\u00e4rjare\r\n</th>\r\n<th>\r\nVitnerpo\u00e4ng\r\n</th>\r\n</tr>\r\n<tr>\r\n<td>\r\nHvitalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 6-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nVaagritalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 7-10)\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\nMorkvitalja\r\n</td>\r\n<td>\r\n1T10(\u00d6P 8-10)\r\n</td>\r\n</tr>\r\n</table>"
+    },
+    "model": "characters.skillimprovement",
+    "pk": 20
+}, {
+    "fields": {
+        "name": "Ritualist",
+        "parent": 1,
+        "level": 1,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren har mycket l\u00e4tt f\u00f6r att utf\u00f6ra ritualer. En besv\u00e4rjare med denna f\u00f6rdjupning utf\u00f6r alla ritualbesv\u00e4rjelser dubbelt s\u00e5 fort, det vill s\u00e4ga halverad ritualtid. dEnna f\u00f6rdjupning g\u00e4ller inte f\u00f6r besv\u00e4rjelser med manatider."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 21
+}, {
+    "fields": {
+        "name": "Sejdra",
+        "parent": 1,
+        "level": 1,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Den som sejdrar fram en besv\u00e4rjelse lockar fram och formar vitner med hj\u00e4lp av olika r\u00f6relser och gester. Den som ut\u00f6var detta s\u00e4tt m\u00e5ste d\u00e4rf\u00f6rkunna anc\u00e4nda b\u00e5da sina h\u00e4nder. Annars kan han inte styra sina vitner p\u00e5 ett s\u00e4tt s\u00e5 att de resulterar i en besv\u00e4rjelse. Besv\u00e4rjeles\u00e4ttet \u00e4r tyst men uppseendev\u00e4ckande d\u00e5 besv\u00e4rjaren m\u00e5ste gestikulera med armar och h\u00e4nder. Den som sejdrar f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde d\u00e5 han ska frammana en andra niv\u00e5ns (niv\u00e5 II) besv\u00e4rjelse. Sejdaren kan \u00e4ven besv\u00e4rja fram den f\u00f6rsta och den tredjeniv\u00e5ns besv\u00e4rjelser, men f\u00e5r d\u00e5 ingen plusmodifikation f\u00f6r detta."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 22
+}, {
+    "fields": {
+        "name": "Snabbv\u00e4vare",
+        "parent": 1,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren har mycket l\u00e4tt f\u00f6r att v\u00e4va vitner s\u00e5 att de tar formen av en besv\u00e4rjelse. En besv\u00e4rjare med denna f\u00f6rdjupning frammanar all besv\u00e4rjelser som har manatid dubbelt s\u00e5 fort, det vill s\u00e4ga med halverad manatid. Denna f\u00f6rdjupning g\u00e4ller inte f\u00f6r ritualbesv\u00e4rjelser."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 23
+}, {
+    "fields": {
+        "name": "S\u00e4kerhetsv\u00e4vare",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren \u00e4r noggran vid besv\u00e4rjande. Vid de tillf\u00e4llen besv\u00e4rjaren snedt\u00e4nder f\u00e5r han tack vare denna f\u00f6rdjupning dra bort 3 fr\u00e5n slaget p\u00e5 snedt\u00e4ndningstabellen."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 24
+}, {
+    "fields": {
+        "name": "S\u00e4kerhetsv\u00e4vare - M\u00e4stare",
+        "parent": 1,
+        "level": 2,
+        "requierment": 8,
+        "cost": 20,
+        "dependencies": [24],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren \u00e4r mycket s\u00e4ker p\u00e5 att v\u00e4va vitner r\u00e4tt. Vid de tillf\u00e4llen besv\u00e4rjaren snedt\u00e4nder f\u00e5r han tack vare denna f\u00f6rdjupning dra bort 5 fr\u00e5n slaget p\u00e5 snedt\u00e4ndningstabellen."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 25
+}, {
+    "fields": {
+        "name": "S\u00e4kerhetsv\u00e4vare - Legendar",
+        "parent": 1,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [25],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren \u00e4r v\u00e4ldigt s\u00e4ker p\u00e5 att v\u00e4va vitner r\u00e4tt d\u00e5 han frammanar en besv\u00e4rjelse. Vid de tillf\u00e4llen besv\u00e4rjaren snedt\u00e4nder f\u00e5r han tack vare denna f\u00f6rdjupning dra bort 8 fr\u00e5n slaget p\u00e5 snedt\u00e4ndningstabellen."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 26
+}, {
+    "fields": {
+        "name": "Vitnerv\u00e4vare",
+        "parent": 1,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "En besv\u00e4rjare med denna kunskap kan minska vitnerkostnaden f\u00f6r att frammana en besv\u00e4rjelse. Genom att f\u00e4rdighetslaget som sl\u00e5s vi frammaningen hamnar p\u00e5 eller under t\u00e4rningsresultatet 4 beh\u00f6ver besv\u00e4rjaren endast spendera h\u00e4lften av de vitnerpo\u00e4ng sin besv\u00e4rjelsen kostate att frammana (inklusive effektgrader)."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 27
+}, {
+    "fields": {
+        "name": "Vitnerm\u00e4stare",
+        "parent": 1,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [27],
+        "tier": 0,
+        "description": "En besv\u00e4rjare med denna kunskap kan minska vitnerkostnaden f\u00f6r att frammana en besv\u00e4rjelse. Genom att f\u00e4rdighetsslaget som sl\u00e5s vid frammaningen hamnar p\u00e5 eller under t\u00e4rningsresultatet 6 beh\u00f6ver besv\u00e4rjaren endast spendera h\u00e4lften av de vitnerpo\u00e4ng som besv\u00e4rjelsen kostade att frammana (inklusive effekgrader)."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 28
+}, {
+    "fields": {
+        "name": "Vitnerlegendar",
+        "parent": 1,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [28],
+        "tier": 0,
+        "description": "En besv\u00e4rjare med denna kunskap kan minska vitnerkostnaden f\u00f6r att frammana en besv\u00e4rjelse. Genom att f\u00e4rdighetsslaget som sl\u00e5s vid frammaningen hamnar p\u00e5 eller under t\u00e4rningsresultatet 8 beh\u00f6ver besv\u00e4rjaren endast spendera h\u00e4lften av de vitnerpo\u00e4ng som besv\u00e4rjelsen kostade att frammana (inklusive effektgrader)."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 29
+}, {
+    "fields": {
+        "name": "Vitnermotst\u00e5nd",
+        "parent": 1,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren kan s\u00e4tta upp stort motst\u00e5nd mot besv\u00e4rjelser som \u00e4r riktade mot honom. Alla situationsslag situationsv\u00e4rden som besv\u00e4rjaren m\u00e5ste sl\u00e5 under  eller lika med f\u00f6r att st\u00e5 emot eller minska en en besv\u00e4rjelses effekt \u00f6kar med +3"
+    },
+    "model": "characters.skillimprovement",
+    "pk": 30
+}, {
+    "fields": {
+        "name": "Vitnerresistent",
+        "parent": 1,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [30],
+        "tier": 0,
+        "description": "Besv\u00e4rjaren kan s\u00e4tta upp stort motst\u00e5nd mot besv\u00e4rjelser som \u00e4r riktade mot honom. Alla situationsslag situationsv\u00e4rden som besv\u00e4rjaren m\u00e5ste sl\u00e5 under  eller lika med f\u00f6r att st\u00e5 emot eller minska en en besv\u00e4rjelses effekt \u00f6kar med +5. <br />\r\nDenna f\u00f6rdjupnings effekt ers\u00e4tter effekten fr\u00e5n f\u00f6rdjupningen Vitnermotst\u00e5nd."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 31
+}, {
+    "fields": {
+        "name": "Vyrda",
+        "parent": 1,
+        "level": 1,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Besv\u00e4rjelses\u00e4ttet vyrda \u00e4r tyst och stillsamt, oftast g\u00e5r vyrden helt obem\u00e4rkt f\u00f6rbi tills dess att effekten kommer farande. Besv\u00e4rjare som vyrdar fyller sig sj\u00e4lv med vitner vilken f\u00f6r en stund blir ett med det egna v\u00e4sendet. Han formar vitnern med tankens kraft och enda som tyder p\u00e5 att den som vyrdar f\u00f6rs\u00f6ker l\u00e4gga en besv\u00e4rjelse \u00e4r n\u00e4st intill obefintilgt gest eller en r\u00f6relse som slutligen kanaliserar ut magin genom kroppen. R\u00f6relserna kan utg\u00f6ras av en ekel vridning av en handled, ett kn\u00e4pp med fingrarna eller blinkgning av ett \u00f6ga. Den som vyrdar f\u00e5r alltid l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4re d\u00e5 han ska frammana en tredje niv\u00e5ns (niv\u00e5 III) besv\u00e4rjelse. Vyrdaren kan \u00e4ven besv\u00e4rja fram den f\u00f6rsta och den andra niv\u00e5ns besv\u00e4rjelser, men f\u00e5r d\u00e5 ingen plusmodifikation f\u00f6r detta. Men eftersom den som vyrdar varken beh\u00f6ver l\u00e5ta eller gestikulera anses vyrden vara den b\u00e4sta besv\u00f6erjelses\u00e4ttet av de tre."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 32
+}, {
+    "fields": {
+        "name": "Havsk\u00e4nnedom",
+        "parent": 2,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till havet som finns utanf\u00f6r regionens kust. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska f\u00f6rs\u00f6ka ta reda p\u00e5 n\u00e5got av den utvalda regionens hav."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 33
+}, {
+    "fields": {
+        "name": "Kunskapst\u00f6rstare",
+        "parent": 2,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen \u00e4r en sann kunskapst\u00f6rstare och ivrig bibblioteksbes\u00f6kare och har l\u00e4rt sig att hitta i bibliotek. N\u00e4r han s\u00f6ker i ett bibliotek f\u00e5r han l\u00e4gga till +3 p\u00e5 sitt v\u00e4rdighetsv\u00e4rde f\u00f6r f\u00e4rdighetsslag (aktuell f\u00e4rdighet) sin anv\u00f6nds f\u00f6r att hitta information om det han s\u00f6ker efter."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 34
+}, {
+    "fields": {
+        "name": "Orientera",
+        "parent": 2,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnos och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. F\u00f6rdjupningen  hj\u00e4lper en person  att p\u00e5 b\u00e4sta och raskast m\u00f6jliga s\u00e4tt ta sig fr\u00e5n en plats till en annan. Beroende p\u00e5 avst\u00e5ndet och terr\u00e4ng f\u00e5r spelledaren avg\u00f6ra hur ofra en orienterare beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela v\u00e4gen. Vem som helst kan normalt peka ut v\u00e4derstrecken och f\u00f6lja dem. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten Geografi d\u00e5 han ska orientera sig fram med hj\u00e4lp av denna f\u00f6rdjupnings kunskaper. <br />\r\nHar en person en duglig karta till hands d\u00e4r landm\u00e4rkens positioner finns markerade kan han med stor exakthet veta vart han \u00e4r p\u00e5v\u00e4g. En s\u00e5dan karta get personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 35
+}, {
+    "fields": {
+        "name": "Navigera",
+        "parent": 2,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [33],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnor och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. <br />\r\nF\u00f6rdjupningen hj\u00e4lper en person att p\u00e5 b\u00e4sta och rakast m\u00f6jliga s\u00e4tt att ta sig fr\u00e5n en plats till en annan ute  till sj\u00f6ss. Beroende p\u00e5 avst\u00e5nd och v\u00e4der f\u00e5r spelledaren avg\u00f6ra hur ofta en navigat\u00f6r beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela tiden. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska ta ut den r\u00e4tta kursen till sj\u00f6ss. <br />\r\nHar en person en duglig sj\u00f6karta tillhands d\u00e4r olika landm\u00e4rkens positioner finns utm\u00e4rkta kan han med stor exakthet veta var han \u00e4r p\u00e5 v\u00e4g, en s\u00e5dan karta ger personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde vid f\u00e4rdighetsslag f\u00f6r navigering."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 36
+}, {
+    "fields": {
+        "name": "Resen\u00e4r",
+        "parent": 2,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen har rest mycket i regionen och k\u00e4nner d\u00e4rf\u00f6r till de st\u00f6rsta och mest trafikerade rutterna mellan olika platser i regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan indom den valda regionen."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 37
+}, {
+    "fields": {
+        "name": "Stadsk\u00e4nnare",
+        "parent": 2,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [37],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de st\u00f6rsta st\u00e4derna i regionen och vet p\u00e5 ett ungef\u00e4r var de ligger i f\u00f6rh\u00e5llande tillvarandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om staden."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 38
+}, {
+    "fields": {
+        "name": "Ortk\u00e4nnare",
+        "parent": 2,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [38],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta byar och orter i regionen och vet p\u00e5 ett ungef\u00e4r var det ligger i f\u00f6rh\u00e5llande till varandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om byn i fr\u00e5ga."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 39
+}, {
+    "fields": {
+        "name": "Stigfinnare",
+        "parent": 2,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [37],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta stigar och mindre farleder i den utvalda regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan inom det valda landet."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 40
+}, {
+    "fields": {
+        "name": "Havsk\u00e4nnedom",
+        "parent": 3,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till havet som finns utanf\u00f6r regionens kust. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska f\u00f6rs\u00f6ka ta reda p\u00e5 n\u00e5got av den utvalda regionens hav."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 41
+}, {
+    "fields": {
+        "name": "Kunskapst\u00f6rstare",
+        "parent": 3,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen \u00e4r en sann kunskapst\u00f6rstare och ivrig bibblioteksbes\u00f6kare och har l\u00e4rt sig att hitta i bibliotek. N\u00e4r han s\u00f6ker i ett bibliotek f\u00e5r han l\u00e4gga till +3 p\u00e5 sitt v\u00e4rdighetsv\u00e4rde f\u00f6r f\u00e4rdighetsslag (aktuell f\u00e4rdighet) sin anv\u00f6nds f\u00f6r att hitta information om det han s\u00f6ker efter."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 42
+}, {
+    "fields": {
+        "name": "Orientera",
+        "parent": 3,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnos och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. F\u00f6rdjupningen  hj\u00e4lper en person  att p\u00e5 b\u00e4sta och raskast m\u00f6jliga s\u00e4tt ta sig fr\u00e5n en plats till en annan. Beroende p\u00e5 avst\u00e5ndet och terr\u00e4ng f\u00e5r spelledaren avg\u00f6ra hur ofra en orienterare beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela v\u00e4gen. Vem som helst kan normalt peka ut v\u00e4derstrecken och f\u00f6lja dem. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten Geografi d\u00e5 han ska orientera sig fram med hj\u00e4lp av denna f\u00f6rdjupnings kunskaper. <br />\r\nHar en person en duglig karta till hands d\u00e4r landm\u00e4rkens positioner finns markerade kan han med stor exakthet veta vart han \u00e4r p\u00e5v\u00e4g. En s\u00e5dan karta get personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 43
+}, {
+    "fields": {
+        "name": "Navigera",
+        "parent": 3,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [41],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnor och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. <br />\r\nF\u00f6rdjupningen hj\u00e4lper en person att p\u00e5 b\u00e4sta och rakast m\u00f6jliga s\u00e4tt att ta sig fr\u00e5n en plats till en annan ute  till sj\u00f6ss. Beroende p\u00e5 avst\u00e5nd och v\u00e4der f\u00e5r spelledaren avg\u00f6ra hur ofta en navigat\u00f6r beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela tiden. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska ta ut den r\u00e4tta kursen till sj\u00f6ss. <br />\r\nHar en person en duglig sj\u00f6karta tillhands d\u00e4r olika landm\u00e4rkens positioner finns utm\u00e4rkta kan han med stor exakthet veta var han \u00e4r p\u00e5 v\u00e4g, en s\u00e5dan karta ger personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde vid f\u00e4rdighetsslag f\u00f6r navigering."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 44
+}, {
+    "fields": {
+        "name": "Resen\u00e4r",
+        "parent": 3,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen har rest mycket i regionen och k\u00e4nner d\u00e4rf\u00f6r till de st\u00f6rsta och mest trafikerade rutterna mellan olika platser i regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan indom den valda regionen."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 45
+}, {
+    "fields": {
+        "name": "Stadsk\u00e4nnare",
+        "parent": 3,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [45],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de st\u00f6rsta st\u00e4derna i regionen och vet p\u00e5 ett ungef\u00e4r var de ligger i f\u00f6rh\u00e5llande tillvarandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om staden."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 46
+}, {
+    "fields": {
+        "name": "Ortk\u00e4nnare",
+        "parent": 3,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [46],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta byar och orter i regionen och vet p\u00e5 ett ungef\u00e4r var det ligger i f\u00f6rh\u00e5llande till varandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om byn i fr\u00e5ga."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 47
+}, {
+    "fields": {
+        "name": "Stigfinnare",
+        "parent": 3,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [45],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta stigar och mindre farleder i den utvalda regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan inom det valda landet."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 48
+}, {
+    "fields": {
+        "name": "Havsk\u00e4nnedom",
+        "parent": 4,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till havet som finns utanf\u00f6r regionens kust. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska f\u00f6rs\u00f6ka ta reda p\u00e5 n\u00e5got av den utvalda regionens hav."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 49
+}, {
+    "fields": {
+        "name": "Kunskapst\u00f6rstare",
+        "parent": 4,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen \u00e4r en sann kunskapst\u00f6rstare och ivrig bibblioteksbes\u00f6kare och har l\u00e4rt sig att hitta i bibliotek. N\u00e4r han s\u00f6ker i ett bibliotek f\u00e5r han l\u00e4gga till +3 p\u00e5 sitt v\u00e4rdighetsv\u00e4rde f\u00f6r f\u00e4rdighetsslag (aktuell f\u00e4rdighet) sin anv\u00f6nds f\u00f6r att hitta information om det han s\u00f6ker efter."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 50
+}, {
+    "fields": {
+        "name": "Orientera",
+        "parent": 4,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnos och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. F\u00f6rdjupningen  hj\u00e4lper en person  att p\u00e5 b\u00e4sta och raskast m\u00f6jliga s\u00e4tt ta sig fr\u00e5n en plats till en annan. Beroende p\u00e5 avst\u00e5ndet och terr\u00e4ng f\u00e5r spelledaren avg\u00f6ra hur ofra en orienterare beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela v\u00e4gen. Vem som helst kan normalt peka ut v\u00e4derstrecken och f\u00f6lja dem. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten Geografi d\u00e5 han ska orientera sig fram med hj\u00e4lp av denna f\u00f6rdjupnings kunskaper. <br />\r\nHar en person en duglig karta till hands d\u00e4r landm\u00e4rkens positioner finns markerade kan han med stor exakthet veta vart han \u00e4r p\u00e5v\u00e4g. En s\u00e5dan karta get personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 51
+}, {
+    "fields": {
+        "name": "Navigera",
+        "parent": 4,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [49],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnor och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. <br />\r\nF\u00f6rdjupningen hj\u00e4lper en person att p\u00e5 b\u00e4sta och rakast m\u00f6jliga s\u00e4tt att ta sig fr\u00e5n en plats till en annan ute  till sj\u00f6ss. Beroende p\u00e5 avst\u00e5nd och v\u00e4der f\u00e5r spelledaren avg\u00f6ra hur ofta en navigat\u00f6r beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela tiden. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska ta ut den r\u00e4tta kursen till sj\u00f6ss. <br />\r\nHar en person en duglig sj\u00f6karta tillhands d\u00e4r olika landm\u00e4rkens positioner finns utm\u00e4rkta kan han med stor exakthet veta var han \u00e4r p\u00e5 v\u00e4g, en s\u00e5dan karta ger personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde vid f\u00e4rdighetsslag f\u00f6r navigering."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 52
+}, {
+    "fields": {
+        "name": "Resen\u00e4r",
+        "parent": 4,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen har rest mycket i regionen och k\u00e4nner d\u00e4rf\u00f6r till de st\u00f6rsta och mest trafikerade rutterna mellan olika platser i regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan indom den valda regionen."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 53
+}, {
+    "fields": {
+        "name": "Stadsk\u00e4nnare",
+        "parent": 4,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [53],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de st\u00f6rsta st\u00e4derna i regionen och vet p\u00e5 ett ungef\u00e4r var de ligger i f\u00f6rh\u00e5llande tillvarandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om staden."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 54
+}, {
+    "fields": {
+        "name": "Ortk\u00e4nnare",
+        "parent": 4,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [54],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta byar och orter i regionen och vet p\u00e5 ett ungef\u00e4r var det ligger i f\u00f6rh\u00e5llande till varandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om byn i fr\u00e5ga."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 55
+}, {
+    "fields": {
+        "name": "Stigfinnare",
+        "parent": 4,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [53],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta stigar och mindre farleder i den utvalda regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan inom det valda landet."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 56
+}, {
+    "fields": {
+        "name": "Havsk\u00e4nnedom",
+        "parent": 5,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till havet som finns utanf\u00f6r regionens kust. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska f\u00f6rs\u00f6ka ta reda p\u00e5 n\u00e5got av den utvalda regionens hav."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 57
+}, {
+    "fields": {
+        "name": "Kunskapst\u00f6rstare",
+        "parent": 5,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen \u00e4r en sann kunskapst\u00f6rstare och ivrig bibblioteksbes\u00f6kare och har l\u00e4rt sig att hitta i bibliotek. N\u00e4r han s\u00f6ker i ett bibliotek f\u00e5r han l\u00e4gga till +3 p\u00e5 sitt v\u00e4rdighetsv\u00e4rde f\u00f6r f\u00e4rdighetsslag (aktuell f\u00e4rdighet) sin anv\u00f6nds f\u00f6r att hitta information om det han s\u00f6ker efter."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 58
+}, {
+    "fields": {
+        "name": "Orientera",
+        "parent": 5,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnos och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. F\u00f6rdjupningen  hj\u00e4lper en person  att p\u00e5 b\u00e4sta och raskast m\u00f6jliga s\u00e4tt ta sig fr\u00e5n en plats till en annan. Beroende p\u00e5 avst\u00e5ndet och terr\u00e4ng f\u00e5r spelledaren avg\u00f6ra hur ofra en orienterare beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela v\u00e4gen. Vem som helst kan normalt peka ut v\u00e4derstrecken och f\u00f6lja dem. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten Geografi d\u00e5 han ska orientera sig fram med hj\u00e4lp av denna f\u00f6rdjupnings kunskaper. <br />\r\nHar en person en duglig karta till hands d\u00e4r landm\u00e4rkens positioner finns markerade kan han med stor exakthet veta vart han \u00e4r p\u00e5v\u00e4g. En s\u00e5dan karta get personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 59
+}, {
+    "fields": {
+        "name": "Navigera",
+        "parent": 5,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [57],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnor och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. <br />\r\nF\u00f6rdjupningen hj\u00e4lper en person att p\u00e5 b\u00e4sta och rakast m\u00f6jliga s\u00e4tt att ta sig fr\u00e5n en plats till en annan ute  till sj\u00f6ss. Beroende p\u00e5 avst\u00e5nd och v\u00e4der f\u00e5r spelledaren avg\u00f6ra hur ofta en navigat\u00f6r beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela tiden. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska ta ut den r\u00e4tta kursen till sj\u00f6ss. <br />\r\nHar en person en duglig sj\u00f6karta tillhands d\u00e4r olika landm\u00e4rkens positioner finns utm\u00e4rkta kan han med stor exakthet veta var han \u00e4r p\u00e5 v\u00e4g, en s\u00e5dan karta ger personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde vid f\u00e4rdighetsslag f\u00f6r navigering."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 60
+}, {
+    "fields": {
+        "name": "Resen\u00e4r",
+        "parent": 5,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen har rest mycket i regionen och k\u00e4nner d\u00e4rf\u00f6r till de st\u00f6rsta och mest trafikerade rutterna mellan olika platser i regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan indom den valda regionen."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 61
+}, {
+    "fields": {
+        "name": "Stadsk\u00e4nnare",
+        "parent": 5,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [61],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de st\u00f6rsta st\u00e4derna i regionen och vet p\u00e5 ett ungef\u00e4r var de ligger i f\u00f6rh\u00e5llande tillvarandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om staden."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 62
+}, {
+    "fields": {
+        "name": "Ortk\u00e4nnare",
+        "parent": 5,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [62],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta byar och orter i regionen och vet p\u00e5 ett ungef\u00e4r var det ligger i f\u00f6rh\u00e5llande till varandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om byn i fr\u00e5ga."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 63
+}, {
+    "fields": {
+        "name": "Stigfinnare",
+        "parent": 5,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [61],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta stigar och mindre farleder i den utvalda regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan inom det valda landet."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 64
+}, {
+    "fields": {
+        "name": "Havsk\u00e4nnedom",
+        "parent": 6,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till havet som finns utanf\u00f6r regionens kust. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska f\u00f6rs\u00f6ka ta reda p\u00e5 n\u00e5got av den utvalda regionens hav."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 65
+}, {
+    "fields": {
+        "name": "Kunskapst\u00f6rstare",
+        "parent": 6,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen \u00e4r en sann kunskapst\u00f6rstare och ivrig bibblioteksbes\u00f6kare och har l\u00e4rt sig att hitta i bibliotek. N\u00e4r han s\u00f6ker i ett bibliotek f\u00e5r han l\u00e4gga till +3 p\u00e5 sitt v\u00e4rdighetsv\u00e4rde f\u00f6r f\u00e4rdighetsslag (aktuell f\u00e4rdighet) sin anv\u00f6nds f\u00f6r att hitta information om det han s\u00f6ker efter."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 66
+}, {
+    "fields": {
+        "name": "Orientera",
+        "parent": 6,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnos och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. F\u00f6rdjupningen  hj\u00e4lper en person  att p\u00e5 b\u00e4sta och raskast m\u00f6jliga s\u00e4tt ta sig fr\u00e5n en plats till en annan. Beroende p\u00e5 avst\u00e5ndet och terr\u00e4ng f\u00e5r spelledaren avg\u00f6ra hur ofra en orienterare beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela v\u00e4gen. Vem som helst kan normalt peka ut v\u00e4derstrecken och f\u00f6lja dem. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten Geografi d\u00e5 han ska orientera sig fram med hj\u00e4lp av denna f\u00f6rdjupnings kunskaper. <br />\r\nHar en person en duglig karta till hands d\u00e4r landm\u00e4rkens positioner finns markerade kan han med stor exakthet veta vart han \u00e4r p\u00e5v\u00e4g. En s\u00e5dan karta get personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 67
+}, {
+    "fields": {
+        "name": "Navigera",
+        "parent": 6,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [65],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnor och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. <br />\r\nF\u00f6rdjupningen hj\u00e4lper en person att p\u00e5 b\u00e4sta och rakast m\u00f6jliga s\u00e4tt att ta sig fr\u00e5n en plats till en annan ute  till sj\u00f6ss. Beroende p\u00e5 avst\u00e5nd och v\u00e4der f\u00e5r spelledaren avg\u00f6ra hur ofta en navigat\u00f6r beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela tiden. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska ta ut den r\u00e4tta kursen till sj\u00f6ss. <br />\r\nHar en person en duglig sj\u00f6karta tillhands d\u00e4r olika landm\u00e4rkens positioner finns utm\u00e4rkta kan han med stor exakthet veta var han \u00e4r p\u00e5 v\u00e4g, en s\u00e5dan karta ger personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde vid f\u00e4rdighetsslag f\u00f6r navigering."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 68
+}, {
+    "fields": {
+        "name": "Resen\u00e4r",
+        "parent": 6,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen har rest mycket i regionen och k\u00e4nner d\u00e4rf\u00f6r till de st\u00f6rsta och mest trafikerade rutterna mellan olika platser i regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan indom den valda regionen."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 69
+}, {
+    "fields": {
+        "name": "Stadsk\u00e4nnare",
+        "parent": 6,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [69],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de st\u00f6rsta st\u00e4derna i regionen och vet p\u00e5 ett ungef\u00e4r var de ligger i f\u00f6rh\u00e5llande tillvarandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om staden."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 70
+}, {
+    "fields": {
+        "name": "Ortk\u00e4nnare",
+        "parent": 6,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [70],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta byar och orter i regionen och vet p\u00e5 ett ungef\u00e4r var det ligger i f\u00f6rh\u00e5llande till varandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om byn i fr\u00e5ga."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 71
+}, {
+    "fields": {
+        "name": "Stigfinnare",
+        "parent": 6,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [69],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta stigar och mindre farleder i den utvalda regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan inom det valda landet."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 72
+}, {
+    "fields": {
+        "name": "Havsk\u00e4nnedom",
+        "parent": 7,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till havet som finns utanf\u00f6r regionens kust. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska f\u00f6rs\u00f6ka ta reda p\u00e5 n\u00e5got av den utvalda regionens hav."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 73
+}, {
+    "fields": {
+        "name": "Kunskapst\u00f6rstare",
+        "parent": 7,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen \u00e4r en sann kunskapst\u00f6rstare och ivrig bibblioteksbes\u00f6kare och har l\u00e4rt sig att hitta i bibliotek. N\u00e4r han s\u00f6ker i ett bibliotek f\u00e5r han l\u00e4gga till +3 p\u00e5 sitt v\u00e4rdighetsv\u00e4rde f\u00f6r f\u00e4rdighetsslag (aktuell f\u00e4rdighet) sin anv\u00f6nds f\u00f6r att hitta information om det han s\u00f6ker efter."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 74
+}, {
+    "fields": {
+        "name": "Orientera",
+        "parent": 7,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnos och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. F\u00f6rdjupningen  hj\u00e4lper en person  att p\u00e5 b\u00e4sta och raskast m\u00f6jliga s\u00e4tt ta sig fr\u00e5n en plats till en annan. Beroende p\u00e5 avst\u00e5ndet och terr\u00e4ng f\u00e5r spelledaren avg\u00f6ra hur ofra en orienterare beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela v\u00e4gen. Vem som helst kan normalt peka ut v\u00e4derstrecken och f\u00f6lja dem. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten Geografi d\u00e5 han ska orientera sig fram med hj\u00e4lp av denna f\u00f6rdjupnings kunskaper. <br />\r\nHar en person en duglig karta till hands d\u00e4r landm\u00e4rkens positioner finns markerade kan han med stor exakthet veta vart han \u00e4r p\u00e5v\u00e4g. En s\u00e5dan karta get personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 75
+}, {
+    "fields": {
+        "name": "Navigera",
+        "parent": 7,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [73],
+        "tier": 0,
+        "description": "Genom att j\u00e4mf\u00f6ra k\u00e4nda landm\u00e4rken, stj\u00e4rnor och himlakroppars positioner i f\u00f6rh\u00e5llande till varandra kan en person veta i vilken riktning han \u00e4r p\u00e5 v\u00e4g samt var han befinner sig. <br />\r\nF\u00f6rdjupningen hj\u00e4lper en person att p\u00e5 b\u00e4sta och rakast m\u00f6jliga s\u00e4tt att ta sig fr\u00e5n en plats till en annan ute  till sj\u00f6ss. Beroende p\u00e5 avst\u00e5nd och v\u00e4der f\u00e5r spelledaren avg\u00f6ra hur ofta en navigat\u00f6r beh\u00f6ver lyckas med ett f\u00e4rdighetsslag f\u00f6r att h\u00e5lla den r\u00e4tta kursen hela tiden. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska ta ut den r\u00e4tta kursen till sj\u00f6ss. <br />\r\nHar en person en duglig sj\u00f6karta tillhands d\u00e4r olika landm\u00e4rkens positioner finns utm\u00e4rkta kan han med stor exakthet veta var han \u00e4r p\u00e5 v\u00e4g, en s\u00e5dan karta ger personen ytterligare +3 att l\u00e4gga till p\u00e5 sitt f\u00e4rdighetsv\u00e4rde vid f\u00e4rdighetsslag f\u00f6r navigering."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 76
+}, {
+    "fields": {
+        "name": "Resen\u00e4r",
+        "parent": 7,
+        "level": 1,
+        "requierment": 8,
+        "cost": 10,
+        "dependencies": [],
+        "tier": 0,
+        "description": "Personen har rest mycket i regionen och k\u00e4nner d\u00e4rf\u00f6r till de st\u00f6rsta och mest trafikerade rutterna mellan olika platser i regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan indom den valda regionen."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 77
+}, {
+    "fields": {
+        "name": "Stadsk\u00e4nnare",
+        "parent": 7,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [77],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de st\u00f6rsta st\u00e4derna i regionen och vet p\u00e5 ett ungef\u00e4r var de ligger i f\u00f6rh\u00e5llande tillvarandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om staden."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 78
+}, {
+    "fields": {
+        "name": "Ortk\u00e4nnare",
+        "parent": 7,
+        "level": 3,
+        "requierment": 16,
+        "cost": 30,
+        "dependencies": [78],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta byar och orter i regionen och vet p\u00e5 ett ungef\u00e4r var det ligger i f\u00f6rh\u00e5llande till varandra. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 ett f\u00e4rdighetsslag ska avg\u00f6ra om personen har kunskap om byn i fr\u00e5ga."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 79
+}, {
+    "fields": {
+        "name": "Stigfinnare",
+        "parent": 7,
+        "level": 2,
+        "requierment": 12,
+        "cost": 20,
+        "dependencies": [77],
+        "tier": 0,
+        "description": "Personen k\u00e4nner till de flesta stigar och mindre farleder i den utvalda regionen. Personen f\u00e5r l\u00e4gga till +3 p\u00e5 sitt f\u00e4rdighetsv\u00e4rde i f\u00e4rdigheten d\u00e5 han ska best\u00e4mma den b\u00e4sta f\u00e4rdv\u00e4gen fr\u00e5n en plats till en annan inom det valda landet."
+    },
+    "model": "characters.skillimprovement",
+    "pk": 80
+}]
