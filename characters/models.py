@@ -234,8 +234,7 @@ class BaseInfoClass(models.Model):
 	name = models.CharField(max_length=100,
 							null=False,
 							blank=False,
-							verbose_name=_(u'Namn'),
-							unique=True)
+							verbose_name=_(u'Namn'))
 
 	tier = models.IntegerField(null=False,
 								blank=False,
@@ -330,6 +329,7 @@ class SkillImprovement(BaseInfoClass):
 								verbose_name=_(u'Nivå'))
 
 	class Meta(BaseInfoClass.Meta):
+		unique_together = (('name', 'parent'),)
 		verbose_name = _(u'Fördjupning')
 		verbose_name_plural = _(u'Fördjupningar')
 
