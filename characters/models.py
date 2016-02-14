@@ -252,6 +252,7 @@ class BaseInfoClass(models.Model):
 
 	class Meta(object):
 		abstract = True
+		ordering = ['-name']
 
 	def __unicode__(self):
 		return self.name
