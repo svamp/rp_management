@@ -241,6 +241,9 @@ class BaseInfoClass(models.Model):
 								default=0,
 								verbose_name=_(u'FV'))
 
+	multiple = models.BooleanField(default=False,
+									verbose_name=_(u'Kan ha flera'))
+
 	description = models.TextField(null=True,
 									blank=True,
 									verbose_name=_(u'Beskrivning'))
@@ -300,6 +303,12 @@ class Characteristic(BaseInfoClass):
 class Skills(BaseInfoClass):
 
 	level = models.IntegerField(null=False, blank=False, default=0, verbose_name=_(u'Nivå'))
+
+	dependencies = models.ManyToManyField("self",
+											symmetrical=False,
+											null=True,
+											blank=True,
+											verbose_name=_(u'Tillhörighet'))
 
 	class Meta(BaseInfoClass.Meta):
 		verbose_name = _(u'Färdighet')

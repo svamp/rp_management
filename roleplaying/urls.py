@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^accounts/', include('accounts.urls')),
     url(r'^chaining/', include('smart_selects.urls')),
     url(r'^character/', include('characters.urls')),
+    url('^searchableselect/', include('searchableselect.urls')),
 ]
