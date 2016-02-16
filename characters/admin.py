@@ -13,10 +13,11 @@ class SkillImprovementAdminForm(forms.ModelForm):
 		model = SkillImprovement
 		exclude = ()
 		widgets = {
-			'dependencies' : SearchableSelect(model='characters.SkillImprovement', search_field='name', many=True)
+			'dependencies' : SearchableSelect(model='characters.SkillImprovement', search_field='name', many=True),
+			'parent': SearchableSelect(model='characters.Skills', search_field='name', many=False)
 		}
 
-class MyModelAdmin(admin.ModelAdmin):
+class SkillImprovementAdmin(admin.ModelAdmin):
     form = SkillImprovementAdminForm
 
 admin.site.register(Weapons)
@@ -29,7 +30,7 @@ admin.site.register(Background)
 admin.site.register(Archetype)
 admin.site.register(Characteristic)
 admin.site.register(Skills)
-admin.site.register(SkillImprovement, MyModelAdmin)
+admin.site.register(SkillImprovement, SkillImprovementAdmin)
 admin.site.register(ExceptionalCharacteristic)
 admin.site.register(CharacteristicDetail)
 admin.site.register(SpellParent)
