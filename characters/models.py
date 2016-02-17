@@ -329,6 +329,8 @@ class SkillImprovement(BaseInfoClass):
 											null=True,
 											blank=True,
 											verbose_name=_(u'Fördjupningskrav'))
+	loose_dependencies = models.BooleanField(default=False,
+											verbose_name=_(u'Kräver någon av fördjupningarna'))
 	requierment = models.IntegerField(null=False,
 										blank=False,
 										default=0,
