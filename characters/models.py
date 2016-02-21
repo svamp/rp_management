@@ -236,11 +236,6 @@ class BaseInfoClass(models.Model):
 							blank=False,
 							verbose_name=_(u'Namn'))
 
-	tier = models.IntegerField(null=False,
-								blank=False,
-								default=0,
-								verbose_name=_(u'FV'))
-
 	multiple = models.BooleanField(default=False,
 									verbose_name=_(u'Kan ha flera'))
 
